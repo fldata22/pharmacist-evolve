@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Main outer circle -->
+  <circle cx="50" cy="50" r="45" fill="none" stroke="#D4A853" stroke-width="4"/>
+  
+  <!-- Inner circle -->
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Central lotus/flower design -->
+  <!-- Top petal -->
+  <path d="M50 20 C45 25, 45 35, 50 40 C55 35, 55 25, 50 20 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Top-right petal -->
+  <path d="M65 30 C60 35, 60 45, 65 50 C70 45, 70 35, 65 30 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom-right petal -->
+  <path d="M65 70 C60 65, 60 55, 65 50 C70 55, 70 65, 65 70 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom petal -->
+  <path d="M50 80 C45 75, 45 65, 50 60 C55 65, 55 75, 50 80 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom-left petal -->
+  <path d="M35 70 C40 65, 40 55, 35 50 C30 55, 30 65, 35 70 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Top-left petal -->
+  <path d="M35 30 C40 35, 40 45, 35 50 C30 45, 30 35, 35 30 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Center circle -->
+  <circle cx="50" cy="50" r="8" fill="#D4A853"/>
+</svg>

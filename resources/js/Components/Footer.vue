@@ -6,27 +6,7 @@
         <div class="lg:col-span-1">
           <div class="mb-4">
             <!-- Logo -->
-            <div class="flex items-center">
-              <div class="w-12 h-12 mr-3 relative">
-                <svg viewBox="0 0 100 100" class="w-full h-full">
-                  <circle cx="50" cy="50" r="45" fill="none" stroke="#F59E0B" stroke-width="6"/>
-                  <path d="M50 20 C60 35, 60 65, 50 80 C40 65, 40 35, 50 20" fill="#F59E0B" opacity="0.8"/>
-                  <path d="M20 50 C35 40, 65 40, 80 50 C65 60, 35 60, 20 50" fill="#F59E0B" opacity="0.6"/>
-                  <path d="M30 30 C45 35, 55 45, 50 60 C45 45, 35 35, 30 30" fill="#F59E0B" opacity="0.7"/>
-                  <path d="M70 30 C65 35, 55 45, 50 60 C55 45, 65 35, 70 30" fill="#F59E0B" opacity="0.7"/>
-                  <path d="M30 70 C45 65, 55 55, 50 40 C45 55, 35 65, 30 70" fill="#F59E0B" opacity="0.7"/>
-                  <path d="M70 70 C65 65, 55 55, 50 40 C55 55, 65 65, 70 70" fill="#F59E0B" opacity="0.7"/>
-                </svg>
-              </div>
-              <div class="flex flex-col">
-                <span class="text-xl font-bold text-white">
-                  Pharmacist<span class="text-orange-400">Evolve</span>
-                </span>
-                <span class="text-sm text-gray-300 mt-0.5">
-                  Empowering Overseas Pharmacists
-                </span>
-              </div>
-            </div>
+            <Logo size="large" variant="dark" />
           </div>
           <p class="text-gray-300 mb-6 max-w-md">
             Expert coaching, seamless transition support, and career excellence programs for overseas pharmacists in the UK.
@@ -84,7 +64,7 @@
           <h3 class="text-lg font-semibold mb-4">Our Services</h3>
           <ul class="space-y-2">
             <li><Link href="/services/group-mentoring" class="text-gray-300 hover:text-orange-400 transition-colors">Group Mentoring School</Link></li>
-            <li><Link href="/services/ospap-coaching" class="text-gray-300 hover:text-orange-400 transition-colors">OSPAP Transition Coaching</Link></li>
+            <li><Link href="/services/professional-development" class="text-gray-300 hover:text-orange-400 transition-colors">Professional Development Coaching</Link></li>
             <li><Link href="/services/workforce-integration" class="text-gray-300 hover:text-orange-400 transition-colors">Workforce Integration</Link></li>
           </ul>
         </div>
@@ -98,8 +78,8 @@
               <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.94a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
               </svg>
-              <a href="mailto:info@pharmacistevolve.com" class="text-gray-300 hover:text-orange-400 transition-colors">
-                info@pharmacistevolve.com
+              <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-gray-300 hover:text-orange-400 transition-colors">
+                faithadebimpe@pharmacistevolve.com
               </a>
             </div>
 
@@ -146,6 +126,7 @@
 <script setup>
 import { computed } from 'vue'
 import { Link } from '@inertiajs/vue3'
+import Logo from '@/Components/Logo.vue'
 
 const currentYear = computed(() => new Date().getFullYear())
 </script>

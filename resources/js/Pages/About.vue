@@ -135,118 +135,46 @@
         </div>
 
         <!-- Team Members Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          <!-- Team Member 1 - Founder -->
-          <div class="group bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Dr. Sarah Johnson" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-orange-600/20 to-transparent"></div>
+        <div class="space-y-16 mb-16">
+          <!-- Founder - Full Width Feature -->
+          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-12 shadow-xl">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+              <!-- Photo -->
+              <div class="text-center lg:text-left">
+                <div class="w-64 h-64 mx-auto lg:mx-0 mb-6 relative">
+                  <img 
+                    src="/images/pharm.PNG" 
+                    alt="Faith Adebimpe" 
+                    class="w-full h-full rounded-full object-cover shadow-xl"
+                    style="object-position: center 15%;"
+                  />
+                  <div class="absolute inset-0 rounded-full bg-gradient-to-t from-orange-600/20 to-transparent"></div>
+                </div>
+                <div class="text-center">
+                  <h3 class="text-3xl font-bold text-gray-900 mb-2">Faith Adebimpe</h3>
+                  <p class="text-orange-600 font-semibold text-lg mb-4">Founder, Independent Prescribing Pharmacist & Lead Coach</p>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. Sarah Johnson</h3>
-              <p class="text-orange-600 font-semibold mb-4">Founder & Lead Coach</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                With over 15 years in UK pharmacy practice and a passion for mentoring, Sarah founded Pharmacist Evolve to support overseas pharmacists. She has personally guided over 200 pharmacists through their OSPAP journey.
-              </p>
-            </div>
-          </div>
 
-          <!-- Team Member 2 - Senior Coach -->
-          <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Dr. Michael Chen" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-blue-600/20 to-transparent"></div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. Michael Chen</h3>
-              <p class="text-blue-600 font-semibold mb-4">Senior OSPAP Coach</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                A clinical pharmacist with expertise in OSPAP preparation and workforce integration. Michael specializes in helping international pharmacists navigate UK clinical practice requirements and interview processes.
-              </p>
-            </div>
-          </div>
+              <!-- Bio Content -->
+              <div class="lg:col-span-2">
+                <div class="prose prose-lg max-w-none text-gray-700">
+                  <p class="text-lg leading-relaxed mb-6">
+                    Having personally walked the journey as an international pharmacist navigating the complexities of the UK pharmacy landscape, I understand both the challenges and the immense potential that overseas professionals bring. From OSPAP to registration, and then stepping confidently into the UK workforce — I've lived the experience, failed and learned a lot along the way and now I'm committed to guiding others through it with clarity, confidence, and community.
+                  </p>
+                  
+                  <p class="text-lg leading-relaxed mb-6">
+                    With a background spanning clinical practice, mentorship, and healthcare leadership, I founded Pharmacist Evolve to bridge the gap between where overseas pharmacists are and where they aspire to be. Whether it's through our group mentoring school, personalised coaching, or our growing network of collaborators and sponsors, every initiative is designed to help pharmacists grow professionally, integrate seamlessly, and achieve excellence in their UK careers.
+                  </p>
 
-          <!-- Team Member 3 - Career Specialist -->
-          <div class="group bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Dr. Priya Patel" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-emerald-600/20 to-transparent"></div>
+                  <div class="bg-white rounded-2xl p-6 border-l-4 border-orange-500 mb-6">
+                    <p class="font-semibold text-gray-900 mb-2">Our Philosophy</p>
+                    <p class="text-gray-700 text-lg">
+                      At Pharmacist Evolve, we focus on building futures. Let's evolve, together.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. Priya Patel</h3>
-              <p class="text-emerald-600 font-semibold mb-4">Career Development Specialist</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Specializing in career advancement and professional development, Priya helps pharmacists identify opportunities and develop strategies for long-term success in the UK pharmacy sector.
-              </p>
-            </div>
-          </div>
-
-          <!-- Team Member 4 - Mentor -->
-          <div class="group bg-gradient-to-br from-purple-50 to-pink-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Dr. James Wilson" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-purple-600/20 to-transparent"></div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. James Wilson</h3>
-              <p class="text-purple-600 font-semibold mb-4">Group Mentoring Lead</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Leading our group mentoring programs, James creates supportive learning environments where overseas pharmacists can learn from each other while receiving expert guidance.
-              </p>
-            </div>
-          </div>
-
-          <!-- Team Member 5 - Support Coordinator -->
-          <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Emma Thompson" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-indigo-600/20 to-transparent"></div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Emma Thompson</h3>
-              <p class="text-indigo-600 font-semibold mb-4">Student Support Coordinator</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Emma ensures every client receives personalized attention and support throughout their journey. She coordinates resources, schedules, and provides ongoing assistance to maximize success.
-              </p>
-            </div>
-          </div>
-
-          <!-- Team Member 6 - Technical Specialist -->
-          <div class="group bg-gradient-to-br from-teal-50 to-green-50 rounded-3xl p-8 hover:shadow-xl transition-all duration-300">
-            <div class="text-center">
-              <div class="w-32 h-32 mx-auto mb-6 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=400&q=80" 
-                  alt="Dr. Ahmed Hassan" 
-                  class="w-full h-full rounded-full object-cover shadow-lg"
-                />
-                <div class="absolute inset-0 rounded-full bg-gradient-to-t from-teal-600/20 to-transparent"></div>
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2">Dr. Ahmed Hassan</h3>
-              <p class="text-teal-600 font-semibold mb-4">Clinical Practice Specialist</p>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                With extensive experience in both hospital and community pharmacy, Ahmed helps overseas pharmacists understand UK clinical practices and regulatory requirements.
-              </p>
             </div>
           </div>
         </div>
@@ -321,15 +249,17 @@
               </svg>
             </Link>
             
-            <Link 
-              href="/book-consultation" 
+            <a 
+              href="https://book.heygoldie.com/FaithThePharmacist"
+              target="_blank"
+              rel="noopener noreferrer"
               class="inline-flex items-center justify-center px-8 py-4 border-2 border-orange-600 text-orange-600 font-semibold rounded-xl hover:bg-orange-600 hover:text-white transition-colors"
             >
               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"/>
               </svg>
               Book a Free Consultation
-            </Link>
+            </a>
           </div>
         </div>
       </div>

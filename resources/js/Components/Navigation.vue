@@ -5,16 +5,33 @@
         <!-- Logo -->
         <div class="flex-shrink-0">
           <Link href="/">
-            <Logo />
+            <Logo :showTagline="false" />
           </Link>
         </div>
 
-        <!-- Desktop Navigation -->
-        <div class="hidden md:block">
-          <div class="ml-10 flex items-baseline space-x-8">
+        <!-- Compact Navigation for Medium Screens -->
+        <div class="hidden md:flex lg:hidden items-center space-x-2">
+          <Link href="/" class="text-gray-700 hover:text-orange-600 text-xs font-medium px-2 py-1">Home</Link>
+          <Link href="/services" class="text-gray-700 hover:text-orange-600 text-xs font-medium px-2 py-1">Services</Link>
+          <Link href="/events" class="text-gray-700 hover:text-orange-600 text-xs font-medium px-2 py-1">Events</Link>
+          <Link href="/about" class="text-gray-700 hover:text-orange-600 text-xs font-medium px-2 py-1">About</Link>
+          <Link href="/contact" class="text-gray-700 hover:text-orange-600 text-xs font-medium px-2 py-1">Contact</Link>
+          <a 
+            href="https://book.heygoldie.com/FaithThePharmacist"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-orange-600 text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-orange-700 whitespace-nowrap ml-2"
+          >
+            Book Now
+          </a>
+        </div>
+
+        <!-- Full Desktop Navigation -->
+        <div class="hidden lg:block">
+          <div class="ml-6 flex items-baseline space-x-4">
             <Link 
               href="/" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Home' }"
             >
               Home
@@ -22,23 +39,31 @@
             
             <Link 
               href="/services" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Services' }"
             >
               Services
             </Link>
 
             <Link 
+              href="/events" 
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
+              :class="{ 'text-orange-600': $page.component === 'Events' }"
+            >
+              Events
+            </Link>
+
+            <Link 
               href="/about" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'About' }"
             >
-              About Us
+              About
             </Link>
             
             <Link 
               href="/testimonials" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Testimonials' }"
             >
               Testimonials
@@ -46,15 +71,15 @@
 
             <Link 
               href="/collaborate" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Collaborate' }"
             >
-              Collaborate with Us
+              Collaborate
             </Link>
 
             <Link 
               href="/blog" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Blog' }"
             >
               Blog
@@ -62,7 +87,7 @@
             
             <Link 
               href="/contact" 
-              class="text-gray-700 hover:text-orange-600 px-3 py-2 text-sm font-medium transition-colors"
+              class="text-gray-700 hover:text-orange-600 px-2 py-2 text-sm font-medium transition-colors"
               :class="{ 'text-orange-600': $page.component === 'Contact' }"
             >
               Contact
@@ -70,18 +95,20 @@
           </div>
         </div>
 
-        <!-- CTA Button -->
-        <div class="hidden md:block">
-          <Link 
-            href="/book-consultation" 
-            class="bg-orange-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors"
+        <!-- CTA Button for Large Screens -->
+        <div class="hidden lg:block">
+          <a 
+            href="https://book.heygoldie.com/FaithThePharmacist"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors whitespace-nowrap"
           >
             Book a Consultation
-          </Link>
+          </a>
         </div>
 
         <!-- Mobile menu button -->
-        <div class="md:hidden">
+        <div class="lg:hidden">
           <button 
             @click="mobileMenuOpen = !mobileMenuOpen"
             class="text-gray-700 hover:text-orange-600 focus:outline-none focus:text-orange-600"
@@ -107,13 +134,16 @@
       </div>
 
       <!-- Mobile Navigation -->
-      <div v-show="mobileMenuOpen" class="md:hidden">
+      <div v-show="mobileMenuOpen" class="lg:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
           <Link href="/" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-600">
             Home
           </Link>
           <Link href="/services" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-600">
             Services
+          </Link>
+          <Link href="/events" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-600">
+            Events
           </Link>
           <Link href="/about" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-600">
             About Us
@@ -131,12 +161,14 @@
             Contact
           </Link>
           <div class="px-3 py-2">
-            <Link 
-              href="/book-consultation" 
+            <a 
+              href="https://book.heygoldie.com/FaithThePharmacist"
+              target="_blank"
+              rel="noopener noreferrer"
               class="block bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 text-center"
             >
               Book a Consultation
-            </Link>
+            </a>
           </div>
         </div>
       </div>

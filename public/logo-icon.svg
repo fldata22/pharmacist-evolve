@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Outer circle -->
+  <circle cx="50" cy="50" r="47" fill="none" stroke="#D4A853" stroke-width="6"/>
+  
+  <!-- Inner circle -->
+  <circle cx="50" cy="50" r="32" fill="none" stroke="#D4A853" stroke-width="4"/>
+  
+  <!-- Lotus petals - more accurate to your logo -->
+  <!-- Top center petal -->
+  <path d="M50 18 Q42 25 42 35 Q42 45 50 50 Q58 45 58 35 Q58 25 50 18 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Top right petal -->
+  <path d="M68 32 Q61 25 51 25 Q41 25 41 35 Q41 45 51 50 Q61 45 68 32 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom right petal -->
+  <path d="M68 68 Q61 75 51 75 Q41 75 41 65 Q41 55 51 50 Q61 55 68 68 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom center petal -->
+  <path d="M50 82 Q58 75 58 65 Q58 55 50 50 Q42 55 42 65 Q42 75 50 82 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Bottom left petal -->
+  <path d="M32 68 Q39 75 49 75 Q59 75 59 65 Q59 55 49 50 Q39 55 32 68 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+  
+  <!-- Top left petal -->
+  <path d="M32 32 Q39 25 49 25 Q59 25 59 35 Q59 45 49 50 Q39 45 32 32 Z" fill="none" stroke="#D4A853" stroke-width="3"/>
+</svg>

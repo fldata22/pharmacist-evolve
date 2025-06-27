@@ -26,8 +26,7 @@
                   <h2 class="text-3xl font-bold text-gray-900 mb-4">Group Mentoring School</h2>
                   <p class="text-lg text-gray-600 leading-relaxed">
                     A comprehensive program that offers group coaching sessions, live webinars, and access to 
-                    extensive resources to help pharmacists navigate the OSPAP exams and transition successfully 
-                    into UK pharmacy practice.
+                    extensive resources to help pharmacists transition successfully into UK pharmacy practice.
                   </p>
                 </div>
                 
@@ -94,82 +93,6 @@
             </div>
           </div>
 
-          <!-- OSPAP Transition Coaching -->
-          <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-              <div class="bg-gradient-to-br from-green-50 to-emerald-100 p-8 lg:p-12 flex items-center justify-center lg:order-1">
-                <div class="text-center">
-                  <div class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                  </div>
-                  <p class="text-lg font-semibold text-gray-800">One-on-One Support</p>
-                  <p class="text-gray-600 mt-2">Personalized guidance for your success</p>
-                </div>
-              </div>
-              
-              <div class="p-8 lg:p-12 lg:order-2">
-                <div class="mb-6">
-                  <h2 class="text-3xl font-bold text-gray-900 mb-4">OSPAP Transition Coaching</h2>
-                  <p class="text-lg text-gray-600 leading-relaxed">
-                    Receive dedicated one-on-one support to help you pass the OSPAP exams with confidence 
-                    and navigate the entire licensing process in the UK. Our personalized approach ensures 
-                    you get the specific guidance you need for your unique situation.
-                  </p>
-                </div>
-                
-                <div class="mb-8">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features:</h3>
-                  <ul class="space-y-3">
-                    <li class="flex items-start">
-                      <div class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
-                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                      </div>
-                      <span class="ml-3 text-gray-700">Completely personalized study plans tailored to your strengths and areas for improvement</span>
-                    </li>
-                    <li class="flex items-start">
-                      <div class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
-                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                      </div>
-                      <span class="ml-3 text-gray-700">Proven exam preparation strategies and techniques</span>
-                    </li>
-                    <li class="flex items-start">
-                      <div class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
-                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                      </div>
-                      <span class="ml-3 text-gray-700">Ongoing mentoring throughout the entire OSPAP process</span>
-                    </li>
-                    <li class="flex items-start">
-                      <div class="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5">
-                        <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                      </div>
-                      <span class="ml-3 text-gray-700">Emotional and mental support to build confidence and resilience</span>
-                    </li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <Link href="/contact" 
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-green-600 hover:bg-green-700 transition-colors duration-200">
-                    Get Started Today
-                    <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                      <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <!-- Workforce Integration & Excellence Coaching -->
           <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div class="lg:grid lg:grid-cols-2 lg:gap-8">
@@ -222,13 +145,17 @@
                 </div>
                 
                 <div>
-                  <Link href="/contact" 
-                        class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-200">
+                  <a 
+                    href="https://book.heygoldie.com/FaithThePharmacist"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-purple-600 hover:bg-purple-700 transition-colors duration-200"
+                  >
                     Schedule Your Free Consultation
                     <svg class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
               
