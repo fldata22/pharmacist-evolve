@@ -202,7 +202,7 @@
                   </div>
                   <div class="ml-4">
                     <p class="text-sm font-medium text-gray-900">Email</p>
-                    <p class="text-sm text-gray-600">info@pharmacistevolve.com</p>
+                    <p class="text-sm text-gray-600">faithadebimpe@pharmacistevolve.com</p>
                   </div>
                 </div>
 

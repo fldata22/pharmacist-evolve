@@ -52,7 +52,7 @@ class ContactController extends Controller
 
             // Send simple text email (no template)
             Mail::raw($emailText, function ($mail) use ($data) {
-                $mail->to('info@pharmacistevolve.com')
+                $mail->to('faithadebimpe@pharmacistevolve.com')
                     ->cc('ade.segs@yahoo.com')
                     ->subject('New Contact Form Submission: ' . $data['subject'])
                     ->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name'])
@@ -64,7 +64,7 @@ class ContactController extends Controller
         } catch (\Exception $e) {
             \Log::error('Contact form email failed: ' . $e->getMessage());
             
-            return back()->with('error', 'There was an issue sending your message. Please try again or contact us directly at info@pharmacistevolve.com');
+            return back()->with('error', 'There was an issue sending your message. Please try again or contact us directly at faithadebimpe@pharmacistevolve.com');
         }
     }
 }
