@@ -71,38 +71,59 @@
 
         <!-- Contact Info -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
-          <div class="space-y-3">
+          <h3 class="text-lg font-semibold mb-6 text-white">Contact Info</h3>
+          <div class="space-y-4">
             <!-- Email -->
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.94a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-              <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-gray-300 hover:text-orange-400 transition-colors">
-                faithadebimpe@pharmacistevolve.com
-              </a>
-            </div>
-
-            <!-- Phone -->
-            <div class="flex items-center">
-              <svg class="w-5 h-5 mr-3 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-              </svg>
-              <a href="tel:+442012345678" class="text-gray-300 hover:text-orange-400 transition-colors">
-                +44 20 1234 5678
-              </a>
+            <div class="flex items-start group">
+              <div class="flex-shrink-0">
+                <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.94a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-300 mb-1">Email</p>
+                <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-gray-400 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  faithadebimpe@pharmacistevolve.com
+                </a>
+              </div>
             </div>
 
             <!-- Address -->
-            <div class="flex items-start">
-              <svg class="w-5 h-5 mr-3 mt-0.5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              <div class="text-gray-300">
-                <div>123 Pharmacy Lane</div>
-                <div>London, SW1A 1AA</div>
-                <div>United Kingdom</div>
+            <div class="flex items-start group">
+              <div class="flex-shrink-0">
+                <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-300 mb-1">Location</p>
+                <div class="text-gray-400 text-sm space-y-0.5">
+                  <div>London, United Kingdom</div>
+                  <div class="text-xs text-gray-500">Remote consultations available</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="flex items-start group">
+              <div class="flex-shrink-0">
+                <div class="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-300 mb-1">Business Hours</p>
+                <div class="text-gray-400 text-sm space-y-0.5">
+                  <div>Monday - Friday: 9:00 AM - 6:00 PM GMT</div>
+                  <div class="text-xs text-gray-500">Flexible scheduling available</div>
+                </div>
               </div>
             </div>
           </div>

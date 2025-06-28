@@ -331,7 +331,7 @@
             What Our Clients Say
           </h2>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Short quotes from satisfied clients with their photos, focusing on their professional development journey and workforce integration
+            Real testimonials from pharmacists who have transformed their careers with our guidance
           </p>
         </div>
 
@@ -343,57 +343,66 @@
               <!-- Slide 1 -->
               <div class="w-full flex-shrink-0">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <!-- Testimonial 1 - OSPAP Focus -->
+                  <!-- Testimonial 1 - Chioma -->
                   <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 border border-orange-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Sarah Ahmed" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-orange-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-orange-700">C</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Sarah Ahmed</h4>
-                        <p class="text-gray-600">Hospital Pharmacist, London</p>
+                        <h4 class="font-bold text-gray-900">Chioma</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">16 Jun 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The professional development coaching was exceptional. The structured approach and personalized guidance made all the difference in my career transition."
+                      "Faith has been a trailblazer in providing guidance for immigrants pursuing a career path, ever since I first came across her YouTube channel. I'm thrilled that she now offers a structured program specifically for migrating pharmacists."
                     </p>
                   </div>
 
-                  <!-- Testimonial 2 - Workforce Integration Focus -->
+                  <!-- Testimonial 2 - Ameeta -->
                   <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Mohammed Khan" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-blue-700">A</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Mohammed Khan</h4>
-                        <p class="text-gray-600">Clinical Pharmacist, Manchester</p>
+                        <h4 class="font-bold text-gray-900">Ameeta Carmels</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">9 Jun 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The workforce integration support was invaluable. They helped me transition smoothly into the UK pharmacy system and secure my ideal position."
+                      "I had a video session with Faith and it was very much useful. I gained some ideas, career advice and future plans. The discussion was amazing and she maintains an impressive platform to help people build better career."
                     </p>
                   </div>
 
-                  <!-- Testimonial 3 - OSPAP & Integration Journey -->
+                  <!-- Testimonial 3 - Charity -->
                   <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Dr. Priya Patel" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-emerald-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-emerald-700">C</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Dr. Priya Patel</h4>
-                        <p class="text-gray-600">Community Pharmacist, Birmingham</p>
+                        <h4 class="font-bold text-gray-900">Charity Chinaka</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">20 Mar 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "From professional development to workforce integration, the journey was seamless. The personalized support helped me navigate every step confidently."
+                      "The conversation was very detailed and helpful. Thank you so much pharmacist faith for every bit of information I have received."
                     </p>
                   </div>
                 </div>
@@ -402,57 +411,66 @@
               <!-- Slide 2 -->
               <div class="w-full flex-shrink-0">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <!-- Testimonial 4 - Career Growth -->
+                  <!-- Testimonial 4 - Amarachi -->
                   <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Dr. James Wilson" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-purple-700">A</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Dr. James Wilson</h4>
-                        <p class="text-gray-600">Senior Pharmacist, Bristol</p>
+                        <h4 class="font-bold text-gray-900">Amarachi</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">19 Mar 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The ongoing career support helped me advance to senior positions. The mentorship and guidance has been invaluable for my professional growth."
+                      "It was a great and informative session. I'm grateful for her help, would highly recommend."
                     </p>
                   </div>
 
-                  <!-- Testimonial 5 - Group Mentoring -->
+                  <!-- Testimonial 5 - Precious -->
                   <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-8 border border-indigo-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Dr. Fatima Al-Rashid" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-indigo-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-indigo-700">P</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Dr. Fatima Al-Rashid</h4>
-                        <p class="text-gray-600">Clinical Pharmacist, Leeds</p>
+                        <h4 class="font-bold text-gray-900">Precious</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">10 Feb 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "The group mentoring created a supportive community. Learning alongside other overseas pharmacists made the professional development journey collaborative and engaging."
+                      "It was an enlightening and interesting conversation, highly motivational and I got the encouragement I needed to think about and commence my conversion process. Thank you Faith."
                     </p>
                   </div>
 
-                  <!-- Testimonial 6 - Complete Journey -->
+                  <!-- Testimonial 6 - Anjlee -->
                   <div class="bg-gradient-to-br from-teal-50 to-green-50 rounded-2xl p-8 border border-teal-100">
                     <div class="flex items-center mb-6">
-                      <img 
-                        src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&w=150&q=80" 
-                        alt="Dr. Raj Patel" 
-                        class="w-16 h-16 rounded-full object-cover mr-4"
-                      />
+                      <div class="w-16 h-16 bg-teal-200 rounded-full flex items-center justify-center mr-4">
+                        <span class="text-2xl font-bold text-teal-700">A</span>
+                      </div>
                       <div>
-                        <h4 class="font-bold text-gray-900">Dr. Raj Patel</h4>
-                        <p class="text-gray-600">Pharmacy Manager, Edinburgh</p>
+                        <h4 class="font-bold text-gray-900">Anjlee Ruparel</h4>
+                        <div class="flex items-center">
+                          <div class="flex text-yellow-400 text-sm">
+                            ★★★★★
+                          </div>
+                          <span class="text-xs text-gray-500 ml-2">12 Feb 2025</span>
+                        </div>
                       </div>
                     </div>
                     <p class="text-gray-700 italic">
-                      "From initial assessment to becoming a pharmacy manager, they supported every step. The comprehensive approach exceeded my expectations."
+                      "I am really grateful for your support and guidance for progressing towards my pharmacy career in uk."
                     </p>
                   </div>
                 </div>
