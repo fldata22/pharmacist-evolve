@@ -138,6 +138,13 @@
         <div class="flex space-x-6 text-sm">
           <Link href="/privacy" class="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</Link>
           <Link href="/terms" class="text-gray-400 hover:text-orange-400 transition-colors">Terms of Service</Link>
+          <Link href="/cookies" class="text-gray-400 hover:text-orange-400 transition-colors">Cookie Policy</Link>
+          <button 
+            @click="showCookieSettings" 
+            class="text-gray-400 hover:text-orange-400 transition-colors cursor-pointer"
+          >
+            Cookie Settings
+          </button>
         </div>
       </div>
     </div>
@@ -150,4 +157,11 @@ import { Link } from '@inertiajs/vue3'
 import Logo from '@/Components/Logo.vue'
 
 const currentYear = computed(() => new Date().getFullYear())
+
+// Function to show cookie settings
+const showCookieSettings = () => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('show-cookie-preferences'))
+  }
+}
 </script>

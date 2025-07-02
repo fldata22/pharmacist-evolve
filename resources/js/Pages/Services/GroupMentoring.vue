@@ -20,7 +20,7 @@
 
           <!-- Main Headline -->
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Evolve Group Coaching Pack
+            Pharmacist Evolve Group Coaching
           </h1>
 
           <!-- Subheading -->
@@ -31,7 +31,7 @@
           <!-- CTA Button -->
           <div class="flex justify-center">
             <a 
-              href="https://book.heygoldie.com/FaithThePharmacist"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf7goPAAcDEYVkSzFkoER2YAE5MMNGkk9EdebtD0IcBOkrZWg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               class="group inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
@@ -366,12 +366,12 @@
           Ready to Accelerate Your UK Pharmacy Career?
         </h2>
         <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Join the Beta Edition of Evolve Group Coaching Pack and be part of our founding cohort. Limited spaces available for this exclusive program.
+          Join the Beta Edition of Pharmacist Evolve Group Coaching and be part of our founding cohort. Limited spaces available for this exclusive program.
         </p>
         
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <a 
-            href="https://book.heygoldie.com/FaithThePharmacist"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf7goPAAcDEYVkSzFkoER2YAE5MMNGkk9EdebtD0IcBOkrZWg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             class="group inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
