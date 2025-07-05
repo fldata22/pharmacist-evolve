@@ -385,10 +385,6 @@ const faqs = ref([
     answer: "The duration varies depending on your individual needs and goals. Our Group Mentoring School runs for 12 weeks, while individual coaching can range from 3-6 months for specific objectives."
   },
   {
-    question: "Do you provide support for OSPAP exam preparation?",
-    answer: "Yes, our Professional Development Coaching includes comprehensive OSPAP exam preparation with personalized study plans, practice exams, and ongoing mentorship support."
-  },
-  {
     question: "What makes your workforce integration program different?",
     answer: "Our program combines practical UK pharmacy experience with personalized career coaching, CV optimization, interview preparation, and ongoing support even after you secure your position."
   },

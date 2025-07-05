@@ -66,21 +66,93 @@
 
           </div>
 
-          <!-- Image Side -->
+          <!-- Minimal Clean Image Carousel -->
           <div class="order-2 lg:order-2">
-            <div class="relative">
-              <!-- Main Pharmacist Image -->
-              <div class="relative z-10">
-                <img 
-                  src="/images/pharm.PNG" 
-                  alt="Professional Pharmacist" 
-                  class="w-full h-[400px] sm:h-[500px] lg:h-[700px] object-cover rounded-3xl shadow-2xl"
-                  style="object-position: center 15%;"
-                />
+            <div class="relative group">
+              <!-- Simple Carousel Container -->
+              <div class="carousel-container relative overflow-hidden rounded-3xl shadow-2xl"
+                   @touchstart="handleTouchStart"
+                   @touchend="handleTouchEnd">
+                <!-- Pure Image Slides -->
+                <div class="relative h-[400px] sm:h-[500px] lg:h-[700px]">
+                  <div
+                    v-for="(slide, index) in imageSlides"
+                    :key="index"
+                    class="absolute inset-0 transition-all duration-1000 ease-out"
+                    :class="[
+                      currentImageSlide === index 
+                        ? 'opacity-100 scale-100' 
+                        : 'opacity-0 scale-105'
+                    ]"
+                  >
+                    <img 
+                      :src="slide.image"
+                      :alt="slide.alt"
+                      class="w-full h-full object-cover transition-transform duration-[8s] ease-linear"
+                      :class="{ 'scale-110': currentImageSlide === index }"
+                      style="object-position: center 20%;"
+                    />
+                    <!-- Subtle overlay for depth -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent"></div>
+                  </div>
+                </div>
+
+                <!-- Minimal Navigation - Only visible on hover -->
+                <div class="absolute inset-0 flex items-center justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <!-- Left Arrow -->
+                  <button
+                    @click="previousImage"
+                    class="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 backdrop-blur-sm"
+                  >
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                  </button>
+
+                  <!-- Right Arrow -->
+                  <button
+                    @click="nextImage"
+                    class="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 backdrop-blur-sm"
+                  >
+                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Minimal Dots - Bottom Center -->
+                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+                  <div class="flex space-x-2">
+                    <button
+                      v-for="(slide, index) in imageSlides"
+                      :key="index"
+                      @click="goToSlide(index)"
+                      class="transition-all duration-300"
+                    >
+                      <div
+                        :class="[
+                          'rounded-full transition-all duration-500',
+                          currentImageSlide === index 
+                            ? 'w-8 h-2 bg-white shadow-lg' 
+                            : 'w-2 h-2 bg-white/60 hover:bg-white/80'
+                        ]"
+                      ></div>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Simple Progress Bar -->
+                <div class="absolute top-0 left-0 w-full h-0.5 bg-white/20">
+                  <div 
+                    class="h-full bg-white transition-all duration-1000 ease-out"
+                    :style="{ width: `${((currentImageSlide + 1) / imageSlides.length) * 100}%` }"
+                  ></div>
+                </div>
               </div>
 
-              <!-- Background Decoration -->
-              <div class="absolute inset-0 bg-gradient-to-br from-orange-400 to-amber-400 rounded-3xl transform rotate-6 opacity-20"></div>
+              <!-- Clean Background Effect -->
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-100/50 to-amber-100/50 rounded-3xl transform rotate-3 -z-10 group-hover:rotate-2 transition-transform duration-700"></div>
+              <div class="absolute inset-0 bg-gradient-to-br from-orange-50/30 to-amber-50/30 rounded-3xl transform rotate-6 -z-20 group-hover:rotate-4 transition-transform duration-1000"></div>
             </div>
           </div>
         </div>
@@ -529,10 +601,39 @@ defineOptions({
   layout: null
 })
 
-// Carousel functionality
+// Testimonials Carousel functionality
 const currentSlide = ref(0)
 const totalSlides = ref(2)
 let autoSlideInterval = null
+
+// Clean Image Carousel functionality
+const currentImageSlide = ref(0)
+let autoImageSlideInterval = null
+const isAutoPlaying = ref(true)
+
+// Simplified carousel slide data
+const imageSlides = ref([
+  {
+    image: '/images/pharmacy-1.png',
+    alt: 'Professional Pharmacist in Community Setting'
+  },
+  {
+    image: '/images/pharmacy-2.png',
+    alt: 'Clinical Pharmacy Specialist'
+  },
+  {
+    image: '/images/pharmacy-3.png',
+    alt: 'Pharmacy Leadership and Management'
+  },
+  {
+    image: '/images/pharmacy-4.png',
+    alt: 'Hospital Pharmacy Services'
+  },
+  {
+    image: '/images/pharmacy-5.png',
+    alt: 'Clinical Pharmaceutical Care'
+  }
+])
 
 const nextSlide = () => {
   if (currentSlide.value < totalSlides.value - 1) {
@@ -550,6 +651,47 @@ const previousSlide = () => {
   }
 }
 
+// Simple and clean image carousel methods
+const nextImage = () => {
+  currentImageSlide.value = (currentImageSlide.value + 1) % imageSlides.value.length
+}
+
+const previousImage = () => {
+  currentImageSlide.value = currentImageSlide.value === 0 
+    ? imageSlides.value.length - 1 
+    : currentImageSlide.value - 1
+}
+
+const goToSlide = (index) => {
+  currentImageSlide.value = index
+}
+
+// Touch/Swipe support for mobile
+let touchStartX = 0
+let touchEndX = 0
+
+const handleTouchStart = (e) => {
+  touchStartX = e.changedTouches[0].screenX
+}
+
+const handleTouchEnd = (e) => {
+  touchEndX = e.changedTouches[0].screenX
+  handleSwipe()
+}
+
+const handleSwipe = () => {
+  const swipeThreshold = 50
+  const diff = touchStartX - touchEndX
+  
+  if (Math.abs(diff) > swipeThreshold) {
+    if (diff > 0) {
+      nextImage() // Swipe left - next image
+    } else {
+      previousImage() // Swipe right - previous image
+    }
+  }
+}
+
 // Auto-slide functionality
 const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
@@ -564,11 +706,67 @@ const stopAutoSlide = () => {
   }
 }
 
+// Simple auto-slide functionality
+const startAutoImageSlide = () => {
+  autoImageSlideInterval = setInterval(() => {
+    nextImage()
+  }, 6000) // Change image every 6 seconds
+}
+
+const stopAutoImageSlide = () => {
+  if (autoImageSlideInterval) {
+    clearInterval(autoImageSlideInterval)
+    autoImageSlideInterval = null
+  }
+}
+
+// Clean lifecycle management
 onMounted(() => {
   startAutoSlide()
+  startAutoImageSlide()
 })
 
 onUnmounted(() => {
   stopAutoSlide()
+  stopAutoImageSlide()
 })
 </script>
+
+<style scoped>
+/* Clean and minimal carousel styles */
+.carousel-container {
+  user-select: none;
+}
+
+/* Smooth transitions for all carousel elements */
+.carousel-container * {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth image loading */
+.carousel-container img {
+  transition: opacity 0.3s ease-in-out, transform 8s ease-linear;
+}
+
+/* Clean button hover effects */
+.carousel-container button:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+/* Mobile touch feedback */
+@media (hover: none) and (pointer: coarse) {
+  .carousel-container button:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Prevent text selection during swipe */
+.carousel-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+</style>
