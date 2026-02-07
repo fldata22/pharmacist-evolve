@@ -12,74 +12,74 @@
         <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
       </div>
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
         <div class="text-center">
           <!-- Event Badge -->
-          <div class="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 text-orange-300 text-sm font-semibold mb-8 backdrop-blur-sm">
-            <span class="w-2 h-2 bg-orange-400 rounded-full mr-3 animate-pulse"></span>
+          <div class="inline-flex items-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 text-orange-300 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 backdrop-blur-sm">
+            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
             23rd May 2026 &middot; Warwick, UK
           </div>
 
           <!-- Main Headline -->
-          <h1 class="text-5xl sm:text-6xl lg:text-8xl font-extrabold text-white mb-6 leading-[0.95] tracking-tight">
+          <h1 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-white mb-4 sm:mb-6 leading-[0.95] tracking-tight">
             <span class="block">Catalyst</span>
             <span class="block bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">Conference</span>
-            <span class="block text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-300 mt-4">2026</span>
+            <span class="block text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-300 mt-3 sm:mt-4">2026</span>
           </h1>
 
           <!-- Tagline -->
-          <p class="text-xl sm:text-2xl lg:text-3xl font-light text-gray-300 mb-4 max-w-4xl mx-auto leading-relaxed">
+          <p class="text-lg sm:text-2xl lg:text-3xl font-light text-gray-300 mb-3 sm:mb-4 max-w-4xl mx-auto leading-relaxed px-2">
             Shaping the Future of Overseas Pharmacist Workforce Integration
           </p>
 
           <!-- Theme -->
-          <div class="flex items-center justify-center gap-3 text-lg text-orange-400 font-semibold mb-10">
-            <span class="w-8 h-px bg-orange-500/50"></span>
+          <div class="flex items-center justify-center gap-2 sm:gap-3 text-base sm:text-lg text-orange-400 font-semibold mb-8 sm:mb-10">
+            <span class="w-6 sm:w-8 h-px bg-orange-500/50"></span>
             Empower &middot; Evolve &middot; Excel
-            <span class="w-8 h-px bg-orange-500/50"></span>
+            <span class="w-6 sm:w-8 h-px bg-orange-500/50"></span>
           </div>
 
           <!-- Description -->
-          <p class="text-lg text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p class="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
             A one-day, in-person conference bringing together overseas pharmacists, employers,
             educators, policymakers, and industry leaders to reframe challenges, share lived
             experience, and co-design practical solutions for workforce integration in the UK.
           </p>
 
           <!-- Event Quick Details -->
-          <div class="flex flex-wrap justify-center gap-6 mb-12">
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-5 py-3 border border-white/10">
-              <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-12">
+            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
+              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
-              <span class="text-sm font-medium">The Slate Conferences, Warwick</span>
+              <span class="text-xs sm:text-sm font-medium">Warwick, UK</span>
             </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-5 py-3 border border-white/10">
-              <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
+              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              <span class="text-sm font-medium">10:00 AM &ndash; 4:30 PM</span>
+              <span class="text-xs sm:text-sm font-medium">10 AM &ndash; 4:30 PM</span>
             </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-5 py-3 border border-white/10">
-              <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
+              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
               </svg>
-              <span class="text-sm font-medium">100&ndash;120 Delegates</span>
+              <span class="text-xs sm:text-sm font-medium">100&ndash;120 Delegates</span>
             </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-5 py-3 border border-white/10">
-              <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
+              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
               </svg>
-              <span class="text-sm font-medium">Panels &middot; Workshops &middot; Strategic Conversations</span>
+              <span class="text-xs sm:text-sm font-medium">Panels &middot; Workshops</span>
             </div>
           </div>
 
           <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
             <a
               href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
-              class="group inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 text-lg"
+              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 text-base sm:text-lg"
             >
               Register Your Interest
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@
             </a>
             <a
               href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-              class="group inline-flex items-center justify-center px-10 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-lg backdrop-blur-sm"
+              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm"
             >
               Partner With Us
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,7 +100,7 @@
       </div>
 
       <!-- Scroll Indicator -->
-      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div class="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
         <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
         </svg>
@@ -108,17 +108,17 @@
     </section>
 
     <!-- Why the Conference Exists -->
-    <section class="py-24 bg-white">
+    <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-12">
-            <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">The Purpose</span>
-            <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+          <div class="text-center mb-8 sm:mb-12">
+            <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">The Purpose</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
               Why the Catalyst Conference Exists
             </h2>
           </div>
 
-          <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+          <div class="space-y-5 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
             <p>
               Overseas-trained pharmacists play a vital role in the UK pharmacy workforce. Yet too often their
               journey is shaped by <strong class="text-gray-900">fragmented support</strong>, <strong class="text-gray-900">unclear pathways</strong>,
@@ -130,8 +130,8 @@
               workforce-ready pharmacists, educators want effective progression pathways, and policymakers
               want sustainable solutions &mdash; but these conversations rarely happen together, in the same room.
             </p>
-            <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 border-l-4 border-orange-500 my-10">
-              <p class="text-xl font-semibold text-gray-900">
+            <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border-l-4 border-orange-500 my-8 sm:my-10">
+              <p class="text-lg sm:text-xl font-semibold text-gray-900">
                 The Pharmacist Evolve Catalyst Conference exists to change that.
               </p>
             </div>
@@ -147,18 +147,18 @@
     </section>
 
     <!-- Who This Conference Is For -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-16 sm:py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Audience</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Audience</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Who This Conference Is For
           </h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <!-- Pharmacists -->
-          <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 relative overflow-hidden">
+          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -189,7 +189,7 @@
           </div>
 
           <!-- Employers -->
-          <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 relative overflow-hidden">
+          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -220,7 +220,7 @@
           </div>
 
           <!-- Educators -->
-          <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 relative overflow-hidden">
+          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 relative overflow-hidden">
             <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,21 +261,21 @@
     </section>
 
     <!-- What Makes It Different -->
-    <section class="py-24 bg-white">
+    <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Our Approach</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Our Approach</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             What Makes the Catalyst Conference Different
           </h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             This is not a traditional CPD event.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 max-w-5xl mx-auto">
           <!-- Lived Experience -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-8 text-white overflow-hidden group">
+          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="relative">
               <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-5">
@@ -291,7 +291,7 @@
           </div>
 
           <!-- Practical -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-8 text-white overflow-hidden group">
+          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="relative">
               <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-5">
@@ -307,7 +307,7 @@
           </div>
 
           <!-- Cross-Sector -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-8 text-white overflow-hidden group">
+          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="relative">
               <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-5">
@@ -323,7 +323,7 @@
           </div>
 
           <!-- Solutions -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-8 text-white overflow-hidden group">
+          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
             <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
             <div class="relative">
               <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-5">
@@ -342,14 +342,14 @@
     </section>
 
     <!-- The Journey of the Day (Timeline) -->
-    <section class="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-20">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Agenda</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-12 sm:mb-20">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Agenda</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             The Journey of the Day
           </h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             The conference is designed to take delegates on a clear and intentional journey.
           </p>
         </div>
@@ -357,38 +357,38 @@
         <div class="max-w-4xl mx-auto">
           <!-- Timeline -->
           <div class="relative">
-            <!-- Timeline Line -->
-            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-blue-500 to-emerald-500"></div>
+            <!-- Timeline Line - left on mobile, center on desktop -->
+            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-blue-500 to-emerald-500"></div>
 
             <!-- Morning -->
-            <div class="relative mb-16 md:mb-24">
-              <div class="md:flex md:items-start md:gap-12">
+            <div class="relative mb-12 md:mb-24">
+              <!-- Mobile dot -->
+              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-orange-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
+              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
                 <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
                     </svg>
                     MORNING
                   </div>
-                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Framing the Reality</h3>
-                  <p class="text-sm text-gray-500 mb-4">10:00 AM</p>
+                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Framing the Reality</h3>
+                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">10:00 AM</p>
                 </div>
-                <!-- Timeline Dot -->
-                <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-4">
+                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
+                    <ul class="space-y-3 sm:space-y-4">
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Registration and networking</span>
+                        <span class="text-sm sm:text-base text-gray-700">Registration and networking</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Opening keynote: the overseas pharmacist experience &mdash; data, lived reality, and workforce impact</span>
+                        <span class="text-sm sm:text-base text-gray-700">Opening keynote: the overseas pharmacist experience &mdash; data, lived reality, and workforce impact</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Panel discussion: workforce integration &mdash; what's working, what isn't, and what needs to change</span>
+                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: workforce integration &mdash; what's working, what isn't, and what needs to change</span>
                       </li>
                     </ul>
                   </div>
@@ -397,74 +397,76 @@
             </div>
 
             <!-- Midday -->
-            <div class="relative mb-16 md:mb-24">
-              <div class="md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:text-right md:pr-8 md:order-1">
-                  <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-4">
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Interactive sessions and facilitated discussions</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Cross-sector roundtable conversations</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Lunch and networking</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Timeline Dot -->
-                <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
+            <div class="relative mb-12 md:mb-24">
+              <!-- Mobile dot -->
+              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
+              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
+                <!-- Label - shown first on mobile, reordered on desktop -->
                 <div class="md:w-1/2 md:pl-8 md:order-2">
-                  <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                     MIDDAY
                   </div>
-                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Deepening the Conversation</h3>
-                  <p class="text-sm text-gray-500 mb-4">12:00 PM</p>
+                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Deepening the Conversation</h3>
+                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">12:00 PM</p>
+                </div>
+                <!-- Content card -->
+                <div class="md:w-1/2 md:text-right md:pr-8 md:order-1">
+                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
+                    <ul class="space-y-3 sm:space-y-4">
+                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span class="text-sm sm:text-base text-gray-700">Interactive sessions and facilitated discussions</span>
+                      </li>
+                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span class="text-sm sm:text-base text-gray-700">Cross-sector roundtable conversations</span>
+                      </li>
+                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span class="text-sm sm:text-base text-gray-700">Lunch and networking</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Afternoon -->
             <div class="relative">
-              <div class="md:flex md:items-start md:gap-12">
+              <!-- Mobile dot -->
+              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
+              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
                 <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold mb-4">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
+                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                     </svg>
                     AFTERNOON
                   </div>
-                  <h3 class="text-2xl font-bold text-gray-900 mb-2">Pathways and Possibilities</h3>
-                  <p class="text-sm text-gray-500 mb-4">2:00 PM</p>
+                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Pathways and Possibilities</h3>
+                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">2:00 PM</p>
                 </div>
-                <!-- Timeline Dot -->
-                <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-4">
+                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
+                    <ul class="space-y-3 sm:space-y-4">
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Panel discussion: employer, education, and policy perspectives</span>
+                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: employer, education, and policy perspectives</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Presentation of the Overseas Pharmacist Workforce Integration Pathway</span>
+                        <span class="text-sm sm:text-base text-gray-700">Presentation of the Overseas Pharmacist Workforce Integration Pathway</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Open dialogue to test, challenge, and refine ideas</span>
+                        <span class="text-sm sm:text-base text-gray-700">Open dialogue to test, challenge, and refine ideas</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-gray-700">Closing reflections, keynote, and next steps</span>
+                        <span class="text-sm sm:text-base text-gray-700">Closing reflections, keynote, and next steps</span>
                       </li>
                     </ul>
                   </div>
@@ -477,21 +479,21 @@
     </section>
 
     <!-- Workforce Integration Pathway -->
-    <section class="py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
+    <section class="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
       <div class="absolute inset-0">
         <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_rgba(249,115,22,0.08),_transparent_60%)]"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center mb-16">
-          <span class="inline-block text-orange-400 font-semibold text-sm uppercase tracking-widest mb-4">Centrepiece</span>
-          <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+        <div class="max-w-4xl mx-auto text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-400 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Centrepiece</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             From Insight to Action
           </h2>
-          <h3 class="text-2xl lg:text-3xl font-light text-gray-300 mb-8">
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-light text-gray-300 mb-6 sm:mb-8">
             The Workforce Integration Pathway
           </h3>
-          <p class="text-lg text-gray-400 leading-relaxed">
+          <p class="text-base sm:text-lg text-gray-400 leading-relaxed">
             A central feature of the Catalyst Conference is the introduction of the
             <strong class="text-white">Overseas Pharmacist Workforce Integration Pathway</strong> &mdash;
             bringing together insights from lived experience, employer needs, education
@@ -500,7 +502,7 @@
         </div>
 
         <!-- Pathway Steps -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto mb-10 sm:mb-16">
           <div class="text-center group">
             <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
               <span class="text-2xl font-bold text-white">1</span>
@@ -531,8 +533,8 @@
         </div>
 
         <div class="max-w-3xl mx-auto space-y-6 text-center">
-          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <p class="text-gray-300 leading-relaxed text-lg">
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
+            <p class="text-gray-300 leading-relaxed text-base sm:text-lg">
               This is not presented as a finished solution, but as a <strong class="text-orange-400">pilot framework</strong>
               that invites collaboration, challenge, and shared ownership from across the sector.
             </p>
@@ -545,20 +547,20 @@
     </section>
 
     <!-- Speakers -->
-    <section class="py-24 bg-white">
+    <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Voices</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Voices</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Speakers & Contributors
           </h2>
-          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
             Speakers and contributors will include voices from across the pharmacy sector.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
-          <div class="text-center bg-gray-50 rounded-2xl p-6 border border-gray-100">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto mb-10 sm:mb-12">
+          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
             <div class="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 7l-9-5 9-5 9 5-9 5z"/>
@@ -566,7 +568,7 @@
             </div>
             <p class="font-semibold text-gray-900">Overseas-Trained Pharmacists</p>
           </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-6 border border-gray-100">
+          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
             <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
@@ -574,7 +576,7 @@
             </div>
             <p class="font-semibold text-gray-900">Pharmacy Leaders & Employers</p>
           </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-6 border border-gray-100">
+          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
             <div class="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
@@ -582,7 +584,7 @@
             </div>
             <p class="font-semibold text-gray-900">Educators & Training Providers</p>
           </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-6 border border-gray-100">
+          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
             <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
@@ -610,14 +612,14 @@
     </section>
 
     <!-- Partners & Sponsors -->
-    <section class="py-24 bg-gray-50">
+    <section class="py-16 sm:py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Collaborate</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Collaborate</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Partners & Sponsors
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
             Partners and sponsors of the Catalyst Conference are more than event supporters &mdash; they are
             contributors to meaningful workforce conversations and solutions.
           </p>
@@ -675,59 +677,59 @@
     </section>
 
     <!-- Practical Information -->
-    <section class="py-24 bg-white">
+    <section class="py-16 sm:py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-4">Details</span>
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Details</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Practical Information
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
           <!-- Venue -->
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border border-orange-100 text-center">
-            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm">
-              <svg class="w-7 h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-4 sm:p-6 border border-orange-100 text-center">
+            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
+              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
             </div>
-            <h4 class="font-bold text-gray-900 mb-2">Venue</h4>
-            <p class="text-gray-600 text-sm">The Slate Conferences, Warwick CV4 7SH</p>
+            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Venue</h4>
+            <p class="text-gray-600 text-xs sm:text-sm">The Slate Conferences, Warwick CV4 7SH</p>
           </div>
 
           <!-- Accessibility -->
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-100 text-center">
-            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm">
-              <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-4 sm:p-6 border border-blue-100 text-center">
+            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
+              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
               </svg>
             </div>
-            <h4 class="font-bold text-gray-900 mb-2">Accessibility</h4>
-            <p class="text-gray-600 text-sm">Fully accessible venue. Contact us with any specific requirements.</p>
+            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Accessibility</h4>
+            <p class="text-gray-600 text-xs sm:text-sm">Fully accessible. Contact us with any requirements.</p>
           </div>
 
           <!-- Catering -->
-          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-100 text-center">
-            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm">
-              <svg class="w-7 h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-4 sm:p-6 border border-emerald-100 text-center">
+            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
+              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
             </div>
-            <h4 class="font-bold text-gray-900 mb-2">Catering</h4>
-            <p class="text-gray-600 text-sm">All dietary requirements will be accommodated.</p>
+            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Catering</h4>
+            <p class="text-gray-600 text-xs sm:text-sm">All dietary requirements accommodated.</p>
           </div>
 
           <!-- Tickets -->
-          <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-6 border border-purple-100 text-center">
-            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 shadow-sm">
-              <svg class="w-7 h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-4 sm:p-6 border border-purple-100 text-center">
+            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
+              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/>
               </svg>
             </div>
-            <h4 class="font-bold text-gray-900 mb-2">Tickets</h4>
-            <p class="text-gray-600 text-sm">Ticket details will be released soon. Register your interest now.</p>
+            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Tickets</h4>
+            <p class="text-gray-600 text-xs sm:text-sm">Details coming soon. Register your interest now.</p>
           </div>
         </div>
 
@@ -762,29 +764,29 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
+    <section class="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
       <div class="absolute inset-0">
         <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_rgba(249,115,22,0.12),_transparent_50%)]"></div>
         <div class="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_left,_rgba(59,130,246,0.08),_transparent_50%)]"></div>
       </div>
 
       <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
           Be Part of the Conversation
         </h2>
-        <p class="text-xl text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto">
+        <p class="text-base sm:text-xl text-gray-300 mb-3 sm:mb-4 leading-relaxed max-w-3xl mx-auto">
           The future of the pharmacy workforce will be shaped by the conversations we are willing to have
           and the actions we are willing to test.
         </p>
-        <p class="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+        <p class="text-base sm:text-xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
           Join us at the Pharmacist Evolve Catalyst Conference and be part of building a more
           <strong class="text-white">confident, supported, and sustainable workforce</strong>.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
           <a
             href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
-            class="group inline-flex items-center justify-center px-10 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-lg"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
           >
             Register Your Interest
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -793,7 +795,7 @@
           </a>
           <a
             href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="group inline-flex items-center justify-center px-10 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-lg"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-base sm:text-lg"
           >
             Partner With Us
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

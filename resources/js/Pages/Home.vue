@@ -92,19 +92,19 @@
     <!-- Floating Conference Banner -->
     <Transition
       enter-active-class="transition-all duration-500 ease-out"
-      enter-from-class="translate-y-full opacity-0"
+      enter-from-class="-translate-y-full opacity-0"
       enter-to-class="translate-y-0 opacity-100"
       leave-active-class="transition-all duration-300 ease-in"
       leave-from-class="translate-y-0 opacity-100"
-      leave-to-class="translate-y-full opacity-0"
+      leave-to-class="-translate-y-full opacity-0"
     >
       <div
         v-if="showBanner"
-        class="fixed bottom-0 left-0 right-0 z-50"
+        class="fixed top-0 left-0 right-0 z-50"
       >
-        <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 border-t border-white/10 shadow-[0_-8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm">
+        <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm">
           <!-- Accent line -->
-          <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
 
           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between gap-4 sm:gap-6">
