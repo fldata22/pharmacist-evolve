@@ -66,87 +66,17 @@
 
           </div>
 
-          <!-- Minimal Clean Image Carousel -->
+          <!-- Hero Image -->
           <div class="order-2 lg:order-2">
             <div class="relative group">
-              <!-- Simple Carousel Container -->
-              <div class="carousel-container relative overflow-hidden rounded-3xl shadow-2xl"
-                   @touchstart="handleTouchStart"
-                   @touchend="handleTouchEnd">
-                <!-- Pure Image Slides -->
+              <div class="relative overflow-hidden rounded-3xl shadow-2xl">
                 <div class="relative h-[400px] sm:h-[500px] lg:h-[700px]">
-                  <div
-                    v-for="(slide, index) in imageSlides"
-                    :key="index"
-                    class="absolute inset-0 transition-all duration-1000 ease-out"
-                    :class="[
-                      currentImageSlide === index 
-                        ? 'opacity-100 scale-100' 
-                        : 'opacity-0 scale-105'
-                    ]"
-                  >
-                    <img 
-                      :src="slide.image"
-                      :alt="slide.alt"
-                      class="w-full h-full object-cover transition-transform duration-[8s] ease-linear"
-                      :class="{ 'scale-110': currentImageSlide === index }"
-                      style="object-position: center 20%;"
-                    />
-                    <!-- Subtle overlay for depth -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent"></div>
-                  </div>
-                </div>
-
-                <!-- Minimal Navigation - Only visible on hover -->
-                <div class="absolute inset-0 flex items-center justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <!-- Left Arrow -->
-                  <button
-                    @click="previousImage"
-                    class="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 backdrop-blur-sm"
-                  >
-                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                    </svg>
-                  </button>
-
-                  <!-- Right Arrow -->
-                  <button
-                    @click="nextImage"
-                    class="w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 backdrop-blur-sm"
-                  >
-                    <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                  </button>
-                </div>
-
-                <!-- Minimal Dots - Bottom Center -->
-                <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-                  <div class="flex space-x-2">
-                    <button
-                      v-for="(slide, index) in imageSlides"
-                      :key="index"
-                      @click="goToSlide(index)"
-                      class="transition-all duration-300"
-                    >
-                      <div
-                        :class="[
-                          'rounded-full transition-all duration-500',
-                          currentImageSlide === index 
-                            ? 'w-8 h-2 bg-white shadow-lg' 
-                            : 'w-2 h-2 bg-white/60 hover:bg-white/80'
-                        ]"
-                      ></div>
-                    </button>
-                  </div>
-                </div>
-
-                <!-- Simple Progress Bar -->
-                <div class="absolute top-0 left-0 w-full h-0.5 bg-white/20">
-                  <div 
-                    class="h-full bg-white transition-all duration-1000 ease-out"
-                    :style="{ width: `${((currentImageSlide + 1) / imageSlides.length) * 100}%` }"
-                  ></div>
+                  <img
+                    src="/images/IMG_2898.jpg"
+                    alt="Pharmacist Evolve"
+                    class="w-full h-full object-cover"
+                    style="object-position: center 20%;"
+                  />
                 </div>
               </div>
 
@@ -158,6 +88,87 @@
         </div>
       </div>
     </section>
+
+    <!-- Floating Conference Banner -->
+    <Transition
+      enter-active-class="transition-all duration-500 ease-out"
+      enter-from-class="translate-y-full opacity-0"
+      enter-to-class="translate-y-0 opacity-100"
+      leave-active-class="transition-all duration-300 ease-in"
+      leave-from-class="translate-y-0 opacity-100"
+      leave-to-class="translate-y-full opacity-0"
+    >
+      <div
+        v-if="showBanner"
+        class="fixed bottom-0 left-0 right-0 z-50"
+      >
+        <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 border-t border-white/10 shadow-[0_-8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm">
+          <!-- Accent line -->
+          <div class="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
+
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between gap-4 sm:gap-6">
+              <!-- Left: Info -->
+              <div class="flex items-center gap-4 min-w-0 flex-1">
+                <!-- Icon/Date block -->
+                <div class="hidden sm:flex flex-shrink-0 w-14 h-14 bg-gradient-to-br from-orange-500 to-amber-500 rounded-xl items-center justify-center shadow-lg shadow-orange-500/20">
+                  <div class="text-center leading-none">
+                    <div class="text-[10px] font-bold text-orange-100 uppercase">May</div>
+                    <div class="text-lg font-extrabold text-white">23</div>
+                  </div>
+                </div>
+
+                <div class="min-w-0">
+                  <div class="flex items-center gap-2 mb-0.5">
+                    <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-300 text-[10px] font-bold uppercase tracking-wider">
+                      <span class="w-1 h-1 bg-orange-400 rounded-full mr-1.5 animate-pulse"></span>
+                      Upcoming
+                    </span>
+                  </div>
+                  <h3 class="text-white font-extrabold text-base sm:text-lg leading-tight truncate">
+                    Catalyst Conference <span class="text-orange-400">2026</span>
+                  </h3>
+                  <p class="text-gray-400 text-xs sm:text-sm truncate">
+                    Warwick, UK &middot; 100&ndash;120 Delegates &middot; Panels, Workshops & Strategy
+                  </p>
+                </div>
+              </div>
+
+              <!-- Right: CTAs + Close -->
+              <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+                <Link
+                  href="/conference"
+                  class="group inline-flex items-center justify-center px-4 sm:px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all duration-200 shadow-lg shadow-orange-500/20 text-xs sm:text-sm whitespace-nowrap"
+                >
+                  Learn More
+                  <svg class="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-0.5 transition-transform hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </Link>
+
+                <a
+                  href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
+                  class="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/30 transition-all duration-200 text-xs sm:text-sm whitespace-nowrap"
+                >
+                  Register Interest
+                </a>
+
+                <!-- Close button -->
+                <button
+                  @click="dismissBanner"
+                  class="p-1.5 rounded-lg text-gray-500 hover:text-white hover:bg-white/10 transition-colors duration-200"
+                  aria-label="Dismiss banner"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Transition>
 
     <!-- Modern Features Section -->
     <section class="py-24 bg-white">
@@ -174,16 +185,16 @@
 
         <!-- Features Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Service 1: Group Mentoring School -->
+          <!-- Service 1: Career Excellence Coaching & Mentoring School -->
           <div class="group relative bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-orange-100">
             <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
               </svg>
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">Group Mentoring School</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Career Excellence Coaching & Mentoring School</h3>
             <p class="text-gray-600 mb-6">
-              Comprehensive group coaching program with live webinars, resources, and community support for career transition and professional development.
+              A 6-week structured coaching programme for overseas pharmacists building confident, sustainable UK careers through mentoring, strategy, and peer support.
             </p>
             <Link 
               href="/services/group-mentoring" 
@@ -601,39 +612,21 @@ defineOptions({
   layout: null
 })
 
+// Conference banner
+const showBanner = ref(false)
+
+const dismissBanner = () => {
+  showBanner.value = false
+  if (typeof window !== 'undefined') {
+    sessionStorage.setItem('conference-banner-dismissed', '1')
+  }
+}
+
 // Testimonials Carousel functionality
 const currentSlide = ref(0)
 const totalSlides = ref(2)
 let autoSlideInterval = null
 
-// Clean Image Carousel functionality
-const currentImageSlide = ref(0)
-let autoImageSlideInterval = null
-const isAutoPlaying = ref(true)
-
-// Simplified carousel slide data
-const imageSlides = ref([
-  {
-    image: '/images/pharmacy-1.png',
-    alt: 'Professional Pharmacist in Community Setting'
-  },
-  {
-    image: '/images/pharmacy-2.png',
-    alt: 'Clinical Pharmacy Specialist'
-  },
-  {
-    image: '/images/pharmacy-3.png',
-    alt: 'Pharmacy Leadership and Management'
-  },
-  {
-    image: '/images/pharmacy-4.png',
-    alt: 'Hospital Pharmacy Services'
-  },
-  {
-    image: '/images/pharmacy-5.png',
-    alt: 'Clinical Pharmaceutical Care'
-  }
-])
 
 const nextSlide = () => {
   if (currentSlide.value < totalSlides.value - 1) {
@@ -651,47 +644,6 @@ const previousSlide = () => {
   }
 }
 
-// Simple and clean image carousel methods
-const nextImage = () => {
-  currentImageSlide.value = (currentImageSlide.value + 1) % imageSlides.value.length
-}
-
-const previousImage = () => {
-  currentImageSlide.value = currentImageSlide.value === 0 
-    ? imageSlides.value.length - 1 
-    : currentImageSlide.value - 1
-}
-
-const goToSlide = (index) => {
-  currentImageSlide.value = index
-}
-
-// Touch/Swipe support for mobile
-let touchStartX = 0
-let touchEndX = 0
-
-const handleTouchStart = (e) => {
-  touchStartX = e.changedTouches[0].screenX
-}
-
-const handleTouchEnd = (e) => {
-  touchEndX = e.changedTouches[0].screenX
-  handleSwipe()
-}
-
-const handleSwipe = () => {
-  const swipeThreshold = 50
-  const diff = touchStartX - touchEndX
-  
-  if (Math.abs(diff) > swipeThreshold) {
-    if (diff > 0) {
-      nextImage() // Swipe left - next image
-    } else {
-      previousImage() // Swipe right - previous image
-    }
-  }
-}
-
 // Auto-slide functionality
 const startAutoSlide = () => {
   autoSlideInterval = setInterval(() => {
@@ -706,67 +658,20 @@ const stopAutoSlide = () => {
   }
 }
 
-// Simple auto-slide functionality
-const startAutoImageSlide = () => {
-  autoImageSlideInterval = setInterval(() => {
-    nextImage()
-  }, 6000) // Change image every 6 seconds
-}
-
-const stopAutoImageSlide = () => {
-  if (autoImageSlideInterval) {
-    clearInterval(autoImageSlideInterval)
-    autoImageSlideInterval = null
-  }
-}
-
 // Clean lifecycle management
 onMounted(() => {
   startAutoSlide()
-  startAutoImageSlide()
+
+  // Show conference banner after a short delay if not dismissed this session
+  if (typeof window !== 'undefined' && !sessionStorage.getItem('conference-banner-dismissed')) {
+    setTimeout(() => {
+      showBanner.value = true
+    }, 2000)
+  }
 })
 
 onUnmounted(() => {
   stopAutoSlide()
-  stopAutoImageSlide()
 })
 </script>
 
-<style scoped>
-/* Clean and minimal carousel styles */
-.carousel-container {
-  user-select: none;
-}
-
-/* Smooth transitions for all carousel elements */
-.carousel-container * {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Smooth image loading */
-.carousel-container img {
-  transition: opacity 0.3s ease-in-out, transform 8s ease-linear;
-}
-
-/* Clean button hover effects */
-.carousel-container button:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease;
-}
-
-/* Mobile touch feedback */
-@media (hover: none) and (pointer: coarse) {
-  .carousel-container button:active {
-    transform: scale(0.95);
-  }
-}
-
-/* Prevent text selection during swipe */
-.carousel-container {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-}
-</style>

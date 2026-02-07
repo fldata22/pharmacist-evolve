@@ -18,18 +18,18 @@
         <!-- Services Grid -->
         <div class="space-y-16">
           
-          <!-- Group Mentoring School -->
+          <!-- Career Excellence Coaching & Mentoring School -->
           <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div class="lg:grid lg:grid-cols-2 lg:gap-8">
               <div class="p-8 lg:p-12">
                 <div class="mb-6">
-                  <h2 class="text-3xl font-bold text-gray-900 mb-4">Group Mentoring School</h2>
+                  <h2 class="text-3xl font-bold text-gray-900 mb-4">Career Excellence Coaching & Mentoring School</h2>
                   <p class="text-lg text-gray-600 leading-relaxed">
-                    A comprehensive program that offers group coaching sessions, live webinars, and access to 
-                    extensive resources to help pharmacists transition successfully into UK pharmacy practice.
+                    A 6-week structured coaching programme designed specifically for overseas pharmacists
+                    building confident, sustainable UK careers through mentoring, career strategy, and peer support.
                   </p>
                 </div>
-                
+
                 <div class="mb-8">
                   <h3 class="text-xl font-semibold text-gray-900 mb-4">Key Features:</h3>
                   <ul class="space-y-3">
@@ -39,7 +39,7 @@
                           <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
                       </div>
-                      <span class="ml-3 text-gray-700">Comprehensive online learning platform with structured modules</span>
+                      <span class="ml-3 text-gray-700">6 live group coaching sessions led by Faith covering confidence, strategy, and career growth</span>
                     </li>
                     <li class="flex items-start">
                       <div class="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
@@ -47,7 +47,7 @@
                           <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
                       </div>
-                      <span class="ml-3 text-gray-700">Interactive webinars and live Q&A sessions with industry experts</span>
+                      <span class="ml-3 text-gray-700">Small cohort format with personalised attention and peer learning community</span>
                     </li>
                     <li class="flex items-start">
                       <div class="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
@@ -55,7 +55,7 @@
                           <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
                       </div>
-                      <span class="ml-3 text-gray-700">Supportive community of like-minded pharmacists on the same journey</span>
+                      <span class="ml-3 text-gray-700">Weekly reflection prompts, action steps, and structured career planning tools</span>
                     </li>
                     <li class="flex items-start">
                       <div class="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-0.5">
@@ -63,7 +63,7 @@
                           <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
                       </div>
-                      <span class="ml-3 text-gray-700">Direct access to expert mentors with proven track records</span>
+                      <span class="ml-3 text-gray-700">Optional 1:1 coaching upgrade for deeper, tailored support</span>
                     </li>
                   </ul>
                 </div>

@@ -102,7 +102,7 @@
                   >
                     <option value="">Select a topic</option>
                     <option value="consultation">Free Consultation</option>
-                    <option value="group-mentoring">Group Mentoring School</option>
+                    <option value="group-mentoring">Career Excellence Coaching & Mentoring School</option>
                     <option value="professional-development">Professional Development Coaching</option>
                     <option value="workforce-integration">Workforce Integration & Excellence</option>
                     <option value="general">General Inquiry</option>
@@ -382,7 +382,7 @@ const openFaq = ref(null)
 const faqs = ref([
   {
     question: "How long does the coaching process typically take?",
-    answer: "The duration varies depending on your individual needs and goals. Our Group Mentoring School runs for 12 weeks, while individual coaching can range from 3-6 months for specific objectives."
+    answer: "The duration varies depending on your individual needs and goals. Our Career Excellence Coaching & Mentoring School runs for 6 weeks, while individual coaching can range from 3-6 months for specific objectives."
   },
   {
     question: "What makes your workforce integration program different?",

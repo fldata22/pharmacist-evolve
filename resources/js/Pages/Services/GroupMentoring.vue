@@ -10,33 +10,33 @@
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
         <div class="text-center">
-          <!-- Beta Badge -->
-          <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-sm font-medium mb-6 animate-pulse">
+          <!-- Cohort Badge -->
+          <div class="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-sm font-medium mb-6">
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            BETA EDITION - July 2025
+            Next Cohort - May 2026
           </div>
 
           <!-- Main Headline -->
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Pharmacist Evolve Group Coaching
+            Career Excellence Coaching & Mentoring School
           </h1>
 
           <!-- Subheading -->
           <p class="text-xl lg:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            A comprehensive 6-Week Career Acceleration program for Overseas Pharmacists
+            A 6-week structured pathway for overseas pharmacists building confident, sustainable UK careers
           </p>
 
           <!-- CTA Button -->
           <div class="flex justify-center">
-            <a 
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSf7goPAAcDEYVkSzFkoER2YAE5MMNGkk9EdebtD0IcBOkrZWg/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               class="group inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
-              Apply for Beta Access
+              Apply Now
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
@@ -46,279 +46,489 @@
       </div>
     </section>
 
-    <!-- Program Overview Section -->
+    <!-- Emotional Hook Section -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Transform Your UK Pharmacy Career
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            You didn't come this far to feel uncertain, stuck, or invisible
           </h2>
-          <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            A small-group coaching experience designed for overseas-trained pharmacists who have recently completed/are soon to complete the GPhC registration process and are ready to step confidently into the UK workforce.
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+            If any of this sounds familiar, this programme was built for you:
           </p>
         </div>
 
-        <!-- Target Audience Highlight -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <!-- Perfect For You If -->
-          <div class="bg-gradient-to-r from-orange-100 to-amber-100 rounded-2xl p-8 border-l-4 border-orange-600">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <svg class="w-8 h-8 text-orange-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                </svg>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Perfect For You If:</h3>
-                <p class="text-gray-700">
-                  You're an overseas-trained pharmacist who has recently completed or is about to complete the GPhC registration process and wants structured support to confidently enter the UK pharmacy workforce with clarity and clinical confidence.
-                </p>
-              </div>
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 border-l-4 border-orange-500">
+            <p class="text-gray-700 text-lg">"I passed my exams, but I still don't feel ready."</p>
           </div>
-
-          <!-- Ideal For -->
-          <div class="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-2xl p-8 border-l-4 border-blue-600">
-            <div class="flex items-start">
-              <div class="flex-shrink-0">
-                <svg class="w-8 h-8 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-                </svg>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-xl font-bold text-gray-900 mb-3">Ideal For:</h3>
-                <p class="text-gray-700">
-                  Newly GPhC-registered pharmacists or Foundation trainees who want to build confidence, structure their job search, and integrate smoothly into UK pharmacy practice.
-                </p>
-              </div>
-            </div>
+          <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 border-l-4 border-orange-500">
+            <p class="text-gray-700 text-lg">"I don't know how to position myself for the roles I actually want."</p>
           </div>
-        </div>
-
-        <!-- Key Features -->
-        <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 mb-16">
-          <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">What You'll Experience</h3>
-          <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto">
-            You'll receive structured, supportive coaching in a cohort of peers navigating the same transition. Each week focuses on building clarity, job-readiness, and clinical confidence in the UK setting.
-          </p>
+          <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 border-l-4 border-orange-500">
+            <p class="text-gray-700 text-lg">"I feel like I'm starting from scratch even though I have years of experience."</p>
+          </div>
+          <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-8 border-l-4 border-orange-500">
+            <p class="text-gray-700 text-lg">"I'm applying for jobs but not getting anywhere."</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Features Grid -->
+    <!-- What This Programme Is (and Isn't) -->
     <section class="py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Program Benefits
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            What This Programme Is (and Isn't)
           </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Structured Learning -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- What it IS -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-green-100">
+            <h3 class="text-2xl font-bold text-green-700 mb-6 flex items-center">
+              <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">📚 Structured Learning</h4>
-            <p class="text-gray-600">
-              Weekly focused sessions building upon each other to create a comprehensive foundation for your UK pharmacy career journey.
-            </p>
+              This programme IS:
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A structured, guided coaching experience with live group sessions</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A space to build confidence, clarity, and career strategy</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">Designed specifically for overseas pharmacists navigating UK practice</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">Led by Faith, a pharmacist who has walked this path</span>
+              </li>
+            </ul>
           </div>
 
-          <!-- Peer Support -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <!-- What it ISN'T -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-red-100">
+            <h3 class="text-2xl font-bold text-red-600 mb-6 flex items-center">
+              <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              This programme ISN'T:
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-red-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A passive course with pre-recorded videos and no interaction</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-red-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A GPhC exam prep programme</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-red-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A job placement or recruitment service</span>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-red-400 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-gray-700">A generic motivational programme with no real structure</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who This Programme Is For -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            Who This Programme Is For
+          </h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto space-y-6">
+          <div class="flex items-start bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+            <svg class="w-6 h-6 text-orange-600 mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-gray-700 text-lg">Overseas pharmacists who have completed or are completing OSPAP and want to build a confident UK career</p>
+          </div>
+          <div class="flex items-start bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+            <svg class="w-6 h-6 text-orange-600 mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-gray-700 text-lg">Foundation trainee pharmacists who want clarity, direction, and support beyond their training placement</p>
+          </div>
+          <div class="flex items-start bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+            <svg class="w-6 h-6 text-orange-600 mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-gray-700 text-lg">Pharmacists already registered but feeling stuck, unsure, or undervalued in their current roles</p>
+          </div>
+          <div class="flex items-start bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+            <svg class="w-6 h-6 text-orange-600 mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-gray-700 text-lg">Pharmacists who want to move intentionally rather than just take whatever comes their way</p>
+          </div>
+          <div class="flex items-start bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+            <svg class="w-6 h-6 text-orange-600 mt-1 mr-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-gray-700 text-lg">Anyone who wants to stop second-guessing themselves and start building with confidence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What Changes (Outcomes) -->
+    <section class="py-24 bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            What Changes After This Programme
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You know who you are professionally and can articulate your value with confidence</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You understand how the UK pharmacy landscape works and where you fit</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You have a clear career strategy and direction that aligns with your goals</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You can navigate interviews and career conversations with ease</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You feel visible, valued, and equipped to advocate for yourself</p>
+            </div>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-md border border-gray-100">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-green-500 mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-gray-700">You have a long-term plan for sustainable career growth and fulfilment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How the Programme Works -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            How the Programme Works
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div class="text-center bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-8 border border-orange-100">
+            <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Duration</h3>
+            <p class="text-gray-600">6 weeks of focused, structured sessions</p>
+          </div>
+          <div class="text-center bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+            <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
               </svg>
             </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">👥 Peer Support</h4>
-            <p class="text-gray-600">
-              Connect with fellow overseas pharmacists facing similar challenges, creating lasting professional relationships and support networks.
-            </p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Format</h3>
+            <p class="text-gray-600">Live group coaching, small cohort for personalised attention</p>
           </div>
-
-          <!-- Job Readiness -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <div class="text-center bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-8 border border-emerald-100">
+            <div class="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
               </svg>
             </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">💼 Job Readiness</h4>
-            <p class="text-gray-600">
-              Develop practical skills and confidence needed to excel in UK pharmacy roles, from community to hospital settings.
-            </p>
-          </div>
-
-          <!-- Clinical Confidence -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">🏥 Clinical Confidence</h4>
-            <p class="text-gray-600">
-              Build expertise in UK-specific clinical practices, regulations, and patient care standards to enhance your professional competence.
-            </p>
-          </div>
-
-          <!-- Career Clarity -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">🎯 Career Clarity</h4>
-            <p class="text-gray-600">
-              Gain clear direction on your career path and understand the opportunities available in the UK pharmacy landscape.
-            </p>
-          </div>
-
-          <!-- Accelerated Growth -->
-          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
-            <div class="w-16 h-16 bg-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
-              </svg>
-            </div>
-            <h4 class="text-xl font-bold text-gray-900 mb-4">🚀 Accelerated Growth</h4>
-            <p class="text-gray-600">
-              Fast-track your integration into the UK healthcare system with targeted coaching and practical insights.
-            </p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Delivery</h3>
+            <p class="text-gray-600">Online with replays available if you miss a session</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- What's Included Section -->
-    <section class="py-24 bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50">
+    <!-- Core Pillars -->
+    <section class="py-24 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            What's Included
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            The 6 Core Pillars
           </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need for a successful transition into the UK pharmacy workforce
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Each week focuses on a key area to help you build a confident, sustainable UK pharmacy career
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <!-- Core Program Features -->
-          <div class="space-y-6">
-            <!-- Live Sessions -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-bold text-gray-900 mb-2">6 Live Weekly Group Coaching Sessions</h3>
-                  <p class="text-gray-600">60–75 minutes each of interactive coaching with your cohort and expert facilitator</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Pillar 1 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">1</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Identity & Confidence Reset</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-orange-500 mr-2">-</span>
+                <span>Reconnecting with your professional identity</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-orange-500 mr-2">-</span>
+                <span>Overcoming imposter syndrome and self-doubt</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-orange-500 mr-2">-</span>
+                <span>Building a confident professional mindset</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">2</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Reality of UK Pharmacy</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2">-</span>
+                <span>Understanding the UK pharmacy landscape</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2">-</span>
+                <span>Navigating sectors, roles, and expectations</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-blue-500 mr-2">-</span>
+                <span>What employers actually look for</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">3</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Career Strategy & Direction</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-emerald-500 mr-2">-</span>
+                <span>Defining your career goals and pathway</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-emerald-500 mr-2">-</span>
+                <span>Building a strategic career plan</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-emerald-500 mr-2">-</span>
+                <span>Aligning your experience with UK opportunities</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">4</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Visibility, Influence & Advocacy</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-purple-500 mr-2">-</span>
+                <span>Making yourself visible in the profession</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-500 mr-2">-</span>
+                <span>Networking and building professional relationships</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-purple-500 mr-2">-</span>
+                <span>Self-advocacy and communicating your value</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">5</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Interviews, Progression & Opportunities</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2">-</span>
+                <span>Mastering UK pharmacy interviews</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2">-</span>
+                <span>CV and application strategies that stand out</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-indigo-500 mr-2">-</span>
+                <span>Identifying and seizing career opportunities</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pillar 6 -->
+          <div class="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100">
+            <div class="w-14 h-14 bg-pink-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <span class="text-white font-bold text-xl">6</span>
+            </div>
+            <h4 class="text-xl font-bold text-gray-900 mb-4">Sustainability & Long-Term Growth</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <span class="text-pink-500 mr-2">-</span>
+                <span>Avoiding burnout and building resilience</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-pink-500 mr-2">-</span>
+                <span>Long-term career development planning</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-pink-500 mr-2">-</span>
+                <span>Creating a fulfilling, sustainable career</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            What's Included
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <!-- Live Coaching -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-orange-600 rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                  </svg>
                 </div>
               </div>
-            </div>
-
-            <!-- Resources -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-bold text-gray-900 mb-2">Weekly Workbooks, Templates & Action Plans</h3>
-                  <p class="text-gray-600">Comprehensive resources to guide your learning and track your progress</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Job Support -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-bold text-gray-900 mb-2">Job Application & Interview Prep Support</h3>
-                  <p class="text-gray-600">Expert guidance on navigating the UK pharmacy job market and excelling in interviews</p>
-                </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">6 Live Group Coaching Sessions with Faith</h3>
+                <p class="text-gray-600">Interactive weekly sessions led by Faith, covering all 6 core pillars with real-time guidance and Q&A</p>
               </div>
             </div>
           </div>
 
-          <!-- Additional Features -->
-          <div class="space-y-6">
-            <!-- CV Enhancement -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-bold text-gray-900 mb-2">Guided CV & Personal Statement Enhancements</h3>
-                  <p class="text-gray-600">Professional guidance to create compelling applications that stand out to UK employers</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- WhatsApp Group -->
-            <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div class="flex items-start">
-                <div class="flex-shrink-0">
-                  <div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2v-6a2 2 0 012-2h2m2-4h4a2 2 0 012 2v6a2 2 0 01-2 2h-4m0 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h4v4z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="ml-4">
-                  <h3 class="text-lg font-bold text-gray-900 mb-2">Private Peer Support Group (WhatsApp)</h3>
-                  <p class="text-gray-600">24/7 access to your cohort for ongoing support, questions, and networking</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Optional Add-ons -->
-            <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 border-2 border-amber-200">
-              <div class="text-center mb-4">
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Optional Add-Ons</h3>
-                <p class="text-sm text-gray-600">Choose additional support based on your needs</p>
-              </div>
-              <div class="space-y-3">
-                <div class="flex items-center p-3 bg-white rounded-lg border border-amber-100">
-                  <svg class="w-5 h-5 text-amber-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                  </svg>
-                  <span class="text-gray-700">1-hour Interview Preparation Session</span>
-                </div>
-                <div class="flex items-center p-3 bg-white rounded-lg border border-amber-100">
-                  <svg class="w-5 h-5 text-amber-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <!-- Reflection Prompts -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                   </svg>
-                  <span class="text-gray-700">Detailed CV Review Session</span>
                 </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Weekly Reflection Prompts & Action Steps</h3>
+                <p class="text-gray-600">Guided reflection exercises and practical action steps to reinforce your learning between sessions</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Peer Learning -->
+          <div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Peer Learning Community</h3>
+                <p class="text-gray-600">Connect with a small cohort of like-minded pharmacists for shared support, accountability, and encouragement</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Optional 1:1 Upgrade -->
+          <div class="bg-gradient-to-r from-amber-50 to-orange-50 rounded-2xl p-6 border-2 border-amber-200">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center">
+                  <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Optional 1:1 Coaching Upgrade</h3>
+                <p class="text-gray-600">Add personalised one-to-one coaching sessions with Faith for deeper, tailored support alongside the group programme</p>
               </div>
             </div>
           </div>
@@ -326,64 +536,181 @@
       </div>
     </section>
 
-    <!-- Join Our Community Section -->
-    <section class="py-24 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-          Join Our Community
-        </h2>
-        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Connect with fellow overseas pharmacists, get daily tips, and stay updated on opportunities in the UK pharmacy sector.
-        </p>
-        
-        <div class="flex justify-center mb-8">
-          <a 
-            href="https://www.instagram.com/pharmacist_evolve/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            class="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-xl hover:from-pink-600 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
-          >
-            <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-            Follow @pharmacist_evolve
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-            </svg>
-          </a>
+    <!-- Investment Section -->
+    <section class="py-24 bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            Investment
+          </h2>
         </div>
-        
-        <p class="text-sm text-gray-500 max-w-2xl mx-auto">
-          Get daily inspiration, career tips, success stories, and be the first to know about new programs and opportunities.
-        </p>
+
+        <div class="max-w-lg mx-auto">
+          <div class="bg-white rounded-2xl shadow-xl p-10 text-center border-2 border-orange-200">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Group Programme</h3>
+            <div class="mb-6">
+              <span class="text-5xl font-bold text-orange-600">&pound;450</span>
+            </div>
+            <p class="text-gray-600 mb-6">Full 6-week programme access</p>
+            <div class="bg-orange-50 rounded-lg p-4 mb-8">
+              <p class="text-sm text-orange-800 font-medium">Payment plans available - contact us to discuss options</p>
+            </div>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf7goPAAcDEYVkSzFkoER2YAE5MMNGkk9EdebtD0IcBOkrZWg/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-center w-full px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Apply Now
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Call to Action Section -->
+    <!-- Why This Programme Exists -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+            Why This Programme Exists
+          </h2>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            There's a gap between completing OSPAP and truly integrating into the UK pharmacy profession. You might have the qualification, but that doesn't automatically come with confidence, clarity, or a career strategy.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            This programme exists to bridge that gap - to give overseas pharmacists the coaching, mentoring, and structured support they need to build careers that are not just functional, but fulfilling. Because you deserve more than just getting by.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-gradient-to-br from-orange-50 to-amber-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            What Past Participants Say
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-orange-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-orange-200 rounded-full flex items-center justify-center mr-4">
+                <span class="text-xl font-bold text-orange-700">P</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Programme Participant</h4>
+                <div class="flex text-yellow-400 text-sm">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "The biggest change has been my confidence. I now feel better equipped to integrate into the UK pharmacy system, thanks to the practical resources, tailored advice, and support I received. I also gained a strong professional network and a mentor in Faith, which I consider an invaluable benefit moving forward."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-orange-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-blue-200 rounded-full flex items-center justify-center mr-4">
+                <span class="text-xl font-bold text-blue-700">P</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Programme Participant</h4>
+                <div class="flex text-yellow-400 text-sm">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "It is remarkable to think that this was her first time coaching a pharmacist-evolved beta program, because she executed it with such flair and confidence. By the end of the program, I truly felt evolved — equipped with a practical toolbox of resources, connected to a strong network of pharmacists, and inspired by the mentorship of Faith."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-orange-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-emerald-200 rounded-full flex items-center justify-center mr-4">
+                <span class="text-xl font-bold text-emerald-700">P</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Programme Participant</h4>
+                <div class="flex text-yellow-400 text-sm">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "Faith was instrumental in helping us find a sense of balance, not only in our professional growth but also in managing work-life priorities. Her professionalism, attentiveness, and active listening were evident in every interaction. She provided constructive feedback, remained approachable at all times, and even left an open invitation for continued support after the program."
+            </p>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg border border-orange-100">
+            <div class="flex items-center mb-6">
+              <div class="w-14 h-14 bg-purple-200 rounded-full flex items-center justify-center mr-4">
+                <span class="text-xl font-bold text-purple-700">P</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-900">Programme Participant</h4>
+                <div class="flex text-yellow-400 text-sm">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic leading-relaxed">
+              "The program included thoughtfully prepared workbooks, learning materials, revision resources, clearly mapped-out plans with achievable goals, and action steps that required us to actively engage. Faith was proactive in inviting guest speakers who shared valuable experiences, helping us navigate areas of ambiguity within the pharmacy network in the United Kingdom."
+            </p>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="md:col-span-2 max-w-2xl mx-auto">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-orange-100">
+              <div class="flex items-center mb-6">
+                <div class="w-14 h-14 bg-amber-200 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-xl font-bold text-amber-700">P</span>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900">Programme Participant</h4>
+                  <div class="flex text-yellow-400 text-sm">★★★★★</div>
+                </div>
+              </div>
+              <p class="text-gray-700 italic leading-relaxed">
+                "Our pharmacy just launched a website and they did a bit of highlight about me. I want to say a big thank you to Faith and all the lovely ladies on this group. The guidance and support has been massive and I took all that I have learnt from here into the workspace. Thank you so much, I couldn't have done it without you guys"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications CTA -->
     <section class="py-24 bg-gradient-to-r from-gray-900 to-gray-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
-          Ready to Accelerate Your UK Pharmacy Career?
+          Ready to Build Your Career with Confidence?
         </h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Join the Beta Edition of Pharmacist Evolve Group Coaching and be part of our founding cohort. Limited spaces available for this exclusive program.
+        <p class="text-xl text-gray-300 mb-4 max-w-3xl mx-auto">
+          This programme is application-led. The next cohort starts in May 2026 with limited spaces available to ensure every participant gets the attention they deserve.
         </p>
-        
+        <p class="text-lg text-gray-400 mb-8">
+          Apply now to secure your place.
+        </p>
+
         <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-          <a 
+          <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf7goPAAcDEYVkSzFkoER2YAE5MMNGkk9EdebtD0IcBOkrZWg/viewform?usp=dialog"
             target="_blank"
             rel="noopener noreferrer"
             class="group inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
-            Apply for Beta Access
+            Apply Now
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
           </a>
-          
-          <Link 
-            href="/contact" 
+
+          <Link
+            href="/contact"
             class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-300 font-semibold rounded-xl hover:border-orange-600 hover:text-orange-600 transition-colors"
           >
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -392,10 +719,6 @@
             Ask Questions
           </Link>
         </div>
-        
-        <p class="text-sm text-gray-400">
-          Beta Edition participants receive special pricing and lifetime access to program updates
-        </p>
       </div>
     </section>
   </AppLayout>
@@ -404,11 +727,5 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue'
 import { Link } from '@inertiajs/vue3'
-
-// Meta information
 import { Head } from '@inertiajs/vue3'
 </script>
-
-<style scoped>
-/* Additional custom styles if needed */
-</style>

@@ -29,6 +29,10 @@ Route::get('/services/workforce-integration', function () {
     return Inertia::render('Services/WorkforceIntegration');
 })->name('services.workforce-integration');
 
+Route::get('/conference', function () {
+    return Inertia::render('Conference');
+})->name('conference');
+
 Route::get('/events', [EventController::class, 'index'])->name('events');
 
 Route::get('/about', function () {

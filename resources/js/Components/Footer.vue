@@ -63,7 +63,7 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Our Services</h3>
           <ul class="space-y-2">
-            <li><Link href="/services/group-mentoring" class="text-gray-300 hover:text-orange-400 transition-colors">Group Mentoring School</Link></li>
+            <li><Link href="/services/group-mentoring" class="text-gray-300 hover:text-orange-400 transition-colors">Career Excellence Coaching & Mentoring School</Link></li>
             <li><Link href="/services/professional-development" class="text-gray-300 hover:text-orange-400 transition-colors">Professional Development Coaching</Link></li>
             <li><Link href="/services/workforce-integration" class="text-gray-300 hover:text-orange-400 transition-colors">Workforce Integration</Link></li>
           </ul>
