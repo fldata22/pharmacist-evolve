@@ -45,9 +45,9 @@
             integration for overseas-trained pharmacists. Bringing together frontline professionals
             and decision-makers to transform lived experience into actionable reform.
           </p>
-          <div class="text-left max-w-2xl mx-auto mb-2">
-            <p class="text-base sm:text-lg text-gray-300 mb-3 font-semibold">Delegates will leave with:</p>
-            <ul class="space-y-2 text-base sm:text-lg text-gray-400">
+          <div class="text-left max-w-2xl mx-auto mb-6 mt-4">
+            <p class="text-base sm:text-lg text-gray-300 mb-5 font-semibold">Delegates will leave with:</p>
+            <ul class="space-y-4 text-base sm:text-lg text-gray-400">
               <li class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
