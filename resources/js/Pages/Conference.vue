@@ -528,6 +528,28 @@
             </div>
           </div>
         </div>
+
+        <!-- Mid-page CTA 2 -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-12 px-4 sm:px-0">
+          <a
+            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
+          >
+            Get a Delegate Pass
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a
+            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
+          >
+            Partner With Us
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -662,27 +684,6 @@
           </p>
         </div>
 
-        <!-- Mid-page CTA 2 -->
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-12 px-4 sm:px-0">
-          <a
-            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
-          >
-            Get a Delegate Pass
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-          <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
-          >
-            Partner With Us
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
 
