@@ -41,9 +41,40 @@
 
           <!-- Description -->
           <p class="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-            A one-day, in-person conference bringing together overseas pharmacists, employers,
-            educators, policymakers, and industry leaders to reframe challenges, share lived
-            experience, and co-design practical solutions for workforce integration in the UK.
+            Catalyst is the UK's first dedicated conference focused exclusively on workforce
+            integration for overseas-trained pharmacists. Bringing together frontline professionals
+            and decision-makers to transform lived experience into actionable reform.
+          </p>
+          <div class="text-left max-w-2xl mx-auto mb-2">
+            <p class="text-base sm:text-lg text-gray-300 mb-3 font-semibold">Delegates will leave with:</p>
+            <ul class="space-y-2 text-base sm:text-lg text-gray-400">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Strategic clarity on how integration actually works in practice</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Tools to influence, lead, and advocate within their organisations</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>Cross-sector relationships that unlock opportunity</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>A collective roadmap for building a more inclusive, high-performing pharmacy workforce</span>
+              </li>
+            </ul>
+          </div>
+          <p class="hidden">
           </p>
 
           <!-- Event Quick Details -->
@@ -78,10 +109,10 @@
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
             <a
-              href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
+              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
               class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 text-base sm:text-lg"
             >
-              Register Your Interest
+              Get a Delegate Pass
               <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
@@ -125,10 +156,10 @@
               and <strong class="text-gray-900">inconsistent integration</strong> into practice.
             </p>
             <p>
-              Pharmacists are expected to adapt quickly, perform confidently, and contribute safely &mdash; while
+              Pharmacists are expected to adapt quickly, perform confidently, and contribute safely -while
               navigating cultural differences, system complexity, and professional uncertainty. Employers want
               workforce-ready pharmacists, educators want effective progression pathways, and policymakers
-              want sustainable solutions &mdash; but these conversations rarely happen together, in the same room.
+              want sustainable solutions -but these conversations rarely happen together, in the same room.
             </p>
             <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border-l-4 border-orange-500 my-8 sm:my-10">
               <p class="text-lg sm:text-xl font-semibold text-gray-900">
@@ -138,7 +169,7 @@
             <p>
               This conference creates space for <strong class="text-gray-900">honest dialogue</strong>,
               <strong class="text-gray-900">shared understanding</strong>, and
-              <strong class="text-gray-900">practical collaboration</strong> &mdash; moving beyond surface-level
+              <strong class="text-gray-900">practical collaboration</strong> -moving beyond surface-level
               discussions toward solutions that can be tested, refined, and scaled.
             </p>
           </div>
@@ -257,6 +288,28 @@
             If you care about building a <strong class="text-orange-600">safe, confident, and well-supported pharmacy workforce</strong>, this conference is for you.
           </p>
         </div>
+
+        <!-- Mid-page CTA -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-10 px-4 sm:px-0">
+          <a
+            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
+          >
+            Get a Delegate Pass
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a
+            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
+          >
+            Partner With Us
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -285,7 +338,7 @@
               </div>
               <h3 class="text-xl font-bold mb-3">Lived Experience at the Centre</h3>
               <p class="text-gray-300 leading-relaxed">
-                Real insights from overseas pharmacists who have navigated the system &mdash; not just theoretical perspectives.
+                Real insights from overseas pharmacists who have navigated the system -not just theoretical perspectives.
               </p>
             </div>
           </div>
@@ -384,11 +437,11 @@
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Opening keynote: the overseas pharmacist experience &mdash; data, lived reality, and workforce impact</span>
+                        <span class="text-sm sm:text-base text-gray-700">Opening keynote: the overseas pharmacist experience -data, lived reality, and workforce impact</span>
                       </li>
                       <li class="flex items-start gap-3">
                         <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: workforce integration &mdash; what's working, what isn't, and what needs to change</span>
+                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: workforce integration -what's working, what isn't, and what needs to change</span>
                       </li>
                     </ul>
                   </div>
@@ -495,7 +548,7 @@
           </h3>
           <p class="text-base sm:text-lg text-gray-400 leading-relaxed">
             A central feature of the Catalyst Conference is the introduction of the
-            <strong class="text-white">Overseas Pharmacist Workforce Integration Pathway</strong> &mdash;
+            <strong class="text-white">Overseas Pharmacist Workforce Integration Pathway</strong> -
             bringing together insights from lived experience, employer needs, education
             frameworks, and workforce priorities.
           </p>
@@ -608,6 +661,28 @@
             </a>
           </p>
         </div>
+
+        <!-- Mid-page CTA 2 -->
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-12 px-4 sm:px-0">
+          <a
+            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
+          >
+            Get a Delegate Pass
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a
+            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
+            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
+          >
+            Partner With Us
+            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -620,7 +695,7 @@
             Partners & Sponsors
           </h2>
           <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Partners and sponsors of the Catalyst Conference are more than event supporters &mdash; they are
+            Partners and sponsors of the Catalyst Conference are more than event supporters -they are
             contributors to meaningful workforce conversations and solutions.
           </p>
         </div>
@@ -729,7 +804,7 @@
               </svg>
             </div>
             <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Tickets</h4>
-            <p class="text-gray-600 text-xs sm:text-sm">Details coming soon. Register your interest now.</p>
+            <p class="text-gray-600 text-xs sm:text-sm">Get your delegate pass now via Eventbrite.</p>
           </div>
         </div>
 
@@ -751,7 +826,7 @@
         <p class="text-lg text-gray-600 leading-relaxed mb-6">
           Pharmacist Evolve is a platform dedicated to supporting overseas-trained pharmacists to
           integrate, progress, and thrive within the UK workforce. Through coaching, community, advocacy,
-          and strategic collaboration, Pharmacist Evolve works to turn complexity into clarity &mdash;
+          and strategic collaboration, Pharmacist Evolve works to turn complexity into clarity -
           supporting both individual pharmacists and the wider systems they work within.
         </p>
         <Link href="/about" class="text-orange-600 hover:text-orange-700 font-semibold inline-flex items-center gap-2">
@@ -785,10 +860,10 @@
 
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
           <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
+            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
             class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
           >
-            Register Your Interest
+            Get a Delegate Pass
             <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
