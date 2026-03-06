@@ -50,7 +50,7 @@
 
           <!-- CTA -->
           <Link
-            :href="route('conference')"
+            href="/conference"
             class="inline-flex items-center text-orange-400 hover:text-orange-300 font-semibold transition-colors"
           >
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -377,7 +377,7 @@
           We're currently confirming delegates for the Catalyst Conference 2026. Check back soon to meet our amazing community of professionals.
         </p>
         <Link
-          :href="route('conference')"
+          href="/conference"
           class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transition-all duration-300 shadow-lg"
         >
           Back to Conference
@@ -414,7 +414,7 @@
             </svg>
           </a>
           <Link
-            :href="route('conference')"
+            href="/conference"
             class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300"
           >
             Learn More
