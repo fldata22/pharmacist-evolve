@@ -123,4 +123,18 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Delegates Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Configuration options for the delegates feature.
+    |
+    */
+
+    'delegates' => [
+        'default_order' => 0,
+        'cache_ttl' => 3600, // 1 hour in seconds
+    ],
+
 ];

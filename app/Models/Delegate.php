@@ -33,6 +33,53 @@ class Delegate extends Model
     ];
 
     /**
+     * Set the LinkedIn URL attribute with security validation.
+     */
+    public function setLinkedinUrlAttribute($value): void
+    {
+        $this->attributes['linkedin_url'] = $this->sanitizeUrl($value);
+    }
+
+    /**
+     * Set the Twitter URL attribute with security validation.
+     */
+    public function setTwitterUrlAttribute($value): void
+    {
+        $this->attributes['twitter_url'] = $this->sanitizeUrl($value);
+    }
+
+    /**
+     * Set the Website URL attribute with security validation.
+     */
+    public function setWebsiteUrlAttribute($value): void
+    {
+        $this->attributes['website_url'] = $this->sanitizeUrl($value);
+    }
+
+    /**
+     * Sanitize URL to prevent XSS attacks.
+     * Ensures only http/https protocols are allowed.
+     */
+    private function sanitizeUrl(?string $value): ?string
+    {
+        if (empty($value)) {
+            return null;
+        }
+
+        // Explicit protocol check to prevent javascript: URLs (XSS risk)
+        if (!preg_match('/^https?:\/\//i', $value)) {
+            $value = 'https://' . $value;
+        }
+
+        // Additional validation: reject if still not http/https after prepending
+        if (!preg_match('/^https?:\/\//i', $value)) {
+            return null;
+        }
+
+        return $value;
+    }
+
+    /**
      * Scope for published delegates
      */
     public function scopePublished($query)

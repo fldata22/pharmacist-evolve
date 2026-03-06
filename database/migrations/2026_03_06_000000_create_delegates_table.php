@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('delegates', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->nullable();
+            $table->string('email')->nullable()->unique();
             $table->string('organization')->nullable();
             $table->string('role')->nullable();
             $table->string('country')->nullable();
@@ -28,6 +28,13 @@ return new class extends Migration
             $table->integer('order')->default(0);
             $table->timestamp('registered_at')->nullable();
             $table->timestamps();
+
+            // Indexes for frequently queried fields
+            $table->index('delegate_type');
+            $table->index('is_published');
+            $table->index('order');
+            $table->index(['is_published', 'delegate_type']);
+            $table->index(['is_published', 'order']);
         });
     }
 
