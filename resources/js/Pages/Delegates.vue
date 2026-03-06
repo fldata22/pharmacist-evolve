@@ -50,7 +50,7 @@
 
           <!-- CTA -->
           <Link
-            href="/conference"
+            :href="route('conference')"
             class="inline-flex items-center text-orange-400 hover:text-orange-300 font-semibold transition-colors"
           >
             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,6 +127,7 @@
                   :href="delegate.linkedin_url"
                   target="_blank"
                   rel="noopener noreferrer"
+                  :aria-label="`Visit ${delegate.name}'s LinkedIn profile`"
                   class="w-8 h-8 rounded-full bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-500 hover:text-emerald-600 transition-colors"
                 >
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -138,6 +139,7 @@
                   :href="delegate.twitter_url"
                   target="_blank"
                   rel="noopener noreferrer"
+                  :aria-label="`Visit ${delegate.name}'s X (Twitter) profile`"
                   class="w-8 h-8 rounded-full bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-500 hover:text-emerald-600 transition-colors"
                 >
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -149,6 +151,7 @@
                   :href="delegate.website_url"
                   target="_blank"
                   rel="noopener noreferrer"
+                  :aria-label="`Visit ${delegate.name}'s website`"
                   class="w-8 h-8 rounded-full bg-gray-100 hover:bg-emerald-100 flex items-center justify-center text-gray-500 hover:text-emerald-600 transition-colors"
                 >
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -218,6 +221,7 @@
                   :href="delegate.linkedin_url"
                   target="_blank"
                   rel="noopener noreferrer"
+                  :aria-label="`Visit ${delegate.name}'s LinkedIn profile`"
                   class="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-500 hover:text-blue-600 transition-colors"
                 >
                   <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -229,6 +233,7 @@
                   :href="delegate.website_url"
                   target="_blank"
                   rel="noopener noreferrer"
+                  :aria-label="`Visit ${delegate.name}'s website`"
                   class="w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-100 flex items-center justify-center text-gray-500 hover:text-blue-600 transition-colors"
                 >
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -296,6 +301,7 @@
                 :href="delegate.website_url"
                 target="_blank"
                 rel="noopener noreferrer"
+                :aria-label="`Visit ${delegate.name}'s website`"
                 class="inline-flex items-center gap-2 mt-4 text-purple-600 hover:text-purple-700 font-medium text-sm"
               >
                 Visit Website
@@ -371,7 +377,7 @@
           We're currently confirming delegates for the Catalyst Conference 2026. Check back soon to meet our amazing community of professionals.
         </p>
         <Link
-          href="/conference"
+          :href="route('conference')"
           class="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transition-all duration-300 shadow-lg"
         >
           Back to Conference
@@ -408,7 +414,7 @@
             </svg>
           </a>
           <Link
-            href="/conference"
+            :href="route('conference')"
             class="group inline-flex items-center justify-center px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300"
           >
             Learn More

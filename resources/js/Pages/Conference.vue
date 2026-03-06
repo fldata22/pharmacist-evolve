@@ -118,7 +118,7 @@
               </svg>
             </a>
             <Link
-              href="/delegates"
+              :href="route('delegates')"
               class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm border border-white/20 hover:border-white/40"
             >
               View Delegates
@@ -310,7 +310,7 @@
             </svg>
           </a>
           <Link
-            href="/delegates"
+            :href="route('delegates')"
             class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
           >
             View Delegates
@@ -559,7 +559,7 @@
             </svg>
           </a>
           <Link
-            href="/delegates"
+            :href="route('delegates')"
             class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
           >
             View Delegates
@@ -897,7 +897,7 @@
             </svg>
           </a>
           <Link
-            href="/delegates"
+            :href="route('delegates')"
             class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm border border-white/20 hover:border-white/40"
           >
             View Delegates
