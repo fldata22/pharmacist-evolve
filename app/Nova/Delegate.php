@@ -117,7 +117,7 @@ class Delegate extends Resource
                 'partner' => 'purple',
             ])->onlyOnIndex(),
 
-            Boolean::make('Published')
+            Boolean::make('Published', 'is_published')
                 ->default(false)
                 ->help('Visible on the delegates page'),
 
