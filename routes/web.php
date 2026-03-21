@@ -8,7 +8,6 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\WaitlistController;
-use App\Http\Controllers\DelegateController;
 use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -58,8 +57,6 @@ Route::get('/book-consultation', function () {
 
 Route::get('/waitlist', [WaitlistController::class, 'index'])->name('waitlist');
 Route::post('/waitlist', [WaitlistController::class, 'store'])->name('waitlist.store');
-
-Route::get('/delegates', [DelegateController::class, 'index'])->name('delegates');
 
 Route::get('/cookies', function () {
     return Inertia::render('Cookies');
