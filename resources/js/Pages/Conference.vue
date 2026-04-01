@@ -412,170 +412,37 @@
       </div>
     </section>
 
-    <!-- The Journey of the Day (Timeline) -->
+    <!-- Programme CTA -->
     <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 sm:mb-20">
+        <div class="max-w-3xl mx-auto text-center">
           <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Agenda</span>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             The Journey of the Day
           </h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            The conference is designed to take delegates on a clear and intentional journey.
+          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+            The conference is designed to take delegates on a clear and intentional journey — from framing the reality in the morning, to deepening the conversation at midday, to exploring pathways and possibilities in the afternoon.
           </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto">
-          <!-- Timeline -->
-          <div class="relative">
-            <!-- Timeline Line - left on mobile, center on desktop -->
-            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-blue-500 to-emerald-500"></div>
-
-            <!-- Morning -->
-            <div class="relative mb-12 md:mb-24">
-              <!-- Mobile dot -->
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-orange-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
-                    </svg>
-                    MORNING
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Framing the Reality</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">10:00 AM</p>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Registration and networking</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Opening keynote: the overseas pharmacist experience -data, lived reality, and workforce impact</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: workforce integration -what's working, what isn't, and what needs to change</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Midday -->
-            <div class="relative mb-12 md:mb-24">
-              <!-- Mobile dot -->
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <!-- Label - shown first on mobile, reordered on desktop -->
-                <div class="md:w-1/2 md:pl-8 md:order-2">
-                  <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    MIDDAY
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Deepening the Conversation</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">12:00 PM</p>
-                </div>
-                <!-- Content card -->
-                <div class="md:w-1/2 md:text-right md:pr-8 md:order-1">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Interactive sessions and facilitated discussions</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Cross-sector roundtable conversations</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Lunch and networking</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Afternoon -->
-            <div class="relative">
-              <!-- Mobile dot -->
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
-                    </svg>
-                    AFTERNOON
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Pathways and Possibilities</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">2:00 PM</p>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: employer, education, and policy perspectives</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Presentation of the Overseas Pharmacist Workforce Integration Pathway</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Open dialogue to test, challenge, and refine ideas</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Closing reflections, keynote, and next steps</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link
+              href="/programme"
+              class="group inline-flex items-center justify-center px-8 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
+            >
+              View Full Programme
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </Link>
+            <a
+              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
+              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
+            >
+              Get a Delegate Pass
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
           </div>
-        </div>
-
-        <!-- Mid-page CTA 2 -->
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-12 px-4 sm:px-0">
-          <a
-            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
-          >
-            Get a Delegate Pass
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-          <Link
-            href="/delegates"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
-          >
-            View Delegates
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-            </svg>
-          </Link>
-          <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
-          >
-            Partner With Us
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
         </div>
       </div>
     </section>

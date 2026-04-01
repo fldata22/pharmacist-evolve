@@ -34,6 +34,10 @@ Route::get('/conference', function () {
     return Inertia::render('Conference');
 })->name('conference');
 
+Route::get('/programme', function () {
+    return Inertia::render('Programme');
+})->name('programme');
+
 Route::get('/events', [EventController::class, 'index'])->name('events');
 
 Route::get('/about', function () {
