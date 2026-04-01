@@ -728,32 +728,28 @@
           </p>
         </div>
 
-        <!-- Sponsor -->
-        <div class="max-w-4xl mx-auto mb-14">
-          <h3 class="text-center text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">Sponsor</h3>
-          <div class="flex justify-center">
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-              <img src="/images/sponsors/revive-active.webp" alt="Revive Active" class="h-24 sm:h-28 w-auto object-contain" />
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-14">
+          <!-- Sponsor -->
+          <div class="text-center">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Sponsor</h3>
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
+              <img src="/images/sponsors/revive-active.webp" alt="Revive Active" class="h-20 sm:h-24 w-auto object-contain" />
             </div>
           </div>
-        </div>
 
-        <!-- Event Partner -->
-        <div class="max-w-4xl mx-auto mb-14">
-          <h3 class="text-center text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">Event Partner</h3>
-          <div class="flex justify-center">
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-              <img src="/images/sponsors/one-origin.png" alt="One Origin" class="h-16 sm:h-20 w-auto object-contain" />
+          <!-- Event Partner -->
+          <div class="text-center">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Event Partner</h3>
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
+              <img src="/images/sponsors/one-origin.png" alt="One Origin" class="h-14 sm:h-18 w-auto object-contain" />
             </div>
           </div>
-        </div>
 
-        <!-- Media Partner -->
-        <div class="max-w-4xl mx-auto mb-14">
-          <h3 class="text-center text-sm font-semibold uppercase tracking-widest text-gray-400 mb-8">Media Partner</h3>
-          <div class="flex justify-center">
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-              <img src="/images/sponsors/pharmacy-business.jpg" alt="Pharmacy Business" class="h-16 sm:h-20 w-auto object-contain" />
+          <!-- Media Partner -->
+          <div class="text-center">
+            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Media Partner</h3>
+            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
+              <img src="/images/sponsors/pharmacy-business.jpg" alt="Pharmacy Business" class="h-14 sm:h-18 w-auto object-contain" />
             </div>
           </div>
         </div>
