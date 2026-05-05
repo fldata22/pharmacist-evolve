@@ -1,779 +1,1283 @@
 <template>
   <AppLayout>
-    <!-- Hero Section -->
-    <section class="relative min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 overflow-hidden flex items-center">
-      <!-- Animated Background Elements -->
-      <div class="absolute inset-0">
-        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_rgba(249,115,22,0.15),_transparent_50%)]"></div>
-        <div class="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_right,_rgba(59,130,246,0.1),_transparent_50%)]"></div>
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-orange-500 rounded-full opacity-[0.07] blur-[100px] animate-pulse"></div>
-        <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500 rounded-full opacity-[0.07] blur-[100px] animate-pulse" style="animation-delay: 1s"></div>
-        <!-- Grid Pattern -->
-        <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 60px 60px;"></div>
-      </div>
+    <div class="conference-page palette-heritage type-editorial">
 
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-32">
-        <div class="text-center">
-          <!-- Event Badge -->
-          <div class="inline-flex items-center px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-orange-500/20 to-amber-500/20 border border-orange-500/30 text-orange-300 text-xs sm:text-sm font-semibold mb-6 sm:mb-8 backdrop-blur-sm">
-            <span class="w-2 h-2 bg-orange-400 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
-            23rd May 2026 &middot; Warwick, UK
-          </div>
-
-          <!-- Main Headline -->
-          <h1 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-white mb-4 sm:mb-6 leading-[0.95] tracking-tight">
-            <span class="block">Catalyst</span>
-            <span class="block bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">Conference</span>
-            <span class="block text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-300 mt-3 sm:mt-4">2026</span>
-          </h1>
-
-          <!-- Tagline -->
-          <p class="text-lg sm:text-2xl lg:text-3xl font-light text-gray-300 mb-3 sm:mb-4 max-w-4xl mx-auto leading-relaxed px-2">
-            Shaping the Future of Overseas Pharmacist Workforce Integration
-          </p>
-
-          <!-- Theme -->
-          <div class="flex items-center justify-center gap-2 sm:gap-3 text-base sm:text-lg text-orange-400 font-semibold mb-8 sm:mb-10">
-            <span class="w-6 sm:w-8 h-px bg-orange-500/50"></span>
-            Empower &middot; Evolve &middot; Excel
-            <span class="w-6 sm:w-8 h-px bg-orange-500/50"></span>
-          </div>
-
-          <!-- Description -->
-          <p class="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-2">
-            Catalyst is the UK's first dedicated conference focused exclusively on workforce
-            integration for overseas-trained pharmacists. Bringing together frontline professionals
-            and decision-makers to transform lived experience into actionable reform.
-          </p>
-          <div class="text-left max-w-2xl mx-auto mb-6 mt-4">
-            <p class="text-base sm:text-lg text-gray-300 mb-5 font-semibold">Delegates will leave with:</p>
-            <ul class="space-y-4 text-base sm:text-lg text-gray-400">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Strategic clarity on how integration actually works in practice</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Tools to influence, lead, and advocate within their organisations</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>Cross-sector relationships that unlock opportunity</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-400 flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span>A collective roadmap for building a more inclusive, high-performing pharmacy workforce</span>
-              </li>
-            </ul>
-          </div>
-          <p class="hidden">
-          </p>
-
-          <!-- Event Quick Details -->
-          <div class="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-3 sm:gap-4 lg:gap-6 mb-8 sm:mb-12">
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
-              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              <span class="text-xs sm:text-sm font-medium">Warwick, UK</span>
+      <!-- ============================================================ -->
+      <!-- 1. HERO (Variant A — Editorial split, dark navy)             -->
+      <!-- ============================================================ -->
+      <header class="hero hero-A" id="top">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="meta-row">
+                <span class="dot"></span>
+                <span>23 May 2026</span>
+                <span>&middot;</span>
+                <span>Warwick, UK</span>
+              </div>
+              <h1 class="display">
+                Catalyst<br /><em>Conference</em>
+              </h1>
             </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
-              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              <span class="text-xs sm:text-sm font-medium">10 AM &ndash; 4:30 PM</span>
-            </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
-              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-              <span class="text-xs sm:text-sm font-medium">100&ndash;120 Delegates</span>
-            </div>
-            <div class="flex items-center gap-2 text-gray-300 bg-white/5 backdrop-blur-sm rounded-xl px-3 sm:px-5 py-2.5 sm:py-3 border border-white/10">
-              <svg class="w-4 sm:w-5 h-4 sm:h-5 text-orange-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
-              </svg>
-              <span class="text-xs sm:text-sm font-medium">Panels &middot; Workshops</span>
+            <div>
+              <p class="lede">
+                Shaping the future of <em>overseas pharmacist</em> workforce integration. Catalyst is the UK's first dedicated conference focused exclusively on workforce integration for overseas-trained pharmacists.
+              </p>
+              <div class="actions">
+                <a
+                  href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator"
+                  target="_blank"
+                  class="btn btn-primary"
+                >
+                  Get a delegate pass &rarr;
+                </a>
+                <Link href="/programme" class="btn btn-on-dark">View the day</Link>
+              </div>
             </div>
           </div>
 
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="label">Date</div>
+              <div class="value">23 May</div>
+            </div>
+            <div class="hero-stat">
+              <div class="label">Hours</div>
+              <div class="value">10&ndash;16:30</div>
+            </div>
+            <div class="hero-stat">
+              <div class="label">Delegates</div>
+              <div class="value">100&ndash;120</div>
+            </div>
+            <div class="hero-stat">
+              <div class="label">Format</div>
+              <div class="value">Panels &middot; Workshops</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============================================================ -->
+      <!-- 2. WHY — Folio 01                                            -->
+      <!-- ============================================================ -->
+      <section class="why" id="why">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">01 / The Purpose</span>
+            <div></div>
+          </div>
+          <div class="why-grid">
+            <div class="left">
+              <h2 class="display">Why the Catalyst Conference <em>exists.</em></h2>
+              <div class="why-quote">
+                The Pharmacist Evolve Catalyst Conference exists to change that.
+              </div>
+            </div>
+            <div class="right">
+              <p>
+                Overseas-trained pharmacists play a vital role in the UK pharmacy workforce. Yet too often their journey is shaped by <strong>fragmented support</strong>, <strong>unclear pathways</strong>, and <strong>inconsistent integration</strong> into practice.
+              </p>
+              <p>
+                Pharmacists are expected to adapt quickly, perform confidently, and contribute safely &mdash; while navigating cultural differences, system complexity, and professional uncertainty. Employers want workforce-ready pharmacists, educators want effective progression pathways, and policymakers want sustainable solutions &mdash; but these conversations rarely happen together, in the same room.
+              </p>
+              <p>
+                This conference creates space for <strong>honest dialogue</strong>, <strong>shared understanding</strong>, and <strong>practical collaboration</strong> &mdash; moving beyond surface-level discussions toward solutions that can be tested, refined, and scaled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 3. WHO — Folio 02                                            -->
+      <!-- ============================================================ -->
+      <section class="who" id="who">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">02 / Audience</span>
+            <div>
+              <h2 class="display">Who this conference is <em>for.</em></h2>
+              <p class="sub">If you care about building a safe, confident and well-supported pharmacy workforce &mdash; this conference is for you.</p>
+            </div>
+          </div>
+          <div class="who-grid">
+            <article v-for="(c, i) in whoCards" :key="i" class="who-card">
+              <div class="num">{{ c.num }}</div>
+              <h3>{{ c.title }}</h3>
+              <div class="body">{{ c.body }}</div>
+              <ul>
+                <li v-for="(p, j) in c.points" :key="j">{{ p }}</li>
+              </ul>
+            </article>
+          </div>
+          <div class="who-cta">
             <a
-              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 text-base sm:text-lg"
+              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator"
+              target="_blank"
+              class="btn btn-primary"
             >
-              Get a Delegate Pass
-              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-              </svg>
+              Get a delegate pass &rarr;
             </a>
-            <Link
-              href="/delegates"
-              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm border border-white/20 hover:border-white/40"
-            >
-              View Delegates
-              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-            </Link>
+            <Link href="/delegates" class="btn btn-ghost">View Delegates</Link>
             <a
               href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm"
+              class="btn btn-ghost"
             >
-              Partner With Us
-              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-              </svg>
+              Partner with us
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Scroll Indicator -->
-      <div class="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
-        <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-        </svg>
-      </div>
-    </section>
-
-    <!-- Why the Conference Exists -->
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-8 sm:mb-12">
-            <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">The Purpose</span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 sm:mb-8">
-              Why the Catalyst Conference Exists
-            </h2>
-          </div>
-
-          <div class="space-y-5 sm:space-y-6 text-base sm:text-lg text-gray-600 leading-relaxed">
-            <p>
-              Overseas-trained pharmacists play a vital role in the UK pharmacy workforce. Yet too often their
-              journey is shaped by <strong class="text-gray-900">fragmented support</strong>, <strong class="text-gray-900">unclear pathways</strong>,
-              and <strong class="text-gray-900">inconsistent integration</strong> into practice.
-            </p>
-            <p>
-              Pharmacists are expected to adapt quickly, perform confidently, and contribute safely -while
-              navigating cultural differences, system complexity, and professional uncertainty. Employers want
-              workforce-ready pharmacists, educators want effective progression pathways, and policymakers
-              want sustainable solutions -but these conversations rarely happen together, in the same room.
-            </p>
-            <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-2xl p-6 sm:p-8 border-l-4 border-orange-500 my-8 sm:my-10">
-              <p class="text-lg sm:text-xl font-semibold text-gray-900">
-                The Pharmacist Evolve Catalyst Conference exists to change that.
-              </p>
-            </div>
-            <p>
-              This conference creates space for <strong class="text-gray-900">honest dialogue</strong>,
-              <strong class="text-gray-900">shared understanding</strong>, and
-              <strong class="text-gray-900">practical collaboration</strong> -moving beyond surface-level
-              discussions toward solutions that can be tested, refined, and scaled.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Who This Conference Is For -->
-    <section class="py-16 sm:py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Audience</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Who This Conference Is For
-          </h2>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Pharmacists -->
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-500 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 7l-9-5 9-5 9 5-9 5z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Overseas-Trained & Early Career Pharmacists</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Post-OSPAP pharmacists navigating UK practice</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Pharmacists in foundation training or early career roles</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Those seeking clarity, confidence, and sustainable career progression</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Employers -->
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Employers & Pharmacy Leaders</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Pharmacy owners and superintendents</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">PCN, GP, and NHS pharmacy leaders</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Workforce, education, and inclusion leads</span>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Educators -->
-          <div class="group bg-white rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-emerald-200 relative overflow-hidden">
-            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-500 to-teal-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-            <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
-              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Educators, Regulators & Industry Partners</h3>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Universities and training providers</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Professional bodies and sector organisations</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-                <span class="text-gray-600">Industry partners invested in workforce development and quality</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Closing statement -->
-        <div class="text-center mt-12">
-          <p class="text-xl text-gray-700 font-medium">
-            If you care about building a <strong class="text-orange-600">safe, confident, and well-supported pharmacy workforce</strong>, this conference is for you.
-          </p>
-        </div>
-
-        <!-- Mid-page CTA -->
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-10 px-4 sm:px-0">
-          <a
-            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
-          >
-            Get a Delegate Pass
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-          <Link
-            href="/delegates"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
-          >
-            View Delegates
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-            </svg>
-          </Link>
-          <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-orange-500/30 text-orange-600 font-bold rounded-xl hover:bg-orange-50 hover:border-orange-500/50 transition-all duration-300 text-base sm:text-lg"
-          >
-            Partner With Us
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- What Makes It Different -->
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Our Approach</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            What Makes the Catalyst Conference Different
-          </h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            This is not a traditional CPD event.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 max-w-5xl mx-auto">
-          <!-- Lived Experience -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center mb-5">
-                <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Lived Experience at the Centre</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Real insights from overseas pharmacists who have navigated the system -not just theoretical perspectives.
-              </p>
+      <!-- ============================================================ -->
+      <!-- 4. DIFFERENT — Folio 03 (bento, dark navy)                  -->
+      <!-- ============================================================ -->
+      <section class="diff" id="approach">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">03 / What Makes It Different</span>
+            <div>
+              <h2 class="display">What makes the Catalyst Conference <em>different.</em></h2>
             </div>
           </div>
-
-          <!-- Practical -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mb-5">
-                <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Practical, Not Performative</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Conversations grounded in what works, what doesn't, and why.
-              </p>
-            </div>
-          </div>
-
-          <!-- Cross-Sector -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center mb-5">
-                <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Cross-Sector Collaboration</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Pharmacists, employers, educators, policymakers, and industry partners in the same room, engaging in shared problem-solving.
-              </p>
-            </div>
-          </div>
-
-          <!-- Solutions -->
-          <div class="relative bg-gradient-to-br from-gray-900 to-slate-800 rounded-2xl p-6 sm:p-8 text-white overflow-hidden group">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500"></div>
-            <div class="relative">
-              <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mb-5">
-                <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-3">Solutions-Focused</h3>
-              <p class="text-gray-300 leading-relaxed">
-                Moving from problem identification toward actionable pathways and pilot-ready ideas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Programme CTA -->
-    <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto text-center">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Agenda</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            The Journey of the Day
-          </h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            The conference is designed to take delegates on a clear and intentional journey — from framing the reality in the morning, to deepening the conversation at midday, to exploring pathways and possibilities in the afternoon.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Link
-              href="/programme"
-              class="group inline-flex items-center justify-center px-8 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
+          <div class="diff-grid">
+            <article
+              v-for="(c, i) in diffCards"
+              :key="i"
+              :class="['diff-card', `span-${c.span}`, c.featured ? 'featured' : '']"
             >
-              View Full Programme
-              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-              </svg>
-            </Link>
+              <div class="glyph">{{ c.glyph }}</div>
+              <div class="num">{{ c.num }}</div>
+              <h3>{{ c.title }}</h3>
+              <p>{{ c.body }}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- 5. JOURNEY — Folio 04 (CTA only)                            -->
+      <!-- ============================================================ -->
+      <section class="journey-cta" id="programme">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">04 / Agenda</span>
+            <div>
+              <h2 class="display">The journey of <em>the day.</em></h2>
+              <p class="sub">The conference is designed to take delegates on a clear and intentional journey &mdash; from framing the reality in the morning, to deepening the conversation at midday, to exploring pathways and possibilities in the afternoon.</p>
+            </div>
+          </div>
+          <div class="journey-strip">
+            <div v-for="(slot, i) in programmeSlots" :key="i" class="journey-slot">
+              <div class="time">{{ slot.time }}</div>
+              <div class="phase">{{ slot.phase }}</div>
+              <p>{{ slot.description }}</p>
+            </div>
+          </div>
+          <div class="who-cta">
+            <Link href="/programme" class="btn btn-primary">Read the full programme &rarr;</Link>
             <a
-              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-              class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition-all duration-300 text-base sm:text-lg"
+              href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator"
+              target="_blank"
+              class="btn btn-ghost"
             >
-              Get a Delegate Pass
-              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-              </svg>
+              Get a delegate pass
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Workforce Integration Pathway -->
-    <section class="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_center,_rgba(249,115,22,0.08),_transparent_60%)]"></div>
-      </div>
-
-      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-400 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Centrepiece</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            From Insight to Action
-          </h2>
-          <h3 class="text-xl sm:text-2xl lg:text-3xl font-light text-gray-300 mb-6 sm:mb-8">
-            The Workforce Integration Pathway
-          </h3>
-          <p class="text-base sm:text-lg text-gray-400 leading-relaxed">
-            A central feature of the Catalyst Conference is the introduction of the
-            <strong class="text-white">Overseas Pharmacist Workforce Integration Pathway</strong> -
-            bringing together insights from lived experience, employer needs, education
-            frameworks, and workforce priorities.
-          </p>
-        </div>
-
-        <!-- Pathway Steps -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto mb-10 sm:mb-16">
-          <div class="text-center group">
-            <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-amber-500 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-300">
-              <span class="text-2xl font-bold text-white">1</span>
+      <!-- ============================================================ -->
+      <!-- 6. PATHWAY — Folio 05 (dark navy)                            -->
+      <!-- ============================================================ -->
+      <section class="pathway" id="pathway">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">05 / Centrepiece</span>
+            <div>
+              <h2 class="display">From insight to <em>action.</em></h2>
+              <p class="sub">A central feature of the Catalyst Conference is the introduction of the Overseas Pharmacist Workforce Integration Pathway &mdash; bringing together insights from lived experience, employer needs, education frameworks, and workforce priorities.</p>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">Pre-OSPAP</h4>
-            <p class="text-gray-400">Preparation and readiness support</p>
           </div>
-          <div class="text-center group">
-            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-300">
-              <span class="text-2xl font-bold text-white">2</span>
+          <div class="pathway-rail">
+            <div v-for="(s, i) in pathwayStages" :key="i" class="pathway-step">
+              <div class="dot">{{ s.num }}</div>
+              <h3>{{ s.label }}</h3>
+              <p>{{ s.body }}</p>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">OSPAP & Training</h4>
-            <p class="text-gray-400">Structured training support</p>
           </div>
-          <div class="text-center group">
-            <div class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform duration-300">
-              <span class="text-2xl font-bold text-white">3</span>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Post-Registration</h4>
-            <p class="text-gray-400">Integration and career progression</p>
-          </div>
-        </div>
-
-        <!-- Connecting Lines (decorative) -->
-        <div class="hidden md:flex items-center justify-center gap-4 max-w-2xl mx-auto mb-12">
-          <div class="flex-1 h-px bg-gradient-to-r from-transparent via-orange-500 to-blue-500"></div>
-          <div class="flex-1 h-px bg-gradient-to-r from-blue-500 via-emerald-500 to-transparent"></div>
-        </div>
-
-        <div class="max-w-3xl mx-auto space-y-6 text-center">
-          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-white/10">
-            <p class="text-gray-300 leading-relaxed text-base sm:text-lg">
-              This is not presented as a finished solution, but as a <strong class="text-orange-400">pilot framework</strong>
-              that invites collaboration, challenge, and shared ownership from across the sector.
+          <div class="pathway-callout">
+            <div class="pull">&ldquo;</div>
+            <p>
+              This is not presented as a finished solution, but as a <em>pilot framework</em> that invites collaboration, challenge, and shared ownership from across the sector. The Catalyst Conference marks the <em>beginning of wider collaboration</em>, not the end of the conversation.
             </p>
           </div>
-          <p class="text-xl font-semibold text-gray-200">
-            The Catalyst Conference marks the <span class="text-orange-400">beginning of wider collaboration</span>, not the end of the conversation.
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Speakers -->
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Voices</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Speakers & Contributors
-          </h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Speakers and contributors will include voices from across the pharmacy sector.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto mb-10 sm:mb-12">
-          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
-            <div class="w-16 h-16 bg-gradient-to-br from-orange-100 to-orange-200 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 7l-9-5 9-5 9 5-9 5z"/>
-              </svg>
+      <!-- ============================================================ -->
+      <!-- 7. SPEAKERS — Folio 06                                       -->
+      <!-- ============================================================ -->
+      <section class="speakers" id="speakers">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">06 / Voices</span>
+            <div>
+              <h2 class="display">Speakers &amp; <em>contributors.</em></h2>
+              <p class="sub">Speakers and contributors include voices from across the pharmacy sector.</p>
             </div>
-            <p class="font-semibold text-gray-900">Overseas-Trained Pharmacists</p>
           </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-              </svg>
-            </div>
-            <p class="font-semibold text-gray-900">Pharmacy Leaders & Employers</p>
+          <div class="speakers-grid">
+            <article v-for="(s, i) in speakers" :key="i" class="speaker-card">
+              <div class="photo">
+                <img :src="s.photo" :alt="s.name" loading="lazy" />
+                <span class="tag">{{ s.tag }}</span>
+              </div>
+              <h4>{{ s.name }}</h4>
+              <div class="role">{{ s.role }}</div>
+              <div class="topic">{{ s.topic }}</div>
+            </article>
           </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
-            <div class="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-              </svg>
-            </div>
-            <p class="font-semibold text-gray-900">Educators & Training Providers</p>
-          </div>
-          <div class="text-center bg-gray-50 rounded-2xl p-4 sm:p-6 border border-gray-100">
-            <div class="w-16 h-16 bg-gradient-to-br from-purple-100 to-purple-200 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
-              </svg>
-            </div>
-            <p class="font-semibold text-gray-900">Workforce & Policy Stakeholders</p>
+          <div class="speakers-note">
+            <span class="pulse"></span>
+            <span>
+              <strong>More speakers will be announced in the coming weeks.</strong>
+              Interested in contributing or participating in the conversation?
+              <a href="mailto:faithadebimpe@pharmacistevolve.com">Get in touch &rarr;</a>
+            </span>
           </div>
         </div>
+      </section>
 
-        <div class="text-center">
-          <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-800 px-6 py-3 rounded-xl border border-amber-200">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-            <span class="font-semibold">Full speaker announcements coming soon.</span>
+      <!-- ============================================================ -->
+      <!-- 8. PARTNERS — Folio 07                                       -->
+      <!-- ============================================================ -->
+      <section class="partners" id="partners">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">07 / Collaborate</span>
+            <div>
+              <h2 class="display">Partners &amp; <em>sponsors.</em></h2>
+              <p class="sub">The partners and sponsors of the Catalyst Conference are more than event supporters &mdash; they are contributors to meaningful workforce conversations and solutions.</p>
+            </div>
           </div>
-          <p class="mt-6 text-gray-600 italic">
-            Interested in contributing or participating in the conversation?
-            <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-orange-600 hover:text-orange-700 font-medium underline underline-offset-2">
-              Please get in touch.
+          <div class="partner-tier">
+            <div class="tier-label">Headline Partners</div>
+            <div class="partner-row headline">
+              <div v-for="(p, i) in partners" :key="i" class="partner-card">
+                <div class="partner-tier-tag">{{ p.tier }}</div>
+                <img :src="p.logo" :alt="p.name" :class="['partner-logo', p.heightClass]" />
+              </div>
+            </div>
+          </div>
+          <div class="partner-cta-row">
+            <a
+              href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
+              class="btn btn-primary"
+            >
+              Discuss partnership opportunities &rarr;
             </a>
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Partners & Sponsors -->
-    <section class="py-16 sm:py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Collaborate</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Partners & Sponsors
-          </h2>
-          <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Partners and sponsors of the Catalyst Conference are more than event supporters -they are
-            contributors to meaningful workforce conversations and solutions.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-14">
-          <!-- Sponsor -->
-          <div class="text-center">
-            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Sponsor</h3>
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
-              <img src="/images/sponsors/revive-active.webp" alt="Revive Active" class="h-20 sm:h-24 w-auto object-contain" />
-            </div>
-          </div>
-
-          <!-- Event Partner -->
-          <div class="text-center">
-            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Event Partner</h3>
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
-              <img src="/images/sponsors/one-origin.png" alt="One Origin" class="h-14 sm:h-18 w-auto object-contain" />
-            </div>
-          </div>
-
-          <!-- Media Partner -->
-          <div class="text-center">
-            <h3 class="text-sm font-semibold uppercase tracking-widest text-gray-400 mb-6">Media Partner</h3>
-            <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex items-center justify-center h-40">
-              <img src="/images/sponsors/pharmacy-business.jpg" alt="Pharmacy Business" class="h-14 sm:h-18 w-auto object-contain" />
-            </div>
           </div>
         </div>
+      </section>
 
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="inline-flex items-center justify-center px-8 py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-gray-800 transition-colors duration-200 text-lg"
-          >
-            Discuss Partnership Opportunities
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Practical Information -->
-    <section class="py-16 sm:py-24 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-10 sm:mb-16">
-          <span class="inline-block text-orange-600 font-semibold text-sm uppercase tracking-widest mb-3 sm:mb-4">Details</span>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Practical Information
-          </h2>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-5xl mx-auto">
-          <!-- Venue -->
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-4 sm:p-6 border border-orange-100 text-center">
-            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
-              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
+      <!-- ============================================================ -->
+      <!-- 9. PRACTICAL — Folio 08                                      -->
+      <!-- ============================================================ -->
+      <section class="practical" id="practical">
+        <div class="container">
+          <div class="section-head">
+            <span class="num">08 / Details</span>
+            <div>
+              <h2 class="display">Practical <em>information.</em></h2>
             </div>
-            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Venue</h4>
-            <p class="text-gray-600 text-xs sm:text-sm">The Slate Conferences, Warwick CV4 7SH</p>
           </div>
-
-          <!-- Accessibility -->
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-4 sm:p-6 border border-blue-100 text-center">
-            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
-              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-              </svg>
-            </div>
-            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Accessibility</h4>
-            <p class="text-gray-600 text-xs sm:text-sm">Fully accessible. Contact us with any requirements.</p>
+          <div class="practical-grid">
+            <article v-for="(c, i) in practicalInfo" :key="i" class="practical-card">
+              <div class="glyph">{{ c.glyph }}</div>
+              <h4>{{ c.title }}</h4>
+              <p>{{ c.body }}</p>
+            </article>
           </div>
-
-          <!-- Catering -->
-          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-4 sm:p-6 border border-emerald-100 text-center">
-            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
-              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-            </div>
-            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Catering</h4>
-            <p class="text-gray-600 text-xs sm:text-sm">All dietary requirements accommodated.</p>
-          </div>
-
-          <!-- Tickets -->
-          <div class="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-4 sm:p-6 border border-purple-100 text-center">
-            <div class="w-10 sm:w-14 h-10 sm:h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4 shadow-sm">
-              <svg class="w-5 sm:w-7 h-5 sm:h-7 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/>
-              </svg>
-            </div>
-            <h4 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Tickets</h4>
-            <p class="text-gray-600 text-xs sm:text-sm">Get your delegate pass now via Eventbrite.</p>
+          <div class="practical-contact">
+            For enquiries, please contact
+            <a href="mailto:faithadebimpe@pharmacistevolve.com">faithadebimpe@pharmacistevolve.com</a>
           </div>
         </div>
+      </section>
 
-        <div class="text-center mt-10">
-          <p class="text-gray-600">
-            For enquiries, please contact:
-            <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-orange-600 hover:text-orange-700 font-semibold underline underline-offset-2">
-              faithadebimpe@pharmacistevolve.com
-            </a>
-          </p>
+      <!-- ============================================================ -->
+      <!-- 10. ABOUT BAND                                               -->
+      <!-- ============================================================ -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-inner">
+            <h3>About Pharmacist Evolve</h3>
+            <p>
+              Pharmacist Evolve is a platform dedicated to supporting overseas-trained pharmacists to integrate, progress and thrive within the UK workforce. Through coaching, community, advocacy and strategic collaboration, Pharmacist Evolve works to turn complexity into clarity &mdash; supporting both individual pharmacists and the wider systems they work within.
+            </p>
+            <Link href="/about" class="link">Learn more about Pharmacist Evolve &rarr;</Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About Pharmacist Evolve -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">About Pharmacist Evolve</h3>
-        <p class="text-lg text-gray-600 leading-relaxed mb-6">
-          Pharmacist Evolve is a platform dedicated to supporting overseas-trained pharmacists to
-          integrate, progress, and thrive within the UK workforce. Through coaching, community, advocacy,
-          and strategic collaboration, Pharmacist Evolve works to turn complexity into clarity -
-          supporting both individual pharmacists and the wider systems they work within.
-        </p>
-        <Link href="/about" class="text-orange-600 hover:text-orange-700 font-semibold inline-flex items-center gap-2">
-          Learn more about Pharmacist Evolve
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-          </svg>
-        </Link>
-      </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_rgba(249,115,22,0.12),_transparent_50%)]"></div>
-        <div class="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_bottom_left,_rgba(59,130,246,0.08),_transparent_50%)]"></div>
-      </div>
-
-      <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-          Be Part of the Conversation
-        </h2>
-        <p class="text-base sm:text-xl text-gray-300 mb-3 sm:mb-4 leading-relaxed max-w-3xl mx-auto">
-          The future of the pharmacy workforce will be shaped by the conversations we are willing to have
-          and the actions we are willing to test.
-        </p>
-        <p class="text-base sm:text-xl text-gray-300 mb-8 sm:mb-12 leading-relaxed max-w-3xl mx-auto">
-          Join us at the Pharmacist Evolve Catalyst Conference and be part of building a more
-          <strong class="text-white">confident, supported, and sustainable workforce</strong>.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">
-          <a
-            href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator" target="_blank"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-xl hover:from-orange-600 hover:to-amber-600 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-orange-500/25 text-base sm:text-lg"
-          >
-            Get a Delegate Pass
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
-          <Link
-            href="/delegates"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 bg-white/10 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300 text-base sm:text-lg backdrop-blur-sm border border-white/20 hover:border-white/40"
-          >
-            View Delegates
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-            </svg>
-          </Link>
-          <a
-            href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
-            class="group inline-flex items-center justify-center px-6 sm:px-10 py-3.5 sm:py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/40 transition-all duration-300 text-base sm:text-lg"
-          >
-            Partner With Us
-            <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-            </svg>
-          </a>
+      <!-- ============================================================ -->
+      <!-- 11. FINAL CTA                                                -->
+      <!-- ============================================================ -->
+      <section class="final" id="final">
+        <div class="container">
+          <div class="final-inner">
+            <h2 class="display">Be part of the <em>conversation.</em></h2>
+            <p>
+              The future of the pharmacy workforce will be shaped by the conversations we are willing to have and the actions we are willing to test.
+            </p>
+            <p>
+              Join us at the Pharmacist Evolve Catalyst Conference and be part of building a more <strong>confident, supported, and sustainable workforce</strong>.
+            </p>
+            <div class="actions">
+              <a
+                href="https://www.eventbrite.co.uk/e/pharmacist-evolve-the-catalyst-conference-2026-tickets-1983275923676?aff=oddtdtcreator"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                Get a delegate pass &rarr;
+              </a>
+              <Link href="/delegates" class="btn btn-on-dark">View Delegates</Link>
+              <a
+                href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Partnership Enquiry"
+                class="btn btn-on-dark"
+              >
+                Partner with us
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+    </div>
   </AppLayout>
 </template>
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue'
 import { Link } from '@inertiajs/vue3'
+
+const whoCards = [
+  {
+    num: '01',
+    title: 'Overseas-trained & early career pharmacists',
+    body: 'For pharmacists who have completed OSPAP, navigating early-career UK practice, or recently registered.',
+    points: [
+      'Post-OSPAP pharmacists navigating UK practice',
+      'Pharmacists in foundation training or early career roles',
+      'Those seeking clarity, confidence, and sustainable career progression',
+    ],
+  },
+  {
+    num: '02',
+    title: 'Employers & pharmacy leaders',
+    body: 'For pharmacy owners and operational leaders integrating overseas-trained colleagues into UK teams.',
+    points: [
+      'Pharmacy owners and superintendents',
+      'PCN, GP, and NHS pharmacy leaders',
+      'Workforce, education, and inclusion leads',
+    ],
+  },
+  {
+    num: '03',
+    title: 'Educators, regulators & industry partners',
+    body: 'For those shaping curricula, policy and the pathways pharmacists travel through.',
+    points: [
+      'Universities and training providers',
+      'Professional bodies and sector organisations',
+      'Industry partners invested in workforce development and quality',
+    ],
+  },
+]
+
+const diffCards = [
+  { num: '01', span: 3, glyph: 'L', title: 'Lived experience at the centre', body: 'Real insights from overseas pharmacists who have navigated the system — not theoretical perspectives.' },
+  { num: '02', span: 3, glyph: 'P', title: 'Practical, not performative', body: 'Conversations grounded in what works, what doesn\'t, and why.' },
+  { num: '03', span: 4, featured: true, glyph: 'C', title: 'Cross-sector collaboration', body: 'Pharmacists, employers, educators and policymakers in one room, engaging in shared problem-solving.' },
+  { num: '04', span: 2, glyph: 'S', title: 'Solutions-focused', body: 'Moving from problem identification toward actionable pathways and pilot-ready ideas.' },
+]
+
+const programmeSlots = [
+  { time: '10:00', phase: 'Morning', description: 'Framing the reality.' },
+  { time: '12:30', phase: 'Midday', description: 'Deepening the conversation.' },
+  { time: '14:30', phase: 'Afternoon', description: 'Pathways and possibilities.' },
+]
+
+const pathwayStages = [
+  { num: '01', label: 'Pre-OSPAP', body: 'Preparation and readiness support.' },
+  { num: '02', label: 'OSPAP & training', body: 'Structured training support.' },
+  { num: '03', label: 'Post-registration', body: 'Integration and career progression.' },
+]
+
+const speakers = [
+  {
+    name: 'Tase Oputu',
+    role: 'President, Royal College of Pharmacy',
+    topic: 'Pharmacy\'s role in population health, equity and high-value medicines systems.',
+    tag: 'Keynote',
+    photo: '/images/speakers/tase-oputu.png',
+  },
+  {
+    name: 'Trevor Gore',
+    role: 'Honorary member, Royal Pharmaceutical Society',
+    topic: 'Beyond recruitment — psychological safety, belonging and workforce integration.',
+    tag: 'Speaker',
+    photo: '/images/speakers/trevor-gore.jpeg',
+  },
+  {
+    name: 'Nirusha Govender',
+    role: 'Strategic pharmacy & health systems leader, FRCPharm',
+    topic: 'Workforce transformation and inclusive integrated care — an OSPAP success story.',
+    tag: 'Speaker',
+    photo: '/images/speakers/nirusha-govender.jpeg',
+  },
+  {
+    name: 'Sobha Sharma Kandel',
+    role: 'Clinical pharmacist, founder of three London pharmacies, FRCPharm',
+    topic: 'Mentoring overseas pharmacists into UK practice; community health and inclusion.',
+    tag: 'Speaker',
+    photo: '/images/speakers/sobha-sharma-kandel.jpeg',
+  },
+  {
+    name: 'Nicola Stockmann',
+    role: 'Pharmacy Operations Manager, Hampshire Hospitals · Past-President, APTUK',
+    topic: 'Developing the whole pharmacy workforce — the technician profession in integrated care.',
+    tag: 'Speaker',
+    photo: '/images/speakers/nicola-stockmann.jpg',
+  },
+  {
+    name: 'Jawn Jiang',
+    role: 'Director, GM Graham Pharmacies · Independent Prescriber',
+    topic: 'Structured training environments for OSPAP candidates and emerging pharmacists.',
+    tag: 'Panel',
+    photo: '/images/speakers/jawn-jiang.png',
+  },
+  {
+    name: 'Bisola Sonoiki',
+    role: 'Prescribing pharmacist · ICB system-level work',
+    topic: 'Cross-sector integration — community, primary and secondary care working together.',
+    tag: 'Panel',
+    photo: '/images/speakers/bisola-sonoiki.png',
+  },
+  {
+    name: 'Gift Chukwuma',
+    role: 'Clinical pharmacist, community & digital pharmacy',
+    topic: 'A lived account of transitioning into UK practice as an overseas-trained pharmacist.',
+    tag: 'Lived experience',
+    photo: '/images/speakers/gift-chukwuma.jpg',
+  },
+  {
+    name: 'Ahmed Abdeldayem',
+    role: 'Rotational clinical pharmacist, University Hospital Southampton',
+    topic: 'Foundation training, prescribing safety, and supporting newly qualified pharmacists.',
+    tag: 'Workshop',
+    photo: '/images/speakers/ahmed-abdeldayem.jpeg',
+  },
+]
+
+const partners = [
+  { tier: 'Sponsor', name: 'Revive Active', logo: '/images/sponsors/revive-active.webp', heightClass: 'h-20 sm:h-24' },
+  { tier: 'Event partner', name: 'One Origin', logo: '/images/sponsors/one-origin.png', heightClass: 'h-14 sm:h-16' },
+  { tier: 'Media partner', name: 'Pharmacy Business', logo: '/images/sponsors/pharmacy-business.jpg', heightClass: 'h-14 sm:h-16' },
+]
+
+const practicalInfo = [
+  { glyph: 'VEN', title: 'Venue', body: 'The Slate Conferences, Warwick CV4 7SH.' },
+  { glyph: 'ACC', title: 'Accessibility', body: 'Fully accessible. Contact us with any requirements.' },
+  { glyph: 'CTR', title: 'Catering', body: 'All dietary requirements accommodated.' },
+  { glyph: 'TKT', title: 'Tickets', body: 'Get your delegate pass now via Eventbrite.' },
+]
 </script>
+
+<style scoped>
+/* ============================================================
+   Heritage palette — cream + dark navy + orange
+   Editorial typography — Instrument Serif italic display
+   ============================================================ */
+.conference-page {
+  /* Heritage palette (default) */
+  --bg: #f4efe6;
+  --bg-2: #ebe4d6;
+  --ink: #0c0f1a;
+  --ink-2: #1a1f2e;
+  --ink-mute: #4d5260;
+  --line: rgba(12, 15, 26, 0.12);
+  --line-strong: rgba(12, 15, 26, 0.22);
+  --accent: #ff5a1f;
+  --accent-ink: #ffffff;
+  --hero-bg: #0c0f1a;
+  --hero-ink: #f4efe6;
+  --hero-mute: rgba(244, 239, 230, 0.62);
+  --hero-line: rgba(244, 239, 230, 0.16);
+  --card: #ffffff;
+  --card-ink: #0c0f1a;
+
+  /* Type stacks */
+  --serif: 'Instrument Serif', 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  --display-family: var(--sans);
+  --display-style: normal;
+  --display-weight: 700;
+  --display-tracking: -0.04em;
+
+  /* Density (default) */
+  --section-py: clamp(80px, 10vw, 160px);
+  --gutter: clamp(20px, 2.5vw, 40px);
+  --card-pad: 28px;
+  --container: 1320px;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --shadow-sm: 0 1px 2px rgba(12, 15, 26, 0.04), 0 4px 14px rgba(12, 15, 26, 0.06);
+
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* universal box-sizing within page */
+.conference-page * { box-sizing: border-box; }
+.conference-page :deep(html) { scroll-behavior: smooth; }
+.conference-page img { max-width: 100%; display: block; }
+.conference-page button { font-family: inherit; cursor: pointer; }
+.conference-page a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ===== Display type ===== */
+.display {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  letter-spacing: var(--display-tracking);
+  line-height: 0.94;
+}
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-mute);
+}
+.eyebrow-accent { color: var(--accent); }
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, background 0.2s, color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { background: color-mix(in oklab, var(--accent), black 12%); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-strong); }
+.btn-ghost:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn-on-dark { background: transparent; color: var(--hero-ink); border-color: var(--hero-line); }
+.btn-on-dark:hover { background: var(--hero-ink); color: var(--hero-bg); }
+
+/* ===== Hero ===== */
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-ink);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(900px 500px at 18% -10%, color-mix(in oklab, var(--accent), transparent 78%), transparent 60%),
+    radial-gradient(700px 400px at 100% 110%, color-mix(in oklab, var(--accent), transparent 88%), transparent 60%);
+  pointer-events: none;
+}
+.hero .container { position: relative; }
+
+.hero-A .hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: end;
+  padding: clamp(60px, 10vw, 130px) 0 clamp(50px, 7vw, 90px);
+  position: relative;
+}
+.hero-A .meta-row {
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--hero-mute);
+  margin-bottom: 28px;
+}
+.hero-A .meta-row .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+.hero-A h1.display {
+  font-size: clamp(64px, 11vw, 168px);
+  margin: 0 0 10px;
+  letter-spacing: -0.025em;
+  line-height: 0.86;
+}
+.hero-A h1 em {
+  font-style: normal;
+  color: var(--accent);
+  font-weight: 700;
+}
+.hero-A .year {
+  font-family: var(--mono);
+  font-size: clamp(13px, 1vw, 14px);
+  letter-spacing: 0.5em;
+  color: var(--hero-mute);
+  margin-top: 6px;
+}
+.hero-A .lede {
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.45;
+  color: color-mix(in oklab, var(--hero-ink), transparent 18%);
+  max-width: 480px;
+  margin: 0 0 28px;
+}
+.hero-A .lede em { color: var(--accent); font-style: normal; font-weight: 600; }
+.hero-A .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-A .actions .btn-primary { padding: 16px 28px; }
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--hero-line);
+  padding-top: 28px;
+  margin-top: 60px;
+  margin-bottom: clamp(60px, 8vw, 100px);
+}
+.hero-stat { padding: 0 24px 0 0; border-right: 1px solid var(--hero-line); }
+.hero-stat:last-child { border-right: none; padding-right: 0; }
+.hero-stat .label {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--hero-mute);
+  margin-bottom: 8px;
+}
+.hero-stat .value {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 880px) {
+  .hero-A .hero-grid { grid-template-columns: 1fr; padding-bottom: 40px; }
+  .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .hero-stat { border-right: none; padding-right: 0; }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+
+/* ===== Section base ===== */
+.conference-page section { padding: var(--section-py) 0; position: relative; }
+.section-head {
+  display: grid; grid-template-columns: auto 1fr; gap: 16px;
+  align-items: baseline; margin-bottom: 64px;
+}
+.section-head .num {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.18em;
+  color: var(--accent); text-transform: uppercase;
+}
+.section-head h2 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  letter-spacing: -0.025em;
+  font-size: clamp(40px, 5.5vw, 76px);
+  line-height: 0.96;
+  margin: 0;
+  max-width: 18ch;
+}
+.section-head h2 em { color: var(--accent); font-style: normal; }
+.section-head .sub {
+  font-size: 16px; color: var(--ink-mute);
+  max-width: 520px; margin-top: 8px;
+}
+
+/* ===== WHY ===== */
+.why {
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: start;
+}
+.why-grid .left h2.display {
+  font-size: clamp(40px, 5.2vw, 76px);
+  margin: 0 0 24px;
+  line-height: 0.96;
+}
+.why-grid .left h2 em { color: var(--accent); font-style: normal; }
+.why-grid .right p {
+  font-size: 17px; line-height: 1.6;
+  color: var(--ink-mute);
+  margin: 0 0 18px;
+  max-width: 56ch;
+}
+.why-grid .right p:first-child::first-letter {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-size: 5em;
+  float: left;
+  line-height: 0.85;
+  margin: 6px 12px 0 0;
+  color: var(--accent);
+}
+.why-grid .right p strong { color: var(--ink); font-weight: 500; }
+
+.why-quote {
+  margin-top: 36px;
+  padding: 28px 32px;
+  border-left: 3px solid var(--accent);
+  background: color-mix(in oklab, var(--accent), transparent 92%);
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.why-quote .by {
+  display: block; margin-top: 12px;
+  font-family: var(--mono); font-style: normal;
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-mute);
+}
+@media (max-width: 880px) {
+  .why-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== WHO ===== */
+.who { background: var(--bg-2); }
+.who-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter);
+}
+.who-card {
+  background: var(--card);
+  color: var(--card-ink);
+  border-radius: var(--radius);
+  padding: var(--card-pad);
+  border: 1px solid var(--line);
+  display: flex; flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.who-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--accent);
+}
+.who-card .num {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--accent); margin-bottom: 28px;
+}
+.who-card h3 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(26px, 2.4vw, 34px);
+  line-height: 1.05;
+  margin: 0 0 18px;
+  letter-spacing: -0.02em;
+  max-width: 13ch;
+}
+.who-card .body { color: var(--ink-mute); font-size: 15px; line-height: 1.5; margin-bottom: 24px; }
+.who-card ul {
+  list-style: none; padding: 0; margin: 0;
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+}
+.who-card ul li {
+  font-size: 14px; padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex; gap: 10px; align-items: start;
+  color: var(--card-ink);
+}
+.who-card ul li:last-child { border-bottom: none; }
+.who-card ul li::before {
+  content: '→'; color: var(--accent); flex-shrink: 0;
+  font-family: var(--mono);
+}
+.who-cta {
+  display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+  margin-top: 56px;
+}
+@media (max-width: 880px) {
+  .who-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== DIFF (bento, dark) ===== */
+.diff { background: var(--hero-bg); color: var(--hero-ink); }
+.diff .section-head h2 { color: var(--hero-ink); }
+.diff .section-head .num { color: var(--accent); }
+.diff .section-head .sub { color: var(--hero-mute); }
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gutter);
+}
+.diff-card {
+  border-radius: var(--radius);
+  padding: var(--card-pad);
+  border: 1px solid var(--hero-line);
+  background: color-mix(in oklab, var(--hero-ink), transparent 96%);
+  position: relative;
+  overflow: hidden;
+  display: flex; flex-direction: column; gap: 14px;
+  min-height: 260px;
+  transition: transform 0.3s, border-color 0.3s, background 0.3s;
+}
+.diff-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--hero-ink), transparent 92%);
+}
+.diff-card .num {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--accent);
+}
+.diff-card h3 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(22px, 2vw, 28px);
+  margin: 0;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.diff-card p { color: var(--hero-mute); font-size: 14.5px; line-height: 1.5; margin: 0; flex-grow: 1; }
+.diff-card.span-3 { grid-column: span 3; }
+.diff-card.span-2 { grid-column: span 2; }
+.diff-card.span-4 { grid-column: span 4; min-height: 320px; }
+.diff-card.featured {
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+.diff-card.featured .num { color: var(--accent-ink); opacity: 0.7; }
+.diff-card.featured p { color: color-mix(in oklab, var(--accent-ink), transparent 18%); }
+.diff-card .glyph {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: color-mix(in oklab, var(--accent), transparent 75%);
+  border: 1px solid var(--hero-line);
+  display: grid; place-items: center;
+  color: var(--accent);
+  font-family: var(--mono); font-weight: 600; font-size: 14px;
+}
+.diff-card.featured .glyph {
+  background: color-mix(in oklab, var(--accent-ink), transparent 80%);
+  color: var(--accent-ink); border-color: var(--accent-ink);
+}
+@media (max-width: 1100px) {
+  .diff-grid { grid-template-columns: repeat(2, 1fr); }
+  .diff-card.span-3, .diff-card.span-2, .diff-card.span-4 { grid-column: span 2; }
+}
+@media (max-width: 700px) {
+  .diff-grid { grid-template-columns: 1fr; }
+  .diff-card.span-3, .diff-card.span-2, .diff-card.span-4 { grid-column: span 1; }
+}
+
+/* ===== JOURNEY (CTA only) ===== */
+.journey-cta { background: var(--bg); }
+.journey-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: -16px; /* tighten to section-head */
+}
+.journey-slot {
+  padding: 28px 28px 28px 0;
+  border-right: 1px solid var(--line);
+}
+.journey-slot:last-child { border-right: none; padding-right: 0; }
+.journey-slot:not(:first-child) { padding-left: 28px; }
+.journey-slot .time {
+  font-family: var(--mono);
+  font-size: clamp(28px, 3vw, 36px);
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.journey-slot .phase {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--accent);
+  margin-top: 4px; margin-bottom: 12px;
+}
+.journey-slot p { color: var(--ink-mute); font-size: 15px; line-height: 1.5; margin: 0; max-width: 36ch; }
+@media (max-width: 880px) {
+  .journey-strip { grid-template-columns: 1fr; }
+  .journey-slot { border-right: none; border-bottom: 1px solid var(--line); padding: 24px 0 !important; }
+  .journey-slot:last-child { border-bottom: none; }
+}
+
+/* ===== PATHWAY (dark) ===== */
+.pathway { background: var(--hero-bg); color: var(--hero-ink); }
+.pathway .section-head h2 { color: var(--hero-ink); }
+.pathway .section-head .num { color: var(--accent); }
+.pathway .section-head .sub { color: var(--hero-mute); }
+.pathway-rail {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 28px;
+}
+.pathway-rail::before {
+  content: '';
+  position: absolute; left: 8%; right: 8%; top: 36px;
+  height: 1px; background: var(--hero-line);
+}
+.pathway-step {
+  position: relative;
+  padding: 0 24px;
+  border-right: 1px solid var(--hero-line);
+}
+.pathway-step:last-child { border-right: none; }
+.pathway-step .dot {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: var(--hero-bg);
+  border: 1px solid var(--hero-line);
+  display: grid; place-items: center;
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-size: 32px;
+  color: var(--accent);
+  margin: 0 auto 36px;
+  position: relative; z-index: 1;
+  transition: all 0.3s;
+}
+.pathway-step:hover .dot {
+  background: var(--accent); color: var(--accent-ink);
+  border-color: var(--accent);
+  transform: scale(1.05);
+}
+.pathway-step .label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--accent); text-transform: uppercase;
+  text-align: center; margin-bottom: 12px;
+}
+.pathway-step h3 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(24px, 2.2vw, 32px);
+  margin: 0 0 12px;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+.pathway-step p {
+  color: var(--hero-mute); font-size: 14.5px; line-height: 1.5;
+  margin: 0 auto; text-align: center; max-width: 32ch;
+}
+.pathway-callout {
+  margin-top: 80px;
+  padding: 32px clamp(28px, 4vw, 56px);
+  border: 1px solid var(--hero-line);
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: center;
+}
+.pathway-callout .pull {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 0.9; color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.pathway-callout p {
+  font-size: 17px; line-height: 1.5;
+  color: var(--hero-mute); margin: 0; max-width: 60ch;
+}
+.pathway-callout p em { font-style: normal; color: var(--hero-ink); font-weight: 500; }
+@media (max-width: 880px) {
+  .pathway-rail { grid-template-columns: 1fr; }
+  .pathway-rail::before { display: none; }
+  .pathway-step { border-right: none; border-bottom: 1px solid var(--hero-line); padding: 36px 0; }
+  .pathway-step:last-child { border-bottom: none; }
+  .pathway-callout { grid-template-columns: 1fr; gap: 18px; }
+}
+
+/* ===== SPEAKERS ===== */
+.speakers { background: var(--bg); }
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter);
+}
+.speaker-card {
+  background: var(--card);
+  color: var(--card-ink);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  padding: 20px;
+  display: flex; flex-direction: column;
+  transition: all 0.3s ease;
+}
+.speaker-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.speaker-card .photo {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  background: var(--bg-2);
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.speaker-card .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.speaker-card:hover .photo img { transform: scale(1.03); }
+.speaker-card .photo .tag {
+  position: absolute;
+  bottom: 12px; left: 12px;
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase;
+  background: var(--ink); color: var(--bg);
+  padding: 4px 10px; border-radius: 999px;
+  z-index: 1;
+}
+.speaker-card h4 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: 22px; margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+.speaker-card .role {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-mute);
+  margin-bottom: 12px;
+}
+.speaker-card .topic { font-size: 14px; color: var(--ink-mute); line-height: 1.4; }
+
+.speakers-note {
+  margin-top: 36px; padding: 18px 24px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius);
+  display: flex; align-items: center; gap: 14px;
+  font-size: 14px; color: var(--ink-mute);
+}
+.speakers-note strong { color: var(--ink); font-weight: 500; }
+.speakers-note a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+.speakers-note .pulse {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+  animation: pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@media (max-width: 880px) { .speakers-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .speakers-grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; } }
+
+/* ===== PARTNERS ===== */
+.partners { background: var(--bg-2); }
+.partner-tier { margin-bottom: 48px; }
+.partner-tier:last-child { margin-bottom: 0; }
+.partner-tier .tier-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--ink-mute); text-transform: uppercase;
+  margin-bottom: 16px;
+  display: flex; align-items: baseline; gap: 12px;
+}
+.partner-tier .tier-label::after {
+  content: ''; flex-grow: 1; height: 1px; background: var(--line);
+}
+.partner-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gutter);
+}
+.partner-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+  min-height: 160px;
+  position: relative;
+  transition: all 0.3s;
+}
+.partner-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+.partner-tier-tag {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em;
+  color: var(--ink-mute); text-transform: uppercase;
+}
+.partner-logo {
+  width: auto;
+  object-fit: contain;
+  flex: 1;
+}
+.partner-cta-row {
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 880px) {
+  .partner-row { grid-template-columns: 1fr; }
+}
+
+/* ===== PRACTICAL ===== */
+.practical { background: var(--bg); }
+.practical-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gutter);
+}
+.practical-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: var(--card-pad);
+  display: flex; flex-direction: column; gap: 12px;
+  min-height: 200px;
+  transition: all 0.3s;
+}
+.practical-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+.practical-card .glyph {
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em;
+  color: var(--accent); text-transform: uppercase;
+}
+.practical-card h4 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: 26px; margin: 0;
+  letter-spacing: -0.01em;
+}
+.practical-card p { font-size: 14px; color: var(--ink-mute); line-height: 1.5; margin: 0; }
+.practical-card .meta {
+  margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line);
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em;
+  color: var(--ink);
+}
+.practical-contact {
+  margin-top: 36px;
+  text-align: center; font-size: 14px; color: var(--ink-mute);
+}
+.practical-contact a {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+@media (max-width: 880px) { .practical-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .practical-grid { grid-template-columns: 1fr; } }
+
+/* ===== ABOUT ===== */
+.about { background: var(--bg-2); text-align: center; }
+.about-inner { max-width: 720px; margin: 0 auto; }
+.about h3 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(36px, 4.5vw, 56px);
+  margin: 16px 0 24px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.about p { font-size: 17px; line-height: 1.6; color: var(--ink-mute); margin: 0 0 20px; }
+.about .link {
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--accent);
+  border-bottom: 1px solid var(--accent); padding-bottom: 2px;
+  display: inline-block;
+}
+
+/* ===== FINAL CTA ===== */
+.final {
+  background: var(--hero-bg);
+  color: var(--hero-ink);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.final::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(800px 500px at 50% 100%, color-mix(in oklab, var(--accent), transparent 75%), transparent 70%);
+  pointer-events: none;
+}
+.final-inner { position: relative; max-width: 880px; margin: 0 auto; }
+.final h2 {
+  font-family: var(--display-family);
+  font-style: var(--display-style);
+  font-weight: var(--display-weight);
+  font-size: clamp(56px, 9vw, 130px);
+  line-height: 0.92;
+  margin: 16px 0 28px;
+  letter-spacing: -0.025em;
+}
+.final h2 em { color: var(--accent); font-style: normal; }
+.final p {
+  font-size: 18px; line-height: 1.55;
+  color: var(--hero-mute);
+  max-width: 560px; margin: 0 auto 36px;
+}
+.final .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .hero-A .meta-row .dot,
+  .speakers-note .pulse {
+    animation: none !important;
+  }
+  .conference-page * {
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
