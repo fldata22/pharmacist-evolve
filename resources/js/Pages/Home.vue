@@ -90,18 +90,10 @@
     </section>
 
     <!-- Floating Conference Banner -->
-    <Transition
-      enter-active-class="transition-all duration-500 ease-out"
-      enter-from-class="-translate-y-full opacity-0"
-      enter-to-class="translate-y-0 opacity-100"
-      leave-active-class="transition-all duration-300 ease-in"
-      leave-from-class="translate-y-0 opacity-100"
-      leave-to-class="-translate-y-full opacity-0"
+    <div
+      v-if="showBanner"
+      class="fixed top-0 left-0 right-0 z-50"
     >
-      <div
-        v-if="showBanner"
-        class="fixed top-0 left-0 right-0 z-50"
-      >
         <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm">
           <!-- Accent line -->
           <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
@@ -168,7 +160,7 @@
           </div>
         </div>
       </div>
-    </Transition>
+    <!-- /Floating Conference Banner -->
 
     <!-- Modern Features Section -->
     <section class="py-24 bg-white">
@@ -612,8 +604,10 @@ defineOptions({
   layout: null
 })
 
-// Conference banner
-const showBanner = ref(false)
+// Conference banner — visible by default, hidden once dismissed for the session
+const showBanner = ref(
+  typeof window === 'undefined' || !sessionStorage.getItem('conference-banner-dismissed')
+)
 
 const dismissBanner = () => {
   showBanner.value = false
@@ -658,16 +652,8 @@ const stopAutoSlide = () => {
   }
 }
 
-// Clean lifecycle management
 onMounted(() => {
   startAutoSlide()
-
-  // Show conference banner after a short delay if not dismissed this session
-  if (typeof window !== 'undefined' && !sessionStorage.getItem('conference-banner-dismissed')) {
-    setTimeout(() => {
-      showBanner.value = true
-    }, 2000)
-  }
 })
 
 onUnmounted(() => {
