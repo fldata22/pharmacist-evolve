@@ -14,7 +14,7 @@
           Programme
         </h1>
         <p class="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-          The conference is designed to take delegates on a clear and intentional journey.
+          A full day of conversations, panels, breakouts and reflection. From framing the reality in the morning to surfacing the pathway in the afternoon.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-400">
           <span class="inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
@@ -27,7 +27,7 @@
             <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            10:00 AM - 4:30 PM
+            09:00 to 17:00
           </span>
           <span class="inline-flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
             <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -40,124 +40,47 @@
       </div>
     </section>
 
-    <!-- Timeline -->
+    <!-- Agenda -->
     <section class="py-16 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-          <div class="relative">
-            <!-- Timeline Line -->
-            <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-orange-500 via-blue-500 to-emerald-500"></div>
-
-            <!-- Morning -->
-            <div class="relative mb-12 md:mb-24">
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-orange-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
-                    </svg>
-                    MORNING
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Framing the Reality</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">10:00 AM</p>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Registration and networking</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Opening keynote: the overseas pharmacist experience - data, lived reality, and workforce impact</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: workforce integration - what's working, what isn't, and what needs to change</span>
-                      </li>
-                    </ul>
-                  </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ol class="space-y-4">
+          <li
+            v-for="(slot, i) in programmeSlots"
+            :key="i"
+            class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-gray-100 grid md:grid-cols-[140px_1fr] gap-3 md:gap-8"
+          >
+            <div class="font-mono text-sm text-orange-600 font-medium pt-1 whitespace-nowrap">{{ slot.time }}</div>
+            <div>
+              <h3 class="text-lg sm:text-xl font-bold text-gray-900 leading-snug">{{ slot.title }}</h3>
+              <div v-if="slot.subtitle" class="text-sm italic text-gray-600 mt-1">{{ slot.subtitle }}</div>
+              <div v-if="slot.speaker" class="text-sm text-gray-800 mt-3 leading-relaxed">
+                <span class="font-mono text-[10px] uppercase tracking-widest text-orange-600 mr-2">Speaker</span>{{ slot.speaker }}
+              </div>
+              <div v-if="slot.panelists" class="mt-3">
+                <span class="font-mono text-[10px] uppercase tracking-widest text-orange-600">Panel</span>
+                <ul class="mt-2 space-y-1.5">
+                  <li
+                    v-for="(p, j) in slot.panelists"
+                    :key="j"
+                    class="text-sm text-gray-800 pl-4 relative before:content-[''] before:absolute before:left-0 before:top-2.5 before:w-2 before:h-px before:bg-orange-500"
+                  >{{ p }}</li>
+                </ul>
+                <div v-if="slot.moderator" class="mt-2 text-sm text-gray-800">
+                  <span class="font-mono text-[10px] uppercase tracking-widest text-orange-600 mr-2">Moderator</span>{{ slot.moderator }}
                 </div>
               </div>
+              <p v-if="slot.description" class="text-sm text-gray-600 mt-3 leading-relaxed max-w-2xl">{{ slot.description }}</p>
+              <ul v-if="slot.outputs" class="mt-3 flex flex-wrap gap-2">
+                <li
+                  v-for="(o, k) in slot.outputs"
+                  :key="k"
+                  class="font-mono text-[10px] uppercase tracking-widest px-2.5 py-1 border border-gray-200 rounded-full text-gray-700 bg-gray-50"
+                >{{ o }}</li>
+              </ul>
+              <p v-if="slot.note" class="text-xs italic text-gray-500 mt-3">{{ slot.note }}</p>
             </div>
-
-            <!-- Midday -->
-            <div class="relative mb-12 md:mb-24">
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-blue-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:pl-8 md:order-2">
-                  <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    MIDDAY
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Deepening the Conversation</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">12:00 PM</p>
-                </div>
-                <div class="md:w-1/2 md:text-right md:pr-8 md:order-1">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Interactive sessions and facilitated discussions</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Cross-sector roundtable conversations</span>
-                      </li>
-                      <li class="flex items-start gap-3 md:flex-row-reverse md:text-right">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Lunch and networking</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Afternoon -->
-            <div class="relative">
-              <div class="absolute left-4 -translate-x-1/2 w-4 h-4 md:w-6 md:h-6 bg-emerald-500 rounded-full border-2 md:border-4 border-white shadow-lg md:left-1/2 md:-translate-x-1/2 z-10"></div>
-              <div class="pl-10 md:pl-0 md:flex md:items-start md:gap-12">
-                <div class="md:w-1/2 md:text-right md:pr-8">
-                  <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-3 sm:px-4 py-1.5 rounded-full text-xs sm:text-sm font-bold mb-3 sm:mb-4">
-                    <svg class="w-3.5 sm:w-4 h-3.5 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
-                    </svg>
-                    AFTERNOON
-                  </div>
-                  <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Pathways and Possibilities</h3>
-                  <p class="text-sm text-gray-500 mb-3 sm:mb-4">2:00 PM</p>
-                </div>
-                <div class="md:w-1/2 md:pl-8">
-                  <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-gray-100">
-                    <ul class="space-y-3 sm:space-y-4">
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Panel discussion: employer, education, and policy perspectives</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Presentation of the Overseas Pharmacist Workforce Integration Pathway</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Open dialogue to test, challenge, and refine ideas</span>
-                      </li>
-                      <li class="flex items-start gap-3">
-                        <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
-                        <span class="text-sm sm:text-base text-gray-700">Closing reflections, keynote, and next steps</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ol>
 
         <!-- CTA -->
         <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-12 px-4 sm:px-0">
@@ -188,4 +111,78 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue'
 import { Link } from '@inertiajs/vue3'
+
+const programmeSlots = [
+  { time: '09:00–10:00', title: 'Arrival, registration & table orientation' },
+  { time: '10:00–10:15', title: 'Welcome & framing the day', speaker: 'Faith Adebimpe, Founder, Pharmacist Evolve' },
+  { time: '10:20–10:40', title: 'GPhC representation' },
+  {
+    time: '10:40–11:20',
+    title: 'Panel 1: What are we actually asking overseas pharmacists to do?',
+    subtitle: 'Lived experience meets the system.',
+    panelists: [
+      'Bisola Sonoiki, Clinical Portfolio Pharmacist, SW IPP Co-Chair',
+      'Ahmed Abdeldayem, Rotational Hospital Pharmacist (OSPAP)',
+      'Sobha Sharma Kandel, Pharmacy Director',
+      'Gift Chukwuma, Community Pharmacist (OSPAP)',
+    ],
+    moderator: 'Faith Adebimpe',
+  },
+  { time: '11:20–11:35', title: 'Break', note: 'Interested overseas pharmacists move to the CPPE breakout session.' },
+  {
+    time: '11:35–12:10',
+    title: 'Table breakouts: diagnosing the problem',
+    description: 'Each table is assigned a lens. Describe the problem as it exists, no solutions.',
+    outputs: ['Symptoms', 'Root causes', 'Who is most impacted'],
+  },
+  { time: '12:10–13:10', title: 'Lunch & networking · Exhibition' },
+  {
+    time: '13:15–13:35',
+    title: 'Keynote 2: Workforce risk & system impact',
+    subtitle: 'Integration as a safety, retention, and system issue.',
+    speaker: 'Trevor Gore, Founder, Maestro Consulting; Advisory Council, Institute for Collaborative Working',
+  },
+  {
+    time: '13:40–14:20',
+    title: 'Panel 2: If we accept the problem, what must change?',
+    panelists: [
+      'Tase Oputu, President, Royal College of Pharmacy',
+      'Jawn Jiang, Director, GM Graham Pharmacies; Pharmacist Independent Prescriber',
+      'Nirusha Govender, Strategic Pharmacy & Health Systems Leader, FRCPharm',
+      'Nicola Stockmann, Pharmacy Operations Manager, Past-President, APTUK',
+    ],
+    moderator: 'Angela Chiweshe',
+    note: 'Final 5–7 minutes, table task: "If nothing changes, what happens in 5 years?"',
+  },
+  { time: '14:30–14:45', title: 'Break' },
+  {
+    time: '14:45–15:10',
+    title: 'Pathway reveal: a provocation',
+    speaker: 'Faith Adebimpe, Founder, Pharmacist Evolve',
+    description: 'Introducing The Pharmacist Evolve Workforce Integration Pathway v0.1. Framed as a hypothesis, not a solution. An invitation to challenge.',
+  },
+  {
+    time: '15:10–15:35',
+    title: 'Table clinics: test the pathway',
+    description: 'Each table is assigned a stage of the pathway.',
+    outputs: ['Keep', 'Change', 'Risk', 'Opportunity'],
+  },
+  {
+    time: '15:35–15:45',
+    title: 'Collective reflection',
+    description: 'Each table shares one hard truth and one condition for success. Faith synthesises.',
+  },
+  {
+    time: '15:45–16:00',
+    title: 'Final keynote: workforce ally perspective',
+    speaker: 'Nicola Stockmann, Pharmacy Operations Manager, Past-President, APTUK',
+  },
+  {
+    time: '16:00–16:10',
+    title: 'Closing: what happens next',
+    speaker: 'Faith Adebimpe, Founder, Pharmacist Evolve',
+    description: 'What changed today. What happens next: pilots, advisory, report. An invitation to collaborate.',
+  },
+  { time: '16:10–17:00', title: 'Networking' },
+]
 </script>
