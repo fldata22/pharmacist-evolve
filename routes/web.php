@@ -9,6 +9,8 @@ use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\WaitlistController;
 use App\Http\Controllers\DelegateController;
+use App\Http\Controllers\ProgrammeInterestController;
+use App\Http\Controllers\EmployerEnquiryController;
 use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -29,6 +31,26 @@ Route::get('/services/ospap-coaching', function () {
 Route::get('/services/workforce-integration', function () {
     return Inertia::render('Services/WorkforceIntegration');
 })->name('services.workforce-integration');
+
+// Two core service pages: individuals (Transition Programme) and employers
+// (Integration Partnership). Each has a public enquiry form.
+Route::get('/for-pharmacists', function () {
+    return Inertia::render('ForPharmacists');
+})->name('for-pharmacists');
+
+Route::post('/for-pharmacists/register-interest', [ProgrammeInterestController::class, 'store'])
+    ->name('for-pharmacists.register-interest');
+
+Route::get('/for-employers', function () {
+    return Inertia::render('ForEmployers');
+})->name('for-employers');
+
+Route::post('/for-employers/enquire', [EmployerEnquiryController::class, 'store'])
+    ->name('for-employers.enquire');
+
+Route::get('/resources', function () {
+    return Inertia::render('Resources');
+})->name('resources');
 
 Route::get('/conference', function () {
     return Inertia::render('Conference');
