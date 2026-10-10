@@ -89,79 +89,6 @@
       </div>
     </section>
 
-    <!-- Floating Conference Banner -->
-    <div
-      v-if="showBanner"
-      class="fixed top-0 left-0 right-0 z-50"
-    >
-        <div class="bg-gradient-to-r from-gray-900 via-slate-800 to-gray-900 border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.3)] backdrop-blur-sm">
-          <!-- Accent line -->
-          <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500 to-transparent"></div>
-
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex items-center justify-between gap-4 sm:gap-6">
-              <!-- Left: Info -->
-              <div class="flex items-center gap-4 min-w-0 flex-1">
-                <!-- Icon/Date block -->
-                <div class="hidden sm:flex flex-shrink-0 w-14 h-14 bg-gradient-to-br from-orange-500 to-amber-500 rounded-xl items-center justify-center shadow-lg shadow-orange-500/20">
-                  <div class="text-center leading-none">
-                    <div class="text-[10px] font-bold text-orange-100 uppercase">May</div>
-                    <div class="text-lg font-extrabold text-white">23</div>
-                  </div>
-                </div>
-
-                <div class="min-w-0">
-                  <div class="flex items-center gap-2 mb-0.5">
-                    <span class="inline-flex items-center px-2 py-0.5 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-300 text-[10px] font-bold uppercase tracking-wider">
-                      <span class="w-1 h-1 bg-orange-400 rounded-full mr-1.5 animate-pulse"></span>
-                      Upcoming
-                    </span>
-                  </div>
-                  <h3 class="text-white font-extrabold text-base sm:text-lg leading-tight truncate">
-                    Catalyst Conference <span class="text-orange-400">2026</span>
-                  </h3>
-                  <p class="text-gray-400 text-xs sm:text-sm truncate">
-                    Warwick, UK &middot; 100&ndash;120 Delegates &middot; Panels, Workshops & Strategy
-                  </p>
-                </div>
-              </div>
-
-              <!-- Right: CTAs + Close -->
-              <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
-                <Link
-                  href="/conference"
-                  class="group inline-flex items-center justify-center px-4 sm:px-6 py-2.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-bold rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all duration-200 shadow-lg shadow-orange-500/20 text-xs sm:text-sm whitespace-nowrap"
-                >
-                  Learn More
-                  <svg class="w-3.5 h-3.5 ml-1.5 group-hover:translate-x-0.5 transition-transform hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                  </svg>
-                </Link>
-
-                <a
-                  href="mailto:faithadebimpe@pharmacistevolve.com?subject=Catalyst Conference 2026 - Register Interest"
-                  class="hidden md:inline-flex items-center justify-center px-5 py-2.5 border border-white/20 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/30 transition-all duration-200 text-xs sm:text-sm whitespace-nowrap"
-                >
-                  Register Interest
-                </a>
-
-                <!-- Close button -->
-                <button
-                  @click="dismissBanner"
-                  class="p-1.5 rounded-lg text-gray-500 hover:text-white hover:bg-white/10 transition-colors duration-200"
-                  aria-label="Dismiss banner"
-                >
-                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <!-- /Floating Conference Banner -->
-
     <!-- Modern Features Section -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -603,18 +530,6 @@ import Logo from '@/Components/Logo.vue'
 defineOptions({
   layout: null
 })
-
-// Conference banner — visible by default, hidden once dismissed for the session
-const showBanner = ref(
-  typeof window === 'undefined' || !sessionStorage.getItem('conference-banner-dismissed')
-)
-
-const dismissBanner = () => {
-  showBanner.value = false
-  if (typeof window !== 'undefined') {
-    sessionStorage.setItem('conference-banner-dismissed', '1')
-  }
-}
 
 // Testimonials Carousel functionality
 const currentSlide = ref(0)
