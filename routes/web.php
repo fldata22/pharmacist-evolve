@@ -15,22 +15,13 @@ use Inertia\Inertia;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Placeholder routes for navigation links
-Route::get('/services', function () {
-    return Inertia::render('Services');
-})->name('services');
-
-Route::get('/services/group-mentoring', function () {
-    return Inertia::render('Services/GroupMentoring');
-})->name('services.group-mentoring');
-
-Route::get('/services/ospap-coaching', function () {
-    return Inertia::render('Services/OSPAPCoaching');
-})->name('services.ospap-coaching');
-
-Route::get('/services/workforce-integration', function () {
-    return Inertia::render('Services/WorkforceIntegration');
-})->name('services.workforce-integration');
+// The old overlapping coaching services were retired in the 2026 relaunch in
+// favour of the two focused programmes. Redirect the old URLs to the new pages
+// so existing links and search results still land somewhere relevant.
+Route::redirect('/services', '/for-pharmacists')->name('services');
+Route::redirect('/services/group-mentoring', '/for-pharmacists')->name('services.group-mentoring');
+Route::redirect('/services/ospap-coaching', '/for-pharmacists')->name('services.ospap-coaching');
+Route::redirect('/services/workforce-integration', '/for-employers')->name('services.workforce-integration');
 
 // Two core service pages: individuals (Transition Programme) and employers
 // (Integration Partnership). Each has a public enquiry form.

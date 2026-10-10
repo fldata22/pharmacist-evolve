@@ -9,7 +9,7 @@
             <Logo size="large" variant="dark" />
           </div>
           <p class="text-gray-300 mb-6 max-w-md">
-            Expert coaching, seamless transition support, and career excellence programs for overseas pharmacists in the UK.
+            Structured transition and integration support for internationally trained pharmacists building their careers in UK pharmacy.
           </p>
           
           <!-- Social Media Links -->
@@ -31,23 +31,23 @@
 
         <!-- Quick Links -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <h3 class="text-lg font-semibold mb-4">Explore</h3>
           <ul class="space-y-2">
-            <li><Link href="/about" class="text-gray-300 hover:text-orange-400 transition-colors">About Us</Link></li>
-            <li><Link href="/services" class="text-gray-300 hover:text-orange-400 transition-colors">Services</Link></li>
-            <li><Link href="/collaborate" class="text-gray-300 hover:text-orange-400 transition-colors">Collaborate with Us</Link></li>
-            <li><Link href="/blog" class="text-gray-300 hover:text-orange-400 transition-colors">Blog</Link></li>
-            <li><Link href="/contact" class="text-gray-300 hover:text-orange-400 transition-colors">Contact Us</Link></li>
+            <li><Link href="/for-pharmacists" class="text-gray-300 hover:text-orange-400 transition-colors">For Pharmacists</Link></li>
+            <li><Link href="/for-employers" class="text-gray-300 hover:text-orange-400 transition-colors">For Employers</Link></li>
+            <li><Link href="/about" class="text-gray-300 hover:text-orange-400 transition-colors">About</Link></li>
+            <li><Link href="/events" class="text-gray-300 hover:text-orange-400 transition-colors">Events</Link></li>
+            <li><Link href="/resources" class="text-gray-300 hover:text-orange-400 transition-colors">Resources</Link></li>
+            <li><Link href="/contact" class="text-gray-300 hover:text-orange-400 transition-colors">Contact</Link></li>
           </ul>
         </div>
 
-        <!-- Services -->
+        <!-- Programmes -->
         <div>
-          <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+          <h3 class="text-lg font-semibold mb-4">Our Programmes</h3>
           <ul class="space-y-2">
-            <li><Link href="/services/group-mentoring" class="text-gray-300 hover:text-orange-400 transition-colors">Career Excellence Coaching & Mentoring School</Link></li>
-            <li><Link href="/services/professional-development" class="text-gray-300 hover:text-orange-400 transition-colors">Professional Development Coaching</Link></li>
-            <li><Link href="/services/workforce-integration" class="text-gray-300 hover:text-orange-400 transition-colors">Workforce Integration</Link></li>
+            <li><Link href="/for-pharmacists" class="text-gray-300 hover:text-orange-400 transition-colors">Transition Programme</Link></li>
+            <li><Link href="/for-employers" class="text-gray-300 hover:text-orange-400 transition-colors">Integration Partnership</Link></li>
           </ul>
         </div>
 
@@ -101,10 +101,9 @@
                 </div>
               </div>
               <div class="ml-3">
-                <p class="text-sm font-medium text-gray-300 mb-1">Business Hours</p>
+                <p class="text-sm font-medium text-gray-300 mb-1">Response time</p>
                 <div class="text-gray-400 text-sm space-y-0.5">
-                  <div>Monday - Friday: 9:00 AM - 6:00 PM GMT</div>
-                  <div class="text-xs text-gray-500">Flexible scheduling available</div>
+                  <div>We reply to enquiries within 5 working days.</div>
                 </div>
               </div>
             </div>
