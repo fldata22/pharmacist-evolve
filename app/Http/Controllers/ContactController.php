@@ -17,11 +17,9 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
+            'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'phone' => 'nullable|string|max:20',
-            'subject' => 'required|string|max:255',
+            'enquiry_type' => 'required|in:programme,employer,events_sponsorship,partnerships,other',
             'message' => 'required|string|max:2000',
             'consent' => 'required|accepted',
         ]);
@@ -32,39 +30,42 @@ class ContactController extends Controller
 
         $data = $validator->validated();
 
-        try {
-            // Create simple text email content
-            $emailText = "NEW CONTACT FORM SUBMISSION\n";
-            $emailText .= "=" . str_repeat("=", 40) . "\n\n";
-            $emailText .= "Name: {$data['first_name']} {$data['last_name']}\n";
-            $emailText .= "Email: {$data['email']}\n";
-            if (!empty($data['phone'])) {
-                $emailText .= "Phone: {$data['phone']}\n";
-            }
-            $emailText .= "Subject: {$data['subject']}\n";
-            $emailText .= "Submitted: " . now()->format('F j, Y \a\t g:i A T') . "\n\n";
-            $emailText .= "MESSAGE:\n";
-            $emailText .= str_repeat("-", 20) . "\n";
-            $emailText .= $data['message'] . "\n";
-            $emailText .= str_repeat("-", 20) . "\n\n";
-            $emailText .= "This message was sent from the Pharmacist Evolve contact form.\n";
-            $emailText .= "You can reply directly to this email to respond to the sender.";
+        $types = [
+            'programme' => 'Programme questions',
+            'employer' => 'Employer support',
+            'events_sponsorship' => 'Events or sponsorship',
+            'partnerships' => 'Partnerships',
+            'other' => 'Other enquiry',
+        ];
+        $typeLabel = $types[$data['enquiry_type']] ?? 'Enquiry';
 
-            // Send simple text email (no template)
-            Mail::raw($emailText, function ($mail) use ($data) {
-                $mail->to('faithadebimpe@pharmacistevolve.com')
-                    ->cc('ade.segs@yahoo.com')
-                    ->subject('New Contact Form Submission: ' . $data['subject'])
-                    ->replyTo($data['email'], $data['first_name'] . ' ' . $data['last_name'])
+        try {
+            $emailText = "NEW CONTACT FORM SUBMISSION\n";
+            $emailText .= str_repeat('=', 41)."\n\n";
+            $emailText .= "Name: {$data['name']}\n";
+            $emailText .= "Email: {$data['email']}\n";
+            $emailText .= "Enquiry type: {$typeLabel}\n";
+            $emailText .= 'Submitted: '.now()->format('F j, Y \a\t g:i A T')."\n\n";
+            $emailText .= "MESSAGE:\n";
+            $emailText .= str_repeat('-', 20)."\n";
+            $emailText .= $data['message']."\n";
+            $emailText .= str_repeat('-', 20)."\n\n";
+            $emailText .= "Sent from the Pharmacist Evolve contact form. Reply directly to respond to the sender.";
+
+            Mail::raw($emailText, function ($mail) use ($data, $typeLabel) {
+                $mail->to('support@pharmacistevolve.com')
+                    ->cc('faithadebimpe@pharmacistevolve.com')
+                    ->subject('New contact enquiry: '.$typeLabel)
+                    ->replyTo($data['email'], $data['name'])
                     ->from(config('mail.from.address'), config('mail.from.name'));
             });
 
-            return back()->with('success', 'Thank you for your message! We\'ll get back to you within 24 hours.');
+            return back()->with('success', 'Thank you for your message. We will reply within 5 working days.');
 
         } catch (\Exception $e) {
-            \Log::error('Contact form email failed: ' . $e->getMessage());
-            
-            return back()->with('error', 'There was an issue sending your message. Please try again or contact us directly at faithadebimpe@pharmacistevolve.com');
+            \Log::error('Contact form email failed: '.$e->getMessage());
+
+            return back()->with('error', 'There was an issue sending your message. Please try again, or email us directly at support@pharmacistevolve.com');
         }
     }
 }
