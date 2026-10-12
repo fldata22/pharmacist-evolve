@@ -17,7 +17,7 @@
 
             <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Structured support for internationally trained pharmacists building their
-              <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">UK careers</span>
+              <span class="text-orange-600">UK careers</span>
             </h1>
 
             <p class="text-xl text-gray-600 mb-8 max-w-2xl leading-relaxed">

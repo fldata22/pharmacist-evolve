@@ -17,7 +17,7 @@
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-            Our <span class="bg-gradient-to-r from-orange-400 via-amber-400 to-orange-500 bg-clip-text text-transparent">Delegates</span>
+            Our <span class="text-orange-400">Delegates</span>
           </h1>
 
           <p class="text-lg sm:text-xl lg:text-2xl font-light text-gray-300 mb-8 sm:mb-10 max-w-3xl mx-auto leading-relaxed px-2">

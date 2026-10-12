@@ -9,7 +9,7 @@
       
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-          About <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Pharmacist Evolve</span>
+          About <span class="text-orange-600">Pharmacist Evolve</span>
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           Empowering overseas pharmacists to succeed in the UK through expert coaching, comprehensive support, and unwavering commitment to career excellence.

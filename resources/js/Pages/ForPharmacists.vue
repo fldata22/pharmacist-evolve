@@ -14,7 +14,7 @@
           For Pharmacists
         </span>
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Pharmacist Evolve <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Transition Programme</span>
+          Pharmacist Evolve <span class="text-orange-600">Transition Programme</span>
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl leading-relaxed">
           Build a practical plan for your transition into UK working life, with six months of structured guidance, peer support and resources tailored to internationally trained pharmacists.

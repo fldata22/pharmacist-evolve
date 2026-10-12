@@ -12,7 +12,7 @@
         <div class="text-center">
           <!-- Main Headline -->
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Join Our <span class="bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">Waitlist</span>
+            Join Our <span class="text-orange-600">Waitlist</span>
           </h1>
 
           <!-- Subheading -->

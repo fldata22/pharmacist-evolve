@@ -13,7 +13,7 @@
           Coming soon
         </span>
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Resource <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Library</span>
+          Resource <span class="text-orange-600">Library</span>
         </h1>
         <p class="text-xl text-gray-600 mb-10 leading-relaxed">
           We are building a library of free and paid resources for internationally trained pharmacists, including those still considering OSPAP and the route into UK practice.

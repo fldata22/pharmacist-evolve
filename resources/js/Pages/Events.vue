@@ -12,7 +12,7 @@
         <div class="text-center">
           <!-- Main Headline -->
           <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Upcoming <span class="bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">Events</span>
+            Upcoming <span class="text-orange-600">Events</span>
           </h1>
 
           <!-- Subheading -->
