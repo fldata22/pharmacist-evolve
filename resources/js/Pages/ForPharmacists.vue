@@ -140,7 +140,7 @@
         </div>
 
         <p class="mt-6 text-sm text-gray-500 text-center">
-          Prices are proposed and will be confirmed before applications open. The confirmed price shown at application will be the full payable amount, including any applicable tax. Participation, cancellation and refund terms are linked at application.
+          The price shown at application is the full payable amount, including any applicable tax. Participation, cancellation and refund terms are linked at application.
         </p>
 
         <div class="text-center mt-10">

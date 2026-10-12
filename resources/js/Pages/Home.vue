@@ -82,7 +82,7 @@
             </p>
             <div class="mb-6">
               <p class="text-3xl font-bold text-gray-900">£450 <span class="text-base font-medium text-gray-500">upfront</span></p>
-              <p class="text-gray-500 text-sm">or six monthly payments of £80 (£480 total). Prices proposed, to be confirmed.</p>
+              <p class="text-gray-500 text-sm">or six monthly payments of £80 (£480 total).</p>
             </div>
             <Link href="/for-pharmacists" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors">
               View the Programme
@@ -99,7 +99,7 @@
             </p>
             <div class="mb-6">
               <p class="text-3xl font-bold">£2,000 <span class="text-base font-medium text-gray-400">per pharmacist</span></p>
-              <p class="text-gray-400 text-sm">for six months, plus VAT. Price proposed, to be confirmed.</p>
+              <p class="text-gray-400 text-sm">for six months, plus VAT.</p>
             </div>
             <Link href="/for-employers" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors">
               Explore Employer Support

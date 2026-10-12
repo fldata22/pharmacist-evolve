@@ -90,7 +90,7 @@
             </div>
           </div>
           <p class="text-sm text-gray-400 border-t border-white/10 pt-4">
-            Prices are proposed and will be confirmed before contracting. Any matching or recruitment arrangement is separate and must be agreed in writing.
+            Any matching or recruitment arrangement is separate and must be agreed in writing.
           </p>
         </div>
       </div>
