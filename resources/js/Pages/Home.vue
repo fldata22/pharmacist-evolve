@@ -78,11 +78,11 @@
             <span class="inline-flex self-start items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wide mb-5">For pharmacists</span>
             <h3 class="text-2xl font-bold text-gray-900 mb-3">Pharmacist Evolve Transition Programme</h3>
             <p class="text-gray-600 mb-6 flex-grow">
-              Six months of structured guidance, practical resources and peer support for OSPAP graduates entering years 1 to 3 of practice.
+              Eight weeks of structured guidance with live group sessions and time for your individual development plan, for OSPAP graduates entering years 1 to 3 of practice.
             </p>
             <div class="mb-6">
-              <p class="text-3xl font-bold text-gray-900">£450 <span class="text-base font-medium text-gray-500">upfront</span></p>
-              <p class="text-gray-500 text-sm">or six monthly payments of £80 (£480 total).</p>
+              <p class="text-3xl font-bold text-gray-900">£500 <span class="text-base font-medium text-gray-500">upfront</span></p>
+              <p class="text-gray-500 text-sm">or 2 monthly payments of £275 (£550 total).</p>
             </div>
             <Link href="/for-pharmacists" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors">
               View the Programme
@@ -168,7 +168,7 @@
           <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">What people say about working with Faith</h2>
         </div>
         <p class="text-center text-sm text-gray-500 mb-16 max-w-2xl mx-auto">
-          Feedback from Faith's earlier one-to-one coaching and career sessions. The six-month programmes above are newly introduced.
+          Feedback from Faith's earlier one-to-one coaching and career sessions. The programmes above are newly introduced.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

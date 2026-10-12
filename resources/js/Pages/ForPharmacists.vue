@@ -17,7 +17,7 @@
           Pharmacist Evolve <span class="text-orange-600">Transition Programme</span>
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-3xl leading-relaxed">
-          Build a practical plan for your transition into UK working life, with six months of structured guidance, peer support and resources tailored to internationally trained pharmacists.
+          Build a practical plan for your transition into UK working life, with eight weeks of structured guidance, live group sessions and time for your individual development plan, tailored to internationally trained pharmacists.
         </p>
 
         <!-- At a glance -->
@@ -83,7 +83,7 @@
             </li>
           </ul>
           <p class="mt-6 text-sm text-gray-500 border-t border-gray-100 pt-4">
-            Community support is for shared learning during the six months. It does not include immediate replies or unlimited private messages.
+            Community support is for shared learning during the eight weeks. It does not include immediate replies or unlimited private messages.
           </p>
         </div>
       </div>
@@ -93,7 +93,7 @@
     <section class="py-16 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-2">Programme outline</h2>
-        <p class="text-gray-500 mb-8">One live group session each month. Faith will confirm this outline before publication.</p>
+        <p class="text-gray-500 mb-8">Live group sessions across the eight weeks. Faith will confirm this outline before publication.</p>
 
         <div class="space-y-4">
           <div v-for="(session, i) in outline" :key="i" class="flex items-start gap-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border border-orange-100">
@@ -128,14 +128,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="rounded-3xl p-8 border-2 border-orange-600 bg-gradient-to-br from-orange-50 to-amber-50 relative">
             <span class="absolute -top-3 left-8 px-3 py-1 rounded-full bg-orange-600 text-white text-xs font-bold uppercase tracking-wide">Pay in full</span>
-            <p class="text-5xl font-bold text-gray-900 mb-2">£450</p>
-            <p class="text-gray-600">Upfront for the full six-month programme.</p>
+            <p class="text-5xl font-bold text-gray-900 mb-2">£500</p>
+            <p class="text-gray-600">Upfront for the full eight-week programme.</p>
           </div>
 
           <div class="rounded-3xl p-8 border border-gray-200 bg-white">
             <span class="inline-block mb-3 px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wide">Spread the cost</span>
-            <p class="text-5xl font-bold text-gray-900 mb-2">6 &times; £80</p>
-            <p class="text-gray-600">Six monthly payments, £480 in total. This spreads the programme fee; it is not an ongoing monthly membership.</p>
+            <p class="text-5xl font-bold text-gray-900 mb-2">2 &times; £275</p>
+            <p class="text-gray-600">Two monthly payments, £550 in total. This spreads the programme fee; it is not an ongoing monthly membership.</p>
           </div>
         </div>
 
@@ -295,7 +295,7 @@ import AppLayout from '@/Layouts/AppLayout.vue'
 
 defineOptions({ layout: null })
 
-const atAGlance = ['Six months', 'Online', 'Small group', 'Monthly group sessions']
+const atAGlance = ['Eight weeks', 'Online', 'Small group', 'Live group sessions']
 
 const workTowards = [
   'A personal transition plan with practical next steps.',
@@ -306,12 +306,15 @@ const workTowards = [
 ]
 
 const included = [
-  'Six live group sessions of 60 minutes, one each month.',
+  'Live group sessions across the eight weeks.',
   'One individual onboarding appointment of 30 minutes.',
   'One individual progress review of 30 minutes.',
+  'CV optimisation tailored to your desired job.',
+  'Interview preparation.',
   'Practical resources, templates and action plans.',
-  'A programme community for support and shared learning during the six months.',
+  'A programme community for support and shared learning during the eight weeks.',
   'Questions reviewed twice weekly on the published working days.',
+  'Experience a dramatic transformation that opens doors to new opportunities in your UK pharmacy career.',
 ]
 
 const outline = [
