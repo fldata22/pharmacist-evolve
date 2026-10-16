@@ -23,6 +23,7 @@ class ProgrammeInterest extends Resource
         'id',
         'first_name',
         'email',
+        'phone',
     ];
 
     public static function label(): string
@@ -49,6 +50,10 @@ class ProgrammeInterest extends Resource
 
             Text::make('Email')
                 ->rules('required', 'email', 'max:255')
+                ->sortable(),
+
+            Text::make('Phone')
+                ->rules('required', 'max:30')
                 ->sortable(),
 
             Text::make('Career stage', 'career_stage')

@@ -12,6 +12,7 @@ class ProgrammeInterest extends Model
     protected $fillable = [
         'first_name',
         'email',
+        'phone',
         'career_stage',
         'support_need',
         'status',

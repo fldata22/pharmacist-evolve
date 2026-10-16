@@ -21,6 +21,7 @@ class ProgrammeInterestController extends Controller
         $validated = $request->validate([
             'first_name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
+            'phone' => 'required|string|max:30',
             'career_stage' => 'required|string|max:255',
             'support_need' => 'nullable|string|max:2000',
         ]);
@@ -46,6 +47,7 @@ class ProgrammeInterestController extends Controller
             $body .= str_repeat('=', 40)."\n\n";
             $body .= "Name: {$interest->first_name}\n";
             $body .= "Email: {$interest->email}\n";
+            $body .= "Phone: {$interest->phone}\n";
             $body .= "Career stage: {$interest->career_stage}\n";
             if (! empty($interest->support_need)) {
                 $body .= "Main support need:\n{$interest->support_need}\n";

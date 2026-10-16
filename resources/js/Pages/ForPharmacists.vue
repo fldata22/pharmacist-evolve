@@ -49,7 +49,7 @@
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Who this is for</h2>
         <p class="text-lg text-gray-600 mb-4 max-w-3xl">
-          This programme is designed for pharmacists who have completed OSPAP and are preparing to enter, or are currently undertaking, foundation training.
+          This programme is for OSPAP pharmacists in years 1 to 3 after GPHC registration who need support to navigate their career journeys.
         </p>
         <p class="text-lg text-gray-600 max-w-3xl">
           It may suit you if you want help understanding workplace expectations, communicating confidently, planning your development or navigating challenges during the transition.
@@ -225,6 +225,12 @@
             </div>
 
             <div>
+              <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">Phone number <span class="text-red-500">*</span></label>
+              <input id="phone" v-model="form.phone" type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all" placeholder="07123 456789" />
+              <p v-if="errors.phone" class="mt-1 text-sm text-red-600">{{ errors.phone }}</p>
+            </div>
+
+            <div>
               <label for="career_stage" class="block text-sm font-semibold text-gray-700 mb-2">Current career stage <span class="text-red-500">*</span></label>
               <select id="career_stage" v-model="form.career_stage" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all">
                 <option value="">Select your stage</option>
@@ -346,6 +352,7 @@ const careerStages = [
 const form = ref({
   first_name: '',
   email: '',
+  phone: '',
   career_stage: '',
   support_need: '',
 })
@@ -361,7 +368,7 @@ const submitForm = () => {
   inertiaForm.post('/for-pharmacists/register-interest', {
     preserveScroll: true,
     onSuccess: () => {
-      form.value = { first_name: '', email: '', career_stage: '', support_need: '' }
+      form.value = { first_name: '', email: '', phone: '', career_stage: '', support_need: '' }
     },
     onError: (formErrors) => {
       errors.value = formErrors
