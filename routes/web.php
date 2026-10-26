@@ -53,6 +53,13 @@ Route::get('/programme', function () {
 
 Route::get('/events', [EventController::class, 'index'])->name('events');
 
+// Standalone landing page for the OSPAP Networking & Awards Dinner
+// (Hyatt Regency Birmingham, 30 January 2027). Booking is handled off-site on
+// Eventbrite and nominations via a Google Form, so the page is content-only.
+Route::get('/awards-dinner', function () {
+    return Inertia::render('AwardsDinner');
+})->name('awards-dinner');
+
 Route::get('/about', function () {
     return Inertia::render('About');
 })->name('about');

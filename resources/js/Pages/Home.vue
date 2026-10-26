@@ -64,6 +64,34 @@
       </div>
     </section>
 
+    <!-- Awards Dinner announcement -->
+    <section class="bg-gradient-to-r from-slate-900 via-slate-900 to-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+          <div class="flex items-center gap-4">
+            <span class="hidden sm:flex flex-shrink-0 w-12 h-12 rounded-xl bg-[#D4A853]/15 border border-[#D4A853]/30 items-center justify-center">
+              <svg class="w-6 h-6 text-[#D4A853]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L23 12l-5.714 2.143L15 21l-2.286-6.857L7 12l5.714-2.143L15 3z" />
+              </svg>
+            </span>
+            <div>
+              <p class="text-[#D4A853] text-xs font-bold uppercase tracking-wider mb-0.5">New &middot; 30 January 2027 &middot; Birmingham</p>
+              <p class="text-white font-semibold text-lg leading-snug">OSPAP Networking &amp; Awards Dinner</p>
+            </div>
+          </div>
+          <Link
+            href="/awards-dinner"
+            class="flex-shrink-0 inline-flex items-center justify-center px-7 py-3 bg-[#D4A853] text-slate-900 font-bold rounded-xl hover:bg-[#e0bb6a] transform hover:scale-105 transition-all duration-200 shadow-lg"
+          >
+            View the dinner
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </section>
+
     <!-- Two offers -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
