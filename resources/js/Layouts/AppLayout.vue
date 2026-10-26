@@ -6,7 +6,7 @@
       <slot />
     </main>
 
-    <Footer />
+    <Footer v-if="!hideFooter" />
     
     <!-- Cookie Consent Banner -->
     <CookieConsent ref="cookieConsentRef" />
@@ -18,6 +18,10 @@ import { ref, onMounted } from 'vue'
 import Navigation from '@/Components/Navigation.vue'
 import Footer from '@/Components/Footer.vue'
 import CookieConsent from '@/Components/CookieConsent.vue'
+
+defineProps({
+  hideFooter: { type: Boolean, default: false },
+})
 
 const cookieConsentRef = ref(null)
 

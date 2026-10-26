@@ -1,349 +1,308 @@
 <template>
-  <AppLayout>
-    <Head title="OSPAP Networking & Awards Dinner" />
+  <AppLayout :hide-footer="true">
+    <Head title="OSPAP Networking & Awards Dinner">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+    </Head>
 
-    <!-- Hero -->
-    <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900 to-gray-900">
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-0 left-10 w-80 h-80 bg-[#D4A853] rounded-full opacity-10 blur-3xl"></div>
-        <div class="absolute bottom-0 right-10 w-96 h-96 bg-orange-500 rounded-full opacity-10 blur-3xl"></div>
-      </div>
+    <div class="inv" :class="{ 'reveal-on': revealReady }">
+      <!-- ===================== THE INVITATION ===================== -->
+      <header class="hero">
+        <div class="hero-inner wrap">
+          <div class="frame reveal">
+            <p class="house">Pharmacist Evolve</p>
+            <Flourish class="fl reveal" />
+            <p class="invite reveal">cordially invites you to an evening of celebration and the conferring of its inaugural</p>
 
-      <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
-        <span class="inline-flex items-center px-4 py-1.5 rounded-full bg-[#D4A853]/15 border border-[#D4A853]/30 text-[#D4A853] text-sm font-medium mb-6">
-          Pharmacist Evolve presents
-        </span>
-        <h1 class="font-serif text-4xl sm:text-5xl lg:text-7xl text-white mb-5 leading-[1.05]">
-          OSPAP Networking <span class="text-[#D4A853]">&amp; Awards Dinner</span>
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-300 mb-4 max-w-3xl leading-relaxed">
-          Celebrating achievement, building connections and recognising the contribution of internationally trained pharmacists to UK pharmacy.
-        </p>
-        <p class="text-base text-gray-400 mb-8 max-w-3xl leading-relaxed">
-          Join OSPAP students, foundation trainees, registered pharmacists, employers and pharmacy leaders for an evening of networking and celebration.
-        </p>
+            <h1 class="title reveal">
+              <span class="t-line">OSPAP Networking</span>
+              <span class="t-amp">&amp;</span>
+              <span class="t-line t-line--lead">Awards Dinner</span>
+            </h1>
 
-        <!-- Essentials -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-10">
-          <div v-for="item in essentials" :key="item.label" class="rounded-2xl bg-white/5 border border-white/10 px-4 py-4">
-            <div class="flex items-center gap-2 text-[#D4A853] mb-1.5">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="item.icon" />
-              </svg>
-              <span class="text-[11px] font-semibold uppercase tracking-wider">{{ item.label }}</span>
+            <HairRule class="reveal" />
+
+            <ul class="particulars reveal">
+              <li><span>Saturday, 30 January 2027</span></li>
+              <li><span>Hyatt Regency, Birmingham</span></li>
+              <li><span>Five until ten o'clock</span></li>
+              <li><span>Black Tie</span></li>
+            </ul>
+
+            <p class="lede reveal">
+              Celebrating achievement, building connections and recognising the contribution of
+              internationally trained pharmacists to UK pharmacy. All of the OSPAP community are
+              warmly welcome.
+            </p>
+
+            <div class="actions reveal">
+              <a :href="links.book" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Book your place</a>
+              <a :href="links.nominate" target="_blank" rel="noopener noreferrer" class="btn btn-line">Nominate for an award</a>
             </div>
-            <p class="text-white font-semibold text-sm leading-snug">{{ item.value }}</p>
           </div>
         </div>
+      </header>
 
-        <div class="flex flex-col sm:flex-row gap-4">
-          <a :href="links.book" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-[#D4A853] text-slate-900 font-bold rounded-xl hover:bg-[#e0bb6a] transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-            Book your place
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-          <a :href="links.nominate" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 border-2 border-white/25 text-white font-semibold rounded-xl hover:border-[#D4A853] hover:text-[#D4A853] transition-colors">
-            Nominate for an award
-          </a>
-        </div>
-      </div>
-    </section>
+      <!-- ===================== THE EVENING ===================== -->
+      <section class="band" aria-labelledby="s-evening">
+        <div class="wrap">
+          <SectionHead id="s-evening">The Evening</SectionHead>
 
-    <!-- What the evening is about -->
-    <section class="py-16 bg-white">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 mb-6">What the evening is about</h2>
-        <p class="text-lg text-gray-600 leading-relaxed">
-          The journey from overseas qualification to practising in the UK takes commitment, resilience and support. This evening brings our community together to celebrate that journey, recognise outstanding contributions and build connections across the profession.
-        </p>
-      </div>
-    </section>
-
-    <!-- Who should attend + What to expect -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">Who should attend</h2>
-          <ul class="space-y-4">
-            <li v-for="item in attendees" :key="item" class="flex items-start">
-              <svg class="w-6 h-6 text-orange-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-gray-700">{{ item }}</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">What guests can expect</h2>
-          <ul class="space-y-4">
-            <li v-for="item in expectations" :key="item" class="flex items-start">
-              <svg class="w-6 h-6 text-[#D4A853] mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              <span class="text-gray-700">{{ item }}</span>
-            </li>
-          </ul>
-          <p class="mt-6 text-sm text-gray-500 border-t border-gray-100 pt-4">
-            <span class="font-semibold text-gray-700">Your ticket includes:</span> meal, drinks, entertainment, goodie bags and all other benefits.
+          <p class="lead-para reveal">
+            <span class="drop">T</span>he journey from overseas qualification to practising in the
+            United Kingdom asks for commitment, resilience and no small measure of support. This
+            evening draws the community together to honour that journey, to recognise outstanding
+            contribution and to build connections across the whole of the profession.
           </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- The awards -->
-    <section id="awards" class="py-16 bg-white scroll-mt-20">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-4">
-          <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 mb-3">The awards</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">Recognising achievement across the OSPAP journey. Tap any award to see who is eligible, how it is judged and what evidence is needed.</p>
-        </div>
+          <div class="journey reveal" aria-label="The OSPAP journey this evening honours">
+            <template v-for="(stage, i) in journey" :key="stage">
+              <span class="j-step">{{ stage }}</span>
+              <span v-if="i < journey.length - 1" class="j-sep" aria-hidden="true"></span>
+            </template>
+          </div>
 
-        <!-- Key dates -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8">
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-5 border border-orange-100 text-center">
-            <p class="text-xs font-bold uppercase tracking-wide text-orange-700 mb-1">Achievement period</p>
-            <p class="text-gray-900 font-semibold">1 Nov 2025 &ndash; 31 Oct 2026</p>
-          </div>
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-5 border border-orange-100 text-center">
-            <p class="text-xs font-bold uppercase tracking-wide text-orange-700 mb-1">Nomination deadline</p>
-            <p class="text-gray-900 font-semibold">15 Nov 2026, 11:59pm UK</p>
-          </div>
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-5 border border-orange-100 text-center">
-            <p class="text-xs font-bold uppercase tracking-wide text-orange-700 mb-1">To nominate</p>
-            <p class="text-gray-900 font-semibold">Free &middot; shortlisted guests attend free</p>
-          </div>
-        </div>
-
-        <div class="space-y-3">
-          <details v-for="(award, i) in awards" :key="i" class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
-            <summary class="flex items-start justify-between cursor-pointer px-6 py-5 list-none gap-4">
-              <div class="flex items-start gap-4">
-                <span class="flex-shrink-0 w-9 h-9 rounded-lg bg-slate-900 text-[#D4A853] flex items-center justify-center font-bold text-sm">{{ i + 1 }}</span>
-                <div>
-                  <h3 class="font-bold text-gray-900 leading-snug">{{ award.name }}</h3>
-                  <p class="text-sm text-gray-500 mt-0.5">{{ award.focus }}</p>
-                </div>
-              </div>
-              <svg class="w-5 h-5 text-orange-600 flex-shrink-0 mt-1 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <div class="px-6 pb-6 pt-1 space-y-4 border-t border-gray-100">
-              <div>
-                <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Who is eligible</p>
-                <p class="text-gray-700">{{ award.eligible }}</p>
-              </div>
-              <div>
-                <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-2">Judging criteria</p>
-                <ul class="space-y-2">
-                  <li v-for="c in award.criteria" :key="c" class="flex items-start text-gray-700">
-                    <span class="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 mr-3 flex-shrink-0"></span>
-                    {{ c }}
-                  </li>
-                </ul>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Self-nominations</p>
-                  <p class="text-gray-700 text-sm">{{ award.selfNom }}</p>
-                </div>
-                <div>
-                  <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Nomination deadline</p>
-                  <p class="text-gray-700 text-sm">{{ award.deadline }}</p>
-                </div>
-              </div>
-              <div>
-                <p class="text-xs font-bold uppercase tracking-wide text-gray-400 mb-1">Evidence required</p>
-                <p class="text-gray-700 text-sm">{{ award.evidence }}</p>
-              </div>
+          <div class="two-col">
+            <div class="col reveal">
+              <h3 class="col-head">Who should attend</h3>
+              <ul class="elegant-list">
+                <li v-for="item in attendees" :key="item">{{ item }}</li>
+              </ul>
             </div>
-          </details>
+            <div class="col reveal">
+              <h3 class="col-head">What guests can expect</h3>
+              <ul class="elegant-list">
+                <li v-for="item in expectations" :key="item">{{ item }}</li>
+              </ul>
+              <p class="col-note">Every ticket includes the meal, drinks, entertainment, a goodie bag and all other benefits of the evening.</p>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="text-center mt-10">
-          <a :href="links.nominate" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-            Nominate yourself or someone else
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
+      <!-- ===================== THE HONOURS ===================== -->
+      <section class="band band--dark" aria-labelledby="s-honours">
+        <div class="wrap">
+          <SectionHead id="s-honours" tone="light">The Honours</SectionHead>
+          <p class="section-sub reveal">
+            Eight honours conferred across the OSPAP journey. Open any entry for who may be put
+            forward, how it is judged and what a nomination asks of you.
+          </p>
 
-    <!-- Guidance for nominations -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Guidance for all nominations</h2>
-        <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm">
-          <ul class="space-y-3">
-            <li v-for="g in guidance" :key="g" class="flex items-start text-gray-700">
-              <svg class="w-5 h-5 text-orange-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span>{{ g }}</span>
+          <dl class="dates reveal">
+            <div><dt>Achievement period</dt><dd>1 Nov 2025 &ndash; 31 Oct 2026</dd></div>
+            <div><dt>Nominations close</dt><dd>15 Nov 2026, 11.59pm</dd></div>
+            <div><dt>To be put forward</dt><dd>Free &middot; shortlisted guests attend free</dd></div>
+          </dl>
+
+          <ol class="honours">
+            <li v-for="(award, i) in awards" :id="award.id" :key="award.id" class="honour reveal">
+              <details>
+                <summary>
+                  <span class="h-num">{{ roman[i] }}</span>
+                  <span class="h-body">
+                    <span class="h-name">{{ award.name }}</span>
+                    <span class="h-focus">{{ award.focus }}</span>
+                  </span>
+                  <span class="h-mark" aria-hidden="true"></span>
+                </summary>
+                <div class="h-detail">
+                  <div class="h-field">
+                    <span class="f-label">Who is eligible</span>
+                    <p>{{ award.eligible }}</p>
+                  </div>
+                  <div class="h-field">
+                    <span class="f-label">Judging criteria</span>
+                    <ul>
+                      <li v-for="c in award.criteria" :key="c">{{ c }}</li>
+                    </ul>
+                  </div>
+                  <div class="h-field-row">
+                    <div class="h-field">
+                      <span class="f-label">Self-nominations</span>
+                      <p>{{ award.selfNom }}</p>
+                    </div>
+                    <div class="h-field">
+                      <span class="f-label">Nominations close</span>
+                      <p>{{ award.deadline }}</p>
+                    </div>
+                  </div>
+                  <div class="h-field">
+                    <span class="f-label">Evidence required</span>
+                    <p>{{ award.evidence }}</p>
+                  </div>
+                </div>
+              </details>
             </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          </ol>
 
-    <!-- Tickets -->
-    <section id="tickets" class="py-16 bg-white scroll-mt-20">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 mb-2 text-center">Tickets and booking</h2>
-        <p class="text-gray-500 mb-10 text-center">Secure your place for the evening.</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div v-for="ticket in tickets" :key="ticket.name" class="rounded-3xl p-8 border-2 relative flex flex-col" :class="ticket.featured ? 'border-[#D4A853] bg-gradient-to-br from-amber-50 to-orange-50' : 'border-gray-200 bg-white'">
-            <span v-if="ticket.featured" class="absolute -top-3 left-8 px-3 py-1 rounded-full bg-[#D4A853] text-slate-900 text-xs font-bold uppercase tracking-wide">Best value</span>
-            <p class="text-sm font-bold uppercase tracking-wide text-gray-500 mb-3">{{ ticket.name }}</p>
-            <p class="text-4xl font-bold text-gray-900 mb-2">{{ ticket.price }}</p>
-            <p class="text-gray-600 text-sm flex-grow">{{ ticket.note }}</p>
-          </div>
-        </div>
-
-        <div class="text-center mt-10">
-          <a :href="links.book" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-[#D4A853] text-slate-900 font-bold rounded-xl hover:bg-[#e0bb6a] transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-            Book your place
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sponsors -->
-    <section class="py-16 bg-gradient-to-r from-slate-900 to-gray-900">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-serif text-3xl sm:text-4xl text-white mb-4">Partners and sponsors</h2>
-        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-          Interested in supporting the evening? Explore sponsorship, award sponsorship and opportunities to introduce your organisation to our community.
-        </p>
-        <a :href="links.sponsor" class="inline-flex items-center justify-center px-8 py-4 border-2 border-[#D4A853] text-[#D4A853] font-semibold rounded-xl hover:bg-[#D4A853] hover:text-slate-900 transition-colors">
-          Enquire about sponsorship
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <!-- Venue, travel and accommodation -->
-    <section class="py-16 bg-white">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 mb-8">Venue, travel and accommodation</h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Venue card -->
-          <div class="bg-gradient-to-br from-slate-900 to-gray-900 rounded-3xl p-8 text-white">
-            <p class="text-[#D4A853] text-xs font-bold uppercase tracking-wider mb-2">The venue</p>
-            <h3 class="text-2xl font-bold mb-3">Hyatt Regency Birmingham</h3>
-            <p class="text-gray-300 leading-relaxed mb-1">2 Bridge Street</p>
-            <p class="text-gray-300 leading-relaxed mb-1">Birmingham, B1 2JZ</p>
-            <p class="text-gray-300 leading-relaxed mb-6">United Kingdom</p>
-            <a :href="links.map" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#D4A853] font-medium hover:text-[#e0bb6a]">
-              View venue on Google Maps
-              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
-            </a>
-            <p class="mt-6 pt-6 border-t border-white/10 text-sm text-gray-400">
-              The dinner is planned for the <span class="text-gray-200 font-medium">Sonata Suite</span>, accessed through the hotel lobby.
-            </p>
+          <div class="guidance reveal">
+            <h3 class="g-head">A word on nominations</h3>
+            <ul>
+              <li v-for="g in guidance" :key="g">{{ g }}</li>
+            </ul>
           </div>
 
-          <!-- Travel + parking -->
-          <div class="space-y-6">
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Travelling by train</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Birmingham New Street is the recommended arrival station, about 10 minutes' walk from the hotel. Birmingham Snow Hill and Birmingham Moor Street are also city-centre alternatives. Taxis are available for the onward journey.
-              </p>
+          <div class="cta-row reveal">
+            <a :href="links.nominate" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Nominate yourself or someone else</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ADMISSION ===================== -->
+      <section class="band" aria-labelledby="s-admission">
+        <div class="wrap">
+          <SectionHead id="s-admission">Admission</SectionHead>
+          <p class="section-sub reveal">Three manners of admission to the evening. Booking is held on Eventbrite.</p>
+
+          <div class="prices reveal">
+            <div v-for="t in tickets" :key="t.name" class="price" :class="{ 'price--marked': t.featured }">
+              <span v-if="t.featured" class="price-flag">Early booking</span>
+              <span class="price-name">{{ t.name }}</span>
+              <span class="price-fig">{{ t.price }}</span>
+              <span class="price-note">{{ t.note }}</span>
             </div>
-            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-              <h3 class="font-bold text-gray-900 mb-2">Parking</h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Limited parking is available at the hotel; availability and booking will be confirmed nearer the date. Nearby paid alternatives include Q-Park Mailbox and Q-Park Brindleyplace. Parking charges are not included in your ticket.
-              </p>
+          </div>
+
+          <div class="cta-row reveal">
+            <a :href="links.book" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Book your place</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PATRONAGE ===================== -->
+      <section class="band band--tint patronage" aria-labelledby="s-patronage">
+        <div class="wrap reveal">
+          <SectionHead id="s-patronage" center>Patronage</SectionHead>
+          <p class="section-sub center">
+            Minded to support the evening? There is room for sponsors and award patrons to be
+            introduced to our community. The roll of patrons remains open and will be announced in
+            good time.
+          </p>
+          <div class="cta-row">
+            <a :href="links.sponsor" class="btn btn-line">Enquire about sponsorship</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== THE VENUE ===================== -->
+      <section class="band" aria-labelledby="s-venue">
+        <div class="wrap">
+          <SectionHead id="s-venue">The Venue</SectionHead>
+
+          <div class="venue">
+            <div class="venue-plate reveal">
+              <h3 class="v-name">Hyatt Regency Birmingham</h3>
+              <address class="v-addr">2 Bridge Street<br />Birmingham, B1 2JZ<br />United Kingdom</address>
+              <a :href="links.map" target="_blank" rel="noopener noreferrer" class="v-map">View on the map</a>
+              <p class="v-suite">The dinner is laid in the <em>Sonata Suite</em>, entered through the hotel lobby.</p>
+            </div>
+            <div class="venue-notes">
+              <div class="vn reveal">
+                <h4>By train</h4>
+                <p>Birmingham New Street is the recommended arrival, about ten minutes on foot. Snow Hill and Moor Street are city-centre alternatives, with taxis for the onward journey.</p>
+              </div>
+              <div class="vn reveal">
+                <h4>Parking</h4>
+                <p>Limited parking at the hotel, confirmed nearer the date. Q-Park Mailbox and Q-Park Brindleyplace are paid alternatives nearby. Parking is not included in the ticket.</p>
+              </div>
+              <div class="vn reveal">
+                <h4>Accessibility</h4>
+                <p>For step-free access, accessible facilities, suitable seating or assistance on arrival, please contact the hotel before travelling on <a href="tel:+441216431234">0121&nbsp;643&nbsp;1234</a>, mentioning the Pharmacist Evolve dinner on 30 January 2027, and tell our team of any arrangements when booking.</p>
+              </div>
+              <div class="vn reveal">
+                <h4>Staying overnight</h4>
+                <p>Rooms may be booked at the Hyatt Regency to stay at the venue; a dedicated rate is not yet confirmed and will be shared here once agreed. Nearby: Premier Inn Birmingham City Centre (Bridge Street) and Hilton Garden Inn Brindleyplace.</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Accessibility + overnight -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">Accessibility</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-3">
-              Guests requiring step-free access, accessible toilet facilities, suitable seating or assistance on arrival should contact the hotel before travelling so arrangements can be confirmed. Accessible bedrooms are available subject to availability; please confirm your requirements directly with the hotel in writing when booking.
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Call Hyatt Regency Birmingham on <a href="tel:+441216431234" class="text-orange-600 font-medium hover:text-orange-700">0121 643 1234</a> and mention the Pharmacist Evolve Networking and Awards Dinner on 30 January 2027. Please also tell the Pharmacist Evolve team about any arrangements needed when booking your ticket.
-            </p>
-          </div>
-          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
-            <h3 class="font-bold text-gray-900 mb-2">Staying overnight</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-3">
-              Guests can book accommodation at Hyatt Regency Birmingham to stay at the event venue. A dedicated event booking rate is not yet confirmed; any agreed rate and instructions will be shared here once available. Accommodation is booked and paid for separately from dinner tickets.
-            </p>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Other nearby options include <span class="font-medium text-gray-700">Premier Inn Birmingham City Centre (Bridge Street)</span>, 20 Bridge Street, B1 2JR, and <span class="font-medium text-gray-700">Hilton Garden Inn Birmingham Brindleyplace</span>, 1 Brunswick Square, B1 2HW. Please check rates, availability and cancellation terms directly with your chosen hotel.
-            </p>
+      <!-- ===================== ENQUIRIES ===================== -->
+      <section class="band band--tint" aria-labelledby="s-faq">
+        <div class="wrap narrow">
+          <SectionHead id="s-faq" center>Enquiries Answered</SectionHead>
+          <div class="faqs">
+            <details v-for="(faq, i) in faqs" :key="i" class="faq reveal">
+              <summary>
+                <span>{{ faq.q }}</span>
+                <span class="faq-mark" aria-hidden="true"></span>
+              </summary>
+              <p>{{ faq.a }}</p>
+            </details>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-serif text-3xl sm:text-4xl text-gray-900 mb-8 text-center">Frequently asked questions</h2>
-        <div class="space-y-3">
-          <details v-for="(faq, i) in faqs" :key="i" class="group bg-white rounded-2xl border border-gray-100 overflow-hidden">
-            <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-gray-900 list-none">
-              {{ faq.q }}
-              <svg class="w-5 h-5 text-orange-600 flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <p class="px-6 pb-5 text-gray-600">{{ faq.a }}</p>
-          </details>
+      <!-- ===================== THE CLOSE ===================== -->
+      <footer class="close">
+        <div class="wrap close-inner reveal">
+          <Flourish class="fl" tone="light" />
+          <p class="close-sum">We look forward to your company</p>
+          <p class="close-when">Saturday, 30 January 2027 &middot; Five until ten o'clock</p>
+          <p class="close-where">Hyatt Regency, Birmingham &middot; Black Tie</p>
+          <div class="cta-row">
+            <a :href="links.book" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Book your place</a>
+          </div>
+          <p class="imprint">
+            Enquiries to
+            <a href="mailto:gloria.nd@pharmacistevolve.com">Gloria</a>
+            &amp;
+            <a href="mailto:faithadebimpe@pharmacistevolve.com">Faith</a>
+          </p>
+          <nav class="colophon" aria-label="Site">
+            <Link href="/">Home</Link><span aria-hidden="true">&middot;</span>
+            <Link href="/events">Events</Link><span aria-hidden="true">&middot;</span>
+            <Link href="/privacy">Privacy</Link><span aria-hidden="true">&middot;</span>
+            <Link href="/terms">Terms</Link><span aria-hidden="true">&middot;</span>
+            <Link href="/cookies">Cookies</Link><span aria-hidden="true">&middot;</span>
+            <button type="button" @click="showCookieSettings">Cookie settings</button>
+          </nav>
+          <p class="copyline">&copy; {{ year }} Pharmacist Evolve</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Final invitation -->
-    <section class="py-20 bg-gradient-to-br from-slate-900 via-slate-900 to-gray-900 relative overflow-hidden">
-      <div class="absolute inset-0 pointer-events-none">
-        <div class="absolute top-0 right-20 w-72 h-72 bg-[#D4A853] rounded-full opacity-10 blur-3xl"></div>
-      </div>
-      <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="font-serif text-3xl sm:text-5xl text-white mb-4">We would love to see you there</h2>
-        <p class="text-lg text-gray-300 mb-2">Saturday, 30 January 2027 &middot; 5pm to 10pm</p>
-        <p class="text-gray-400 mb-8">Hyatt Regency Birmingham &middot; Black Tie Formal</p>
-        <a :href="links.book" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-4 bg-[#D4A853] text-slate-900 font-bold rounded-xl hover:bg-[#e0bb6a] transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-          Book your place
-          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
-        <p class="mt-10 text-sm text-gray-400">
-          Questions? Contact
-          <a href="mailto:gloria.nd@pharmacistevolve.com" class="text-[#D4A853] hover:text-[#e0bb6a] font-medium">Gloria</a>
-          or
-          <a href="mailto:faithadebimpe@pharmacistevolve.com" class="text-[#D4A853] hover:text-[#e0bb6a] font-medium">Faith</a>.
-        </p>
-      </div>
-    </section>
+      </footer>
+    </div>
   </AppLayout>
 </template>
 
 <script setup>
-import { Head } from '@inertiajs/vue3'
+import { ref, computed, onMounted, onBeforeUnmount, h } from 'vue'
+import { Head, Link } from '@inertiajs/vue3'
 import AppLayout from '@/Layouts/AppLayout.vue'
 
 defineOptions({ layout: null })
+
+const year = computed(() => new Date().getFullYear())
+const showCookieSettings = () => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('show-cookie-preferences'))
+  }
+}
+
+/* elegant drawn ornaments (no emoji / unicode icons) */
+const Flourish = (props) =>
+  h('svg', { viewBox: '0 0 140 12', class: `flourish flourish-${props.tone || 'dark'}`, 'aria-hidden': 'true' }, [
+    h('path', { d: 'M4 6 H56', fill: 'none', stroke: 'currentColor', 'stroke-width': '1' }),
+    h('path', { d: 'M70 1 L75 6 L70 11 L65 6 Z', fill: 'none', stroke: 'currentColor', 'stroke-width': '1' }),
+    h('circle', { cx: '70', cy: '6', r: '1.4', fill: 'currentColor' }),
+    h('path', { d: 'M84 6 H136', fill: 'none', stroke: 'currentColor', 'stroke-width': '1' }),
+  ])
+Flourish.props = ['tone']
+
+const HairRule = () =>
+  h('div', { class: 'hairrule', 'aria-hidden': 'true' }, [h('span')])
+
+const SectionHead = (props, { slots }) =>
+  h('div', { class: `sechead sechead-${props.tone || 'dark'} ${props.center ? 'sechead--center' : ''} reveal` }, [
+    h('span', { class: 'sechead-rule sechead-rule--l' }),
+    h('h2', { class: 'sechead-title', id: props.id }, slots.default ? slots.default() : []),
+    h('span', { class: 'sechead-rule sechead-rule--r' }),
+  ])
+SectionHead.props = ['id', 'tone', 'center']
+
+const roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
 
 const links = {
   book: 'https://www.eventbrite.co.uk/e/ospap-pharmacists-networking-awards-dinner-by-pharmacistevolve-tickets-1995464109869?aff=oddtdtcreator',
@@ -352,13 +311,7 @@ const links = {
   map: 'https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Birmingham%202%20Bridge%20Street%20B1%202JZ',
 }
 
-const essentials = [
-  { label: 'Date', value: 'Sat 30 January 2027', icon: 'M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z' },
-  { label: 'Venue', value: 'Hyatt Regency, Birmingham', icon: 'M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z' },
-  { label: 'Time', value: '5:00pm to 10:00pm', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
-  { label: 'Dress code', value: 'Black Tie Formal', icon: 'M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' },
-  { label: 'Tickets', value: 'From £35 to £70', icon: 'M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z' },
-]
+const journey = ['Overseas qualification', 'OSPAP', 'Foundation training', 'UK registration', 'Honoured']
 
 const attendees = [
   'Current and prospective OSPAP students.',
@@ -378,7 +331,8 @@ const expectations = [
 
 const awards = [
   {
-    name: 'OSPAP Pharmacist of the Year Award',
+    id: 'award-pharmacist',
+    name: 'OSPAP Pharmacist of the Year',
     focus: 'Outstanding overall contribution to pharmacy practice, patient care and the profession.',
     eligible: 'GPhC-registered pharmacists who qualified through the OSPAP route and practised in the UK during the achievement period.',
     criteria: [
@@ -392,7 +346,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'Emerging Leader Award',
+    id: 'award-leader',
+    name: 'Emerging Leader',
     focus: 'Initiative, positive influence and leadership potential.',
     eligible: 'OSPAP students, foundation trainees and OSPAP-qualified pharmacists within their first five years of GPhC registration who demonstrated leadership during the achievement period. A formal leadership title is not required.',
     criteria: [
@@ -406,8 +361,9 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'Community Impact Award',
-    focus: 'Meaningful contributions to a UK community during the achievement period.',
+    id: 'award-community',
+    name: 'Community Impact',
+    focus: 'A meaningful contribution to a UK community during the achievement period.',
     eligible: 'Individuals or teams led by, or including, an OSPAP student, foundation trainee or OSPAP-qualified pharmacist who made a meaningful contribution to a UK community during the achievement period. Contributions may be paid or voluntary.',
     criteria: [
       'Responding to an identifiable community need.',
@@ -420,7 +376,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'OSPAP Employer of the Year Award',
+    id: 'award-employer',
+    name: 'OSPAP Employer of the Year',
     focus: 'An employer showing strong support, development and inclusion of OSPAP pharmacists or trainees.',
     eligible: 'UK pharmacy employers or individual workplaces that employed or hosted OSPAP students, foundation trainees or OSPAP-qualified pharmacists during the achievement period. Employers of any size and across all pharmacy sectors may enter.',
     criteria: [
@@ -434,7 +391,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'OSPAP Entrepreneur of the Year Award',
+    id: 'award-entrepreneur',
+    name: 'OSPAP Entrepreneur of the Year',
     focus: 'Enterprise and innovation through a pharmacy or healthcare business or initiative.',
     eligible: 'OSPAP students, foundation trainees or OSPAP-qualified pharmacists who founded or co-founded an active business or social enterprise, in any sector, demonstrating progress during the achievement period. An idea alone is not sufficient.',
     criteria: [
@@ -448,7 +406,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'OSPAP Foundation Trainee of the Year Award',
+    id: 'award-trainee',
+    name: 'OSPAP Foundation Trainee of the Year',
     focus: 'Outstanding development, professionalism and contribution during foundation training.',
     eligible: 'Individuals who completed OSPAP and undertook UK foundation pharmacist training at any point during the achievement period, including those who have since registered as pharmacists.',
     criteria: [
@@ -462,7 +421,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'OSPAP Student of the Year Award',
+    id: 'award-student',
+    name: 'OSPAP Student of the Year',
     focus: 'Achievement, initiative and contribution during the OSPAP course.',
     eligible: 'Individuals enrolled on a GPhC-accredited OSPAP programme at any point during the achievement period, including those who have since completed the programme or entered foundation training.',
     criteria: [
@@ -476,7 +436,8 @@ const awards = [
     deadline: '15 November 2026.',
   },
   {
-    name: 'OSPAP Educator and Mentor of the Year Award',
+    id: 'award-educator',
+    name: 'OSPAP Educator & Mentor of the Year',
     focus: 'Outstanding contribution to developing OSPAP learners through teaching, supervision or mentorship.',
     eligible: 'Lecturers, teacher practitioners, foundation supervisors, practice educators, coaches and formal or informal mentors who supported OSPAP students, foundation trainees or OSPAP-qualified pharmacists during the achievement period. Nominees do not need to have qualified through OSPAP themselves.',
     criteria: [
@@ -492,30 +453,321 @@ const awards = [
 ]
 
 const guidance = [
-  'Explain what the nominee personally contributed and what changed as a result. Specific examples carry more weight than general praise.',
-  'Obtain the nominee’s consent before submitting their nomination, and permission to share any testimonials.',
-  'Remove patient-identifiable information and confidential information from all evidence.',
-  'Previous achievements may provide context, but judging will focus on the stated achievement period.',
-  'Individuals may enter more than one category where eligible, but each submission must address that category’s criteria.',
-  'Entries will be assessed on the quality and impact of the contribution, taking account of the nominee’s career stage and available resources.',
+  'Say what the nominee personally contributed and what changed as a result. Specific examples carry more weight than general praise.',
+  'Obtain the nominee’s consent before submitting, and permission to share any testimonials.',
+  'Remove patient-identifiable and confidential information from all evidence.',
+  'Earlier achievements may give context, but judging focuses on the stated achievement period.',
+  'You may enter more than one category where eligible, but each submission must address that category’s criteria.',
+  'Entries are judged on the quality and impact of the contribution, taking account of career stage and available resources.',
 ]
 
 const tickets = [
-  { name: 'Student / Foundation trainee', price: '£35', note: 'A student ID or proof of trainee registration will be required on the day.', featured: false },
-  { name: 'Early booking rate', price: '£50', note: 'Reduced rate; closes 15 November 2026. Book early to save.', featured: true },
-  { name: 'Individual ticket', price: '£70', note: 'Standard individual admission to the dinner and awards ceremony.', featured: false },
+  { name: 'Student / Foundation trainee', price: '£35', note: 'A student ID or proof of trainee registration is required on the day.', featured: false },
+  { name: 'Early booking', price: '£50', note: 'A reduced rate that closes on 15 November 2026.', featured: true },
+  { name: 'Individual', price: '£70', note: 'Standard admission to the dinner and awards ceremony.', featured: false },
 ]
 
 const faqs = [
-  { q: 'Can I attend if I am not nominated for an award?', a: 'Absolutely. You do not need to be an award nominee to attend. Purchase your ticket using the booking link above and join us for an evening of celebration and connection.' },
-  { q: 'Can I come alone?', a: 'Yes. Whether you come alone or with others, there will be opportunities to meet fellow guests, make connections and grow your network.' },
-  { q: 'Can I bring a partner, friend or family member?', a: 'Yes, partners, friends and family members are welcome to celebrate with us. Each guest will need their own ticket.' },
+  { q: 'Can I attend if I am not nominated for an award?', a: 'Absolutely. You do not need to be a nominee to attend. Book a ticket and join us for an evening of celebration and connection.' },
+  { q: 'Can I come alone?', a: 'Yes. Whether you come alone or with others, there will be plenty of opportunity to meet fellow guests and grow your network.' },
+  { q: 'Can I bring a partner, friend or family member?', a: 'Yes, they are welcome to celebrate with us. Each guest will need their own ticket.' },
   { q: 'Is the event open to pharmacists who did not take the OSPAP route?', a: 'Yes. Pharmacists from all training backgrounds are welcome to join us in celebrating the OSPAP community.' },
   { q: 'What is the dress code?', a: 'Black tie or formal evening wear. Dress for a special evening of celebration.' },
-  { q: 'Can you accommodate dietary requirements?', a: 'Yes. Please let us know about any dietary requirements or food allergies at least two weeks before the event so we can discuss suitable arrangements with the venue.' },
-  { q: 'Can I request to sit with someone?', a: 'Seating is available on a first-come, first-served basis. We recommend arriving together if you would like to sit with someone, although we cannot guarantee seats together.' },
-  { q: 'Can I transfer my ticket or receive a refund?', a: 'Please contact the Pharmacist Evolve team to discuss ticket transfers or refund requests.' },
-  { q: 'Will photographs and videos be taken?', a: 'Yes, official photography and filming will take place during the evening. Please speak to the event team on arrival if you would prefer not to be photographed or filmed.' },
-  { q: 'I booked for the original October date. Is my ticket still valid?', a: 'Yes. Your original ticket remains valid for the rescheduled dinner on 30 January 2027. You do not need to purchase another ticket.' },
+  { q: 'Can you accommodate dietary requirements?', a: 'Yes. Please tell us of any dietary requirements or food allergies at least two weeks before, so we can arrange with the venue.' },
+  { q: 'Can I request to sit with someone?', a: 'Seating is first-come, first-served. We recommend arriving together if you would like to sit with someone, though we cannot guarantee it.' },
+  { q: 'Can I transfer my ticket or receive a refund?', a: 'Please contact the Pharmacist Evolve team to discuss ticket transfers or refunds.' },
+  { q: 'Will photographs and videos be taken?', a: 'Yes, official photography and filming will take place. Speak to the event team on arrival if you would prefer not to be captured.' },
+  { q: 'I booked for the original October date. Is my ticket still valid?', a: 'Yes. Your original ticket remains valid for the rescheduled dinner on 30 January 2027. There is no need to buy another.' },
 ]
+
+/* a single, slow, orchestrated reveal — from a fully-visible default */
+const revealReady = ref(false)
+let observer = null
+onMounted(() => {
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduce || typeof IntersectionObserver === 'undefined') return
+  revealReady.value = true
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('seen')
+          observer.unobserve(e.target)
+        }
+      })
+    },
+    { rootMargin: '0px 0px -8% 0px', threshold: 0.06 }
+  )
+  document.querySelectorAll('.inv .reveal').forEach((el) => observer.observe(el))
+  window.setTimeout(() => {
+    document.querySelectorAll('.inv .reveal:not(.seen)').forEach((el) => el.classList.add('seen'))
+  }, 2800)
+})
+onBeforeUnmount(() => observer && observer.disconnect())
 </script>
+
+<style scoped>
+/* ============================================================
+   THE ENGRAVED INVITATION — refined gala elegance.
+   Warm ivory + espresso ink + antique gold, with a restrained
+   brand-orange accent. Cinzel (display) + EB Garamond (body).
+   ============================================================ */
+.inv {
+  --ivory: #faf2df;
+  --ivory-2: #f1e6cc;
+  --ink: #2a2015;
+  --ink-soft: #6f6454;
+  --espresso: #221a0f;
+  --espresso-2: #17110a;
+  --gold: #b8903a;
+  --gold-soft: #cdaf6a;
+  --gold-bright: #e8cd88;
+  --gilt-ink: #8a6522;
+  --cream: #f7f0df;
+  --cream-soft: #d2c4a0;
+  --flare: #c2410c;
+
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.08rem;
+  overflow-x: hidden;
+}
+
+.wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.5rem; }
+.wrap.narrow { max-width: 44rem; }
+
+/* ---- shared marks ---- */
+.flourish { display: block; width: clamp(110px, 22vw, 150px); height: 12px; margin: 0 auto; }
+.flourish-dark { color: var(--gold); }
+.flourish-light { color: var(--gold-bright); }
+.hairrule { display: flex; justify-content: center; margin: 1.5rem 0; }
+.hairrule span { display: block; width: min(16rem, 60%); height: 1px; background: var(--gold); opacity: 0.85; transform-origin: center; }
+
+/* =================== THE INVITATION =================== */
+.hero { background: var(--ivory); padding: clamp(2.5rem, 6vw, 4.5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+.frame {
+  position: relative; text-align: center;
+  padding: clamp(2.5rem, 6vw, 4.25rem) clamp(1.5rem, 5vw, 3.5rem);
+  box-shadow: inset 0 0 0 1.5px var(--gold), inset 0 0 0 4px var(--ivory), inset 0 0 0 5px var(--gold);
+}
+.house {
+  font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.34em; font-size: clamp(0.72rem, 1.5vw, 0.86rem);
+  color: var(--gilt-ink); margin: 0 0 1.4rem; padding-left: 0.34em;
+}
+.fl { margin-bottom: 1.5rem; }
+.invite {
+  font-style: italic; font-size: clamp(1rem, 2.1vw, 1.2rem); color: var(--ink-soft);
+  max-width: 33rem; margin: 0 auto 1.6rem; line-height: 1.55;
+}
+.title { margin: 0; color: var(--ink); font-weight: 400; }
+.title .t-line {
+  display: block; font-family: 'Cinzel', serif; font-weight: 500;
+  text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.08;
+  font-size: clamp(1.5rem, 4.4vw, 2.5rem);
+}
+.title .t-line--lead { font-size: clamp(2.4rem, 7vw, 4.25rem); font-weight: 600; letter-spacing: 0.03em; margin-top: 0.1em; }
+.title .t-amp {
+  display: block; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 500;
+  color: var(--flare); font-size: clamp(1.8rem, 4.5vw, 2.6rem); line-height: 1; margin: 0.12em 0;
+}
+
+.particulars {
+  list-style: none; margin: 1.6rem auto 0; padding: 0; max-width: 40rem;
+  display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+  column-gap: 0; row-gap: 0.5rem;
+}
+.particulars li { display: flex; align-items: center; }
+.particulars li span {
+  font-family: 'Cinzel', serif; font-weight: 400; text-transform: uppercase;
+  letter-spacing: 0.14em; font-size: clamp(0.64rem, 1.4vw, 0.74rem); color: var(--ink);
+  padding: 0 1.1rem;
+}
+.particulars li + li::before {
+  content: ''; width: 4px; height: 4px; background: var(--gold); transform: rotate(45deg); flex: none;
+}
+.lede {
+  max-width: 36rem; margin: 1.8rem auto 0; line-height: 1.7;
+  font-size: clamp(1.02rem, 2vw, 1.14rem); color: var(--ink-soft);
+}
+.actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.2rem; }
+
+/* ---- buttons ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 0.16em; font-size: 0.78rem; padding: 1rem 2rem; text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn-solid { background: var(--gold); color: #2a2015; box-shadow: 0 14px 30px -18px rgba(120, 90, 30, 0.7); }
+.btn-solid:hover { background: #a2792c; color: #1d160c; transform: translateY(-1px); }
+.btn-line { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--gold); }
+.btn-line:hover { color: var(--gilt-ink); box-shadow: inset 0 0 0 1px var(--gilt-ink); background: rgba(184, 144, 58, 0.08); }
+.btn-gold { background: transparent; color: var(--gold-bright); box-shadow: inset 0 0 0 1px var(--gold); }
+.band--dark .btn-gold:hover,
+.close .btn-gold:hover { background: var(--gold); color: var(--espresso); }
+.band .btn-gold { color: var(--gilt-ink); }
+.band .btn-gold:hover { background: var(--gold); color: var(--cream); }
+
+/* =================== SECTIONS =================== */
+.band { position: relative; padding: clamp(3.25rem, 7vw, 5.5rem) 0; }
+.band--tint { background: var(--ivory-2); }
+.band--dark { background: var(--espresso); color: var(--cream); }
+
+.sechead { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 2.2rem; }
+.sechead--center { justify-content: center; }
+.sechead-title {
+  font-family: 'Cinzel', serif; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.14em; font-size: clamp(1.2rem, 3vw, 1.8rem); margin: 0; color: inherit; white-space: nowrap;
+}
+.sechead-rule { height: 1px; background: var(--gold); opacity: 0.6; flex: 1 1 auto; }
+.sechead--center .sechead-rule { max-width: 6rem; }
+.sechead-dark .sechead-title { color: var(--ink); }
+.sechead-light .sechead-title { color: var(--cream); }
+.sechead-light .sechead-rule { background: var(--gold-bright); opacity: 0.5; }
+
+.section-sub { max-width: 40rem; line-height: 1.65; font-size: 1.08rem; color: var(--ink-soft); margin: -0.8rem 0 2rem; }
+.section-sub.center { margin-left: auto; margin-right: auto; text-align: center; }
+.band--dark .section-sub { color: var(--cream-soft); }
+
+/* ---- The Evening ---- */
+.lead-para { max-width: 40rem; font-size: clamp(1.1rem, 2.2vw, 1.28rem); line-height: 1.7; color: var(--ink); margin: 0 0 2.4rem; }
+.drop { font-family: 'Cinzel', serif; font-weight: 600; float: left; font-size: 3.1em; line-height: 0.76; padding: 0.06em 0.14em 0 0; color: var(--gold); }
+.journey {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.7rem 1rem;
+  padding: 1.5rem 1.25rem; margin-bottom: 2.8rem;
+  border-top: 1px solid rgba(184, 144, 58, 0.4); border-bottom: 1px solid rgba(184, 144, 58, 0.4);
+}
+.j-step { font-family: 'Cinzel', serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; font-size: clamp(0.66rem, 1.5vw, 0.78rem); color: var(--ink); }
+.j-sep { width: 5px; height: 5px; background: var(--gold); transform: rotate(45deg); flex: none; }
+
+.two-col { display: grid; grid-template-columns: 1fr; gap: 2.4rem; }
+.col-head { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.95rem; color: var(--ink); margin: 0 0 1rem; padding-bottom: 0.7rem; border-bottom: 1px solid var(--gold); }
+.elegant-list { list-style: none; margin: 0; padding: 0; }
+.elegant-list li { position: relative; padding: 0.55rem 0 0.55rem 1.5rem; line-height: 1.55; color: var(--ink-soft); }
+.elegant-list li + li { border-top: 1px solid rgba(42, 32, 21, 0.08); }
+.elegant-list li::before { content: ''; position: absolute; left: 0; top: 1.05rem; width: 4px; height: 4px; background: var(--gold); transform: rotate(45deg); }
+.col-note { margin-top: 1.1rem; font-style: italic; color: var(--ink-soft); font-size: 0.98rem; line-height: 1.55; }
+
+/* ---- The Honours ---- */
+.dates { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0 0 2.4rem; border: 1px solid rgba(232, 205, 136, 0.3); }
+.dates > div { padding: 1.05rem 1.25rem; border-bottom: 1px solid rgba(232, 205, 136, 0.22); }
+.dates > div:last-child { border-bottom: 0; }
+.dates dt { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.64rem; color: var(--gold-bright); }
+.dates dd { margin: 0.35rem 0 0; font-size: 1.1rem; color: var(--cream); }
+
+.honours { list-style: none; margin: 0; padding: 0; }
+.honour { border-top: 1px solid rgba(232, 205, 136, 0.2); }
+.honour:last-child { border-bottom: 1px solid rgba(232, 205, 136, 0.2); }
+.honour summary { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem 1.3rem; padding: 1.35rem 0.25rem; cursor: pointer; list-style: none; }
+.honour summary::-webkit-details-marker { display: none; }
+.h-num { font-family: 'Cinzel', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-bright); min-width: 2.4rem; text-align: center; letter-spacing: 0.05em; }
+.h-body { display: flex; flex-direction: column; gap: 0.3rem; }
+.h-name { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; font-size: clamp(0.98rem, 2.1vw, 1.16rem); color: var(--cream); line-height: 1.25; }
+.h-focus { font-style: italic; font-size: 1.02rem; color: var(--cream-soft); line-height: 1.45; }
+.h-mark { position: relative; width: 16px; height: 16px; flex: none; }
+.h-mark::before, .h-mark::after { content: ''; position: absolute; background: var(--gold-bright); transition: transform 0.35s ease, opacity 0.35s ease; }
+.h-mark::before { top: 7.5px; left: 0; width: 16px; height: 1px; }
+.h-mark::after { top: 0; left: 7.5px; width: 1px; height: 16px; }
+.honour details[open] .h-mark::after { transform: scaleY(0); opacity: 0; }
+
+.h-detail { padding: 0.25rem 0.25rem 1.85rem 3.7rem; display: grid; gap: 1.35rem; animation: unveil 0.5s ease; }
+@keyframes unveil { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.h-field-row { display: grid; gap: 1.35rem; grid-template-columns: 1fr; }
+.f-label { display: block; font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.62rem; color: var(--gold-bright); margin-bottom: 0.5rem; }
+.h-field p { margin: 0; line-height: 1.65; color: var(--cream); opacity: 0.92; max-width: 66ch; }
+.h-field ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.55rem; max-width: 66ch; }
+.h-field ul li { position: relative; padding-left: 1.4rem; line-height: 1.55; color: var(--cream); opacity: 0.92; }
+.h-field ul li::before { content: ''; position: absolute; left: 0; top: 0.62rem; width: 4px; height: 4px; background: var(--gold-bright); transform: rotate(45deg); }
+
+.guidance { margin-top: 2.8rem; padding: 1.9rem; border: 1px solid rgba(232, 205, 136, 0.3); }
+.g-head { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.92rem; color: var(--gold-bright); margin: 0 0 1.1rem; }
+.guidance ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.75rem; max-width: 70ch; }
+.guidance li { position: relative; padding-left: 1.4rem; line-height: 1.6; color: var(--cream); opacity: 0.9; }
+.guidance li::before { content: ''; position: absolute; left: 0; top: 0.62rem; width: 4px; height: 4px; background: var(--gold-bright); transform: rotate(45deg); }
+
+.cta-row { margin-top: 2.6rem; text-align: center; }
+
+/* ---- Admission ---- */
+.prices { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+.price { position: relative; text-align: center; padding: 2rem 1.6rem; border: 1px solid rgba(184, 144, 58, 0.4); background: var(--ivory); }
+.price--marked { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
+.price-flag { display: inline-block; font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.58rem; color: var(--cream); background: var(--ink); padding: 0.28rem 0.7rem; margin-bottom: 0.9rem; }
+.price-name { display: block; font-family: 'Cinzel', serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.74rem; color: var(--gilt-ink); }
+.price-fig { display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: clamp(2.4rem, 6vw, 3rem); color: var(--ink); margin: 0.7rem 0; }
+.price-note { display: block; line-height: 1.55; color: var(--ink-soft); font-size: 0.96rem; max-width: 22rem; margin: 0 auto; }
+
+/* ---- Patronage ---- */
+.patronage .cta-row { margin-top: 2rem; }
+
+/* ---- The Venue ---- */
+.venue { display: grid; gap: 2.2rem; grid-template-columns: 1fr; }
+.venue-plate { background: var(--espresso); color: var(--cream); padding: 2.2rem 2rem; }
+.v-name { font-family: 'Cinzel', serif; font-weight: 500; font-size: clamp(1.4rem, 3.4vw, 1.9rem); margin: 0 0 1.1rem; line-height: 1.15; letter-spacing: 0.02em; }
+.v-addr { font-style: normal; line-height: 1.8; color: var(--cream-soft); margin-bottom: 1.3rem; }
+.v-map { font-family: 'Cinzel', serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.72rem; color: var(--gold-bright); text-decoration: none; border-bottom: 1px solid rgba(232, 205, 136, 0.5); padding-bottom: 2px; }
+.v-map:hover { color: var(--cream); }
+.v-suite { margin-top: 1.5rem; padding-top: 1.3rem; border-top: 1px solid rgba(232, 205, 136, 0.22); font-size: 0.98rem; color: var(--cream-soft); line-height: 1.6; }
+.v-suite em { color: var(--cream); font-style: italic; }
+.venue-notes { display: grid; gap: 1.6rem; grid-template-columns: 1fr; }
+.vn h4 { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.82rem; color: var(--ink); margin: 0 0 0.5rem; padding-bottom: 0.45rem; border-bottom: 1px solid rgba(184, 144, 58, 0.35); }
+.vn p { margin: 0; line-height: 1.65; color: var(--ink-soft); font-size: 0.98rem; }
+.vn a { color: var(--gilt-ink); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- Enquiries ---- */
+.faqs { display: grid; gap: 0; }
+.faq { border-top: 1px solid rgba(184, 144, 58, 0.3); }
+.faq:last-child { border-bottom: 1px solid rgba(184, 144, 58, 0.3); }
+.faq summary { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.25rem 0.1rem; cursor: pointer; list-style: none; font-family: 'Cinzel', serif; font-weight: 400; font-size: 1rem; letter-spacing: 0.01em; color: var(--ink); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq-mark { position: relative; width: 15px; height: 15px; flex: none; }
+.faq-mark::before, .faq-mark::after { content: ''; position: absolute; background: var(--gold); transition: transform 0.35s ease, opacity 0.35s ease; }
+.faq-mark::before { top: 7px; left: 0; width: 15px; height: 1px; }
+.faq-mark::after { top: 0; left: 7px; width: 1px; height: 15px; }
+.faq[open] .faq-mark::after { transform: scaleY(0); opacity: 0; }
+.faq p { margin: 0; padding: 0 0 1.3rem; line-height: 1.7; color: var(--ink-soft); max-width: 62ch; }
+
+/* =================== THE CLOSE =================== */
+.close { background: var(--espresso-2); color: var(--cream); padding: clamp(3.75rem, 8vw, 6rem) 0; text-align: center; }
+.close-inner { position: relative; }
+.close .fl { margin-bottom: 1.8rem; }
+.close-sum { font-family: 'Cinzel', serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; font-size: clamp(1.5rem, 4.5vw, 2.6rem); margin: 0 0 1.2rem; color: var(--cream); line-height: 1.2; }
+.close-when { font-family: 'EB Garamond', serif; font-size: 1.12rem; margin: 0 0 0.35rem; color: var(--cream); }
+.close-where { font-family: 'EB Garamond', serif; font-style: italic; color: var(--cream-soft); margin: 0 0 2rem; }
+.imprint { margin-top: 2.2rem; font-style: italic; font-size: 1.02rem; color: var(--cream-soft); }
+.imprint a { color: var(--gold-bright); text-decoration: none; border-bottom: 1px solid rgba(232, 205, 136, 0.4); }
+.imprint a:hover { color: var(--cream); }
+.colophon { margin-top: 1.6rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.35rem 0.7rem; font-family: 'Cinzel', serif; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.62rem; }
+.colophon a, .colophon button { color: var(--cream-soft); text-decoration: none; background: none; border: 0; padding: 0; font: inherit; letter-spacing: inherit; text-transform: inherit; cursor: pointer; }
+.colophon a:hover, .colophon button:hover { color: var(--gold-bright); }
+.colophon > span { color: rgba(246, 239, 223, 0.3); }
+.copyline { margin-top: 1rem; font-family: 'Cinzel', serif; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.6rem; color: var(--cream-soft); opacity: 0.7; }
+
+/* =================== browser surfaces =================== */
+.inv ::selection { background: var(--ink); color: var(--cream); }
+.inv a:focus-visible, .inv summary:focus-visible, .inv button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.inv summary:focus-visible { outline-offset: -2px; }
+
+/* =================== the reveal =================== */
+.reveal-on .reveal { opacity: 0; transform: translateY(16px); }
+.reveal-on .reveal.seen { opacity: 1; transform: none; transition: opacity 1s cubic-bezier(0.22, 1, 0.36, 1), transform 1s cubic-bezier(0.22, 1, 0.36, 1); }
+.reveal-on .hairrule.seen span { animation: hairdraw 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+@keyframes hairdraw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on .reveal, .reveal-on .reveal.seen { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+/* =================== responsive =================== */
+@media (min-width: 720px) {
+  .two-col { grid-template-columns: 1fr 1fr; gap: 3.5rem; }
+  .dates { grid-template-columns: repeat(3, 1fr); }
+  .dates > div { border-bottom: 0; border-right: 1px solid rgba(232, 205, 136, 0.22); }
+  .dates > div:last-child { border-right: 0; }
+  .h-field-row { grid-template-columns: 1fr 1fr; gap: 2.4rem; }
+  .prices { grid-template-columns: repeat(3, 1fr); align-items: start; }
+  .price--marked { transform: translateY(-0.6rem); padding-top: 2.6rem; padding-bottom: 2.6rem; }
+  .venue { grid-template-columns: 0.9fr 1.1fr; gap: 3rem; align-items: start; }
+  .venue-notes { grid-template-columns: 1fr 1fr; gap: 1.8rem 2.4rem; }
+}
+</style>
