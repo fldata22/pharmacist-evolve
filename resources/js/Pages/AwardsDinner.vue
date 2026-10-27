@@ -516,19 +516,22 @@ onBeforeUnmount(() => observer && observer.disconnect())
    brand-orange accent. Cinzel (display) + EB Garamond (body).
    ============================================================ */
 .inv {
-  --ivory: #faf2df;
-  --ivory-2: #f1e6cc;
-  --ink: #2a2015;
-  --ink-soft: #6f6454;
-  --espresso: #221a0f;
-  --espresso-2: #17110a;
-  --gold: #b8903a;
-  --gold-soft: #cdaf6a;
-  --gold-bright: #e8cd88;
-  --gilt-ink: #8a6522;
-  --cream: #f7f0df;
-  --cream-soft: #d2c4a0;
+  --ivory: #fcfbf8;
+  --ivory-2: #f2eee6;
+  --ink: #17120d;
+  --ink-soft: #473d31;
+  --espresso: #16273f;
+  --espresso-2: #101d33;
+  --gold: #a87c28;
+  --gold-soft: #c6a556;
+  --gold-bright: #ecd08a;
+  --gilt-ink: #7a5718;
+  --cream: #fbf7ef;
+  --cream-soft: #ded4c3;
   --flare: #c2410c;
+  --flare-bright: #ea580c;
+  --flare-deep: #9a3412;
+  --flare-tint: #fceee6;
 
   background: var(--ivory);
   color: var(--ink);
@@ -603,10 +606,10 @@ onBeforeUnmount(() => observer && observer.disconnect())
   letter-spacing: 0.16em; font-size: 0.78rem; padding: 1rem 2rem; text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
-.btn-solid { background: var(--gold); color: #2a2015; box-shadow: 0 14px 30px -18px rgba(120, 90, 30, 0.7); }
-.btn-solid:hover { background: #a2792c; color: #1d160c; transform: translateY(-1px); }
-.btn-line { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--gold); }
-.btn-line:hover { color: var(--gilt-ink); box-shadow: inset 0 0 0 1px var(--gilt-ink); background: rgba(184, 144, 58, 0.08); }
+.btn-solid { background: var(--flare); color: #fff; box-shadow: 0 14px 30px -16px rgba(194, 65, 12, 0.55); }
+.btn-solid:hover { background: var(--flare-deep); color: #fff; transform: translateY(-1px); box-shadow: 0 16px 34px -16px rgba(154, 52, 18, 0.6); }
+.btn-line { background: transparent; color: var(--flare-deep); box-shadow: inset 0 0 0 1.5px var(--flare); }
+.btn-line:hover { color: var(--flare-deep); box-shadow: inset 0 0 0 1.5px var(--flare); background: var(--flare-tint); }
 .btn-gold { background: transparent; color: var(--gold-bright); box-shadow: inset 0 0 0 1px var(--gold); }
 .band--dark .btn-gold:hover,
 .close .btn-gold:hover { background: var(--gold); color: var(--espresso); }
@@ -636,7 +639,7 @@ onBeforeUnmount(() => observer && observer.disconnect())
 
 /* ---- The Evening ---- */
 .lead-para { max-width: 40rem; font-size: clamp(1.1rem, 2.2vw, 1.28rem); line-height: 1.7; color: var(--ink); margin: 0 0 2.4rem; }
-.drop { font-family: 'Cinzel', serif; font-weight: 600; float: left; font-size: 3.1em; line-height: 0.76; padding: 0.06em 0.14em 0 0; color: var(--gold); }
+.drop { font-family: 'Cinzel', serif; font-weight: 600; float: left; font-size: 3.1em; line-height: 0.76; padding: 0.06em 0.14em 0 0; color: var(--flare); }
 .journey {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.7rem 1rem;
   padding: 1.5rem 1.25rem; margin-bottom: 2.8rem;
@@ -666,7 +669,7 @@ onBeforeUnmount(() => observer && observer.disconnect())
 .honour:last-child { border-bottom: 1px solid rgba(232, 205, 136, 0.2); }
 .honour summary { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem 1.3rem; padding: 1.35rem 0.25rem; cursor: pointer; list-style: none; }
 .honour summary::-webkit-details-marker { display: none; }
-.h-num { font-family: 'Cinzel', serif; font-weight: 500; font-size: 1.1rem; color: var(--gold-bright); min-width: 2.4rem; text-align: center; letter-spacing: 0.05em; }
+.h-num { font-family: 'Cinzel', serif; font-weight: 600; font-size: 1.15rem; color: var(--flare-bright); min-width: 2.4rem; text-align: center; letter-spacing: 0.05em; }
 .h-body { display: flex; flex-direction: column; gap: 0.3rem; }
 .h-name { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; font-size: clamp(0.98rem, 2.1vw, 1.16rem); color: var(--cream); line-height: 1.25; }
 .h-focus { font-style: italic; font-size: 1.02rem; color: var(--cream-soft); line-height: 1.45; }
@@ -696,9 +699,9 @@ onBeforeUnmount(() => observer && observer.disconnect())
 /* ---- Admission ---- */
 .prices { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
 .price { position: relative; text-align: center; padding: 2rem 1.6rem; border: 1px solid rgba(184, 144, 58, 0.4); background: var(--ivory); }
-.price--marked { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
-.price-flag { display: inline-block; font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.58rem; color: var(--cream); background: var(--ink); padding: 0.28rem 0.7rem; margin-bottom: 0.9rem; }
-.price-name { display: block; font-family: 'Cinzel', serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.74rem; color: var(--gilt-ink); }
+.price--marked { border-color: var(--flare); box-shadow: inset 0 0 0 1.5px var(--flare); background: var(--flare-tint); }
+.price-flag { display: inline-block; font-family: 'Cinzel', serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.58rem; color: #fff; background: var(--flare); padding: 0.28rem 0.7rem; margin-bottom: 0.9rem; }
+.price-name { display: block; font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.74rem; color: var(--flare-deep); }
 .price-fig { display: block; font-family: 'Cinzel', serif; font-weight: 600; font-size: clamp(2.4rem, 6vw, 3rem); color: var(--ink); margin: 0.7rem 0; }
 .price-note { display: block; line-height: 1.55; color: var(--ink-soft); font-size: 0.96rem; max-width: 22rem; margin: 0 auto; }
 
@@ -749,8 +752,8 @@ onBeforeUnmount(() => observer && observer.disconnect())
 .copyline { margin-top: 1rem; font-family: 'Cinzel', serif; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.6rem; color: var(--cream-soft); opacity: 0.7; }
 
 /* =================== browser surfaces =================== */
-.inv ::selection { background: var(--ink); color: var(--cream); }
-.inv a:focus-visible, .inv summary:focus-visible, .inv button:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+.inv ::selection { background: var(--flare); color: #fff; }
+.inv a:focus-visible, .inv summary:focus-visible, .inv button:focus-visible { outline: 2px solid var(--flare); outline-offset: 3px; }
 .inv summary:focus-visible { outline-offset: -2px; }
 
 /* =================== the reveal =================== */
