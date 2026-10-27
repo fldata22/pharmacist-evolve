@@ -40,6 +40,11 @@
               <a :href="links.book" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Book your place</a>
               <a :href="links.nominate" target="_blank" rel="noopener noreferrer" class="btn btn-line">Nominate for an award</a>
             </div>
+
+            <p class="hero-aside reveal">
+              Interested in partnering or sponsoring the evening?
+              <a :href="links.sponsor" class="hero-aside-link">Enquire about partnership or sponsorship</a>
+            </p>
           </div>
         </div>
       </header>
@@ -310,7 +315,7 @@ const roman = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII']
 const links = {
   book: 'https://www.eventbrite.co.uk/e/ospap-pharmacists-networking-awards-dinner-by-pharmacistevolve-tickets-1995464109869?aff=oddtdtcreator',
   nominate: 'https://docs.google.com/forms/d/e/1FAIpQLSd0MYrpChE2W-YSwi_XphZd_1mf0syFCPciyKrFtarN3nLixA/viewform',
-  sponsor: 'mailto:faithadebimpe@pharmacistevolve.com?subject=Sponsorship enquiry - OSPAP Networking & Awards Dinner',
+  sponsor: 'mailto:faithadebimpe@pharmacistevolve.com?subject=Partnership or sponsorship enquiry - OSPAP Networking & Awards Dinner',
   map: 'https://www.google.com/maps/search/?api=1&query=Hyatt%20Regency%20Birmingham%202%20Bridge%20Street%20B1%202JZ',
 }
 
@@ -598,6 +603,12 @@ onBeforeUnmount(() => observer && observer.disconnect())
   font-size: clamp(1.02rem, 2vw, 1.14rem); color: var(--ink-soft);
 }
 .actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 2.2rem; }
+.hero-aside { margin: 1.5rem auto 0; max-width: 34rem; font-size: 0.98rem; line-height: 1.5; color: var(--ink-soft); }
+.hero-aside-link {
+  display: inline-block; color: var(--flare-deep); font-weight: 500; text-decoration: none;
+  border-bottom: 1px solid var(--flare); padding-bottom: 1px; transition: color 0.25s ease, border-color 0.25s ease;
+}
+.hero-aside-link:hover { color: var(--flare); border-color: var(--flare-bright); }
 
 /* ---- buttons ---- */
 .btn {
