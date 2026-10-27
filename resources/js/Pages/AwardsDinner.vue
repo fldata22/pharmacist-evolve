@@ -13,7 +13,7 @@
           <div class="frame reveal">
             <p class="house">Pharmacist Evolve</p>
             <Flourish class="fl reveal" />
-            <p class="invite reveal">cordially invites you to an evening of celebration and the conferring of its inaugural</p>
+            <p class="invite reveal">Celebrating achievement, building connections and recognising the contribution of internationally trained pharmacists to UK pharmacy.</p>
 
             <h1 class="title reveal">
               <span class="t-line">OSPAP Networking</span>
@@ -25,15 +25,15 @@
 
             <ul class="particulars reveal">
               <li><span>Saturday, 30 January 2027</span></li>
-              <li><span>Hyatt Regency, Birmingham</span></li>
-              <li><span>Five until ten o'clock</span></li>
-              <li><span>Black Tie</span></li>
+              <li><span>Birmingham, UK</span></li>
+              <li><span>5pm to 10pm</span></li>
+              <li><span>Black Tie Formal</span></li>
+              <li><span>Tickets £35&ndash;£70</span></li>
             </ul>
 
             <p class="lede reveal">
-              Celebrating achievement, building connections and recognising the contribution of
-              internationally trained pharmacists to UK pharmacy. All of the OSPAP community are
-              warmly welcome.
+              Join OSPAP students, foundation trainees, registered pharmacists, employers and
+              pharmacy leaders for an evening of networking and celebration.
             </p>
 
             <div class="actions reveal">
@@ -51,9 +51,9 @@
 
           <p class="lead-para reveal">
             <span class="drop">T</span>he journey from overseas qualification to practising in the
-            United Kingdom asks for commitment, resilience and no small measure of support. This
-            evening draws the community together to honour that journey, to recognise outstanding
-            contribution and to build connections across the whole of the profession.
+            UK takes commitment, resilience and support. This evening brings our community together
+            to celebrate that journey, recognise outstanding contributions and build connections
+            across the profession.
           </p>
 
           <div class="journey reveal" aria-label="The OSPAP journey this evening honours">
@@ -65,7 +65,7 @@
 
           <div class="two-col">
             <div class="col reveal">
-              <h3 class="col-head">Who should attend</h3>
+              <h3 class="col-head">Who should attend?</h3>
               <ul class="elegant-list">
                 <li v-for="item in attendees" :key="item">{{ item }}</li>
               </ul>
@@ -75,7 +75,7 @@
               <ul class="elegant-list">
                 <li v-for="item in expectations" :key="item">{{ item }}</li>
               </ul>
-              <p class="col-note">Every ticket includes the meal, drinks, entertainment, a goodie bag and all other benefits of the evening.</p>
+              <p class="col-note">Ticket includes: meal, drinks, entertainment and all goodie bags and other benefits.</p>
             </div>
           </div>
         </div>
@@ -86,15 +86,19 @@
         <div class="wrap">
           <SectionHead id="s-honours" tone="light">The Honours</SectionHead>
           <p class="section-sub reveal">
-            Eight honours conferred across the OSPAP journey. Open any entry for who may be put
-            forward, how it is judged and what a nomination asks of you.
+            Recognising achievement across the OSPAP journey. These awards celebrate the
+            achievements of the OSPAP community and the individuals and organisations supporting
+            their development within UK pharmacy. Select any award for who is eligible, the judging
+            criteria, whether self-nominations are accepted, what evidence is required and the
+            nomination deadline.
           </p>
 
           <dl class="dates reveal">
-            <div><dt>Achievement period</dt><dd>1 Nov 2025 &ndash; 31 Oct 2026</dd></div>
-            <div><dt>Nominations close</dt><dd>15 Nov 2026, 11.59pm</dd></div>
-            <div><dt>To be put forward</dt><dd>Free &middot; shortlisted guests attend free</dd></div>
+            <div><dt>Achievement period</dt><dd>1 November 2025 &ndash; 31 October 2026</dd></div>
+            <div><dt>Nomination deadline for all categories</dt><dd>15 November 2026 at 11:59 pm UK time</dd></div>
+            <div><dt>To nominate</dt><dd>Free &middot; shortlisted nominees attend the dinner for free</dd></div>
           </dl>
+          <p class="dates-note reveal">Work may have started earlier, but nominations must demonstrate achievements or impact during this period.</p>
 
           <ol class="honours">
             <li v-for="(award, i) in awards" :id="award.id" :key="award.id" class="honour reveal">
@@ -154,7 +158,7 @@
       <section class="band" aria-labelledby="s-admission">
         <div class="wrap">
           <SectionHead id="s-admission">Admission</SectionHead>
-          <p class="section-sub reveal">Three manners of admission to the evening. Booking is held on Eventbrite.</p>
+          <p class="section-sub reveal">Each available ticket type and its full price. Booking is on Eventbrite.</p>
 
           <div class="prices reveal">
             <div v-for="t in tickets" :key="t.name" class="price" :class="{ 'price--marked': t.featured }">
@@ -176,9 +180,8 @@
         <div class="wrap reveal">
           <SectionHead id="s-patronage" center>Patronage</SectionHead>
           <p class="section-sub center">
-            Minded to support the evening? There is room for sponsors and award patrons to be
-            introduced to our community. The roll of patrons remains open and will be announced in
-            good time.
+            Interested in supporting the evening? Explore sponsorship, award sponsorship and
+            opportunities to introduce your organisation to our community.
           </p>
           <div class="cta-row">
             <a :href="links.sponsor" class="btn btn-line">Enquire about sponsorship</a>
@@ -195,25 +198,25 @@
             <div class="venue-plate reveal">
               <h3 class="v-name">Hyatt Regency Birmingham</h3>
               <address class="v-addr">2 Bridge Street<br />Birmingham, B1 2JZ<br />United Kingdom</address>
-              <a :href="links.map" target="_blank" rel="noopener noreferrer" class="v-map">View on the map</a>
-              <p class="v-suite">The dinner is laid in the <em>Sonata Suite</em>, entered through the hotel lobby.</p>
+              <a :href="links.map" target="_blank" rel="noopener noreferrer" class="v-map">View venue on Google Maps</a>
+              <p class="v-suite">The dinner is planned for the <em>Sonata Suite</em>, accessed through the hotel lobby.</p>
             </div>
             <div class="venue-notes">
               <div class="vn reveal">
-                <h4>By train</h4>
-                <p>Birmingham New Street is the recommended arrival, about ten minutes on foot. Snow Hill and Moor Street are city-centre alternatives, with taxis for the onward journey.</p>
+                <h4>Travelling by train</h4>
+                <p>Birmingham New Street is the recommended arrival station, approximately 10 minutes&rsquo; walk from the hotel. Birmingham Snow Hill and Birmingham Moor Street are also city-centre alternatives. Taxis are available for the onward journey.</p>
               </div>
               <div class="vn reveal">
                 <h4>Parking</h4>
-                <p>Limited parking at the hotel, confirmed nearer the date. Q-Park Mailbox and Q-Park Brindleyplace are paid alternatives nearby. Parking is not included in the ticket.</p>
+                <p>Limited parking is available at the hotel. We will confirm availability, and booking arrangements nearer to the date. Nearby paid alternatives include Q-Park Mailbox and Q-Park Brindleyplace. Parking charges are not included in your event ticket.</p>
               </div>
               <div class="vn reveal">
                 <h4>Accessibility</h4>
-                <p>For step-free access, accessible facilities, suitable seating or assistance on arrival, please contact the hotel before travelling on <a href="tel:+441216431234">0121&nbsp;643&nbsp;1234</a>, mentioning the Pharmacist Evolve dinner on 30 January 2027, and tell our team of any arrangements when booking.</p>
+                <p>Guests requiring step-free access, accessible toilet facilities, suitable seating or assistance on arrival should contact the hotel before travelling so the appropriate arrangements can be confirmed. Accessible bedrooms are available, subject to availability. Please discuss your specific requirements directly with the hotel and obtain written confirmation when booking. Please call Hyatt Regency Birmingham on <a href="tel:+441216431234">0121&nbsp;643&nbsp;1234</a> and mention the Pharmacist Evolve Networking and Awards Dinner on 30 January 2027. Please also tell the Pharmacist Evolve team about any arrangements needed during the dinner when booking your ticket.</p>
               </div>
               <div class="vn reveal">
                 <h4>Staying overnight</h4>
-                <p>Rooms may be booked at the Hyatt Regency to stay at the venue; a dedicated rate is not yet confirmed and will be shared here once agreed. Nearby: Premier Inn Birmingham City Centre (Bridge Street) and Hilton Garden Inn Brindleyplace.</p>
+                <p>Guests can book accommodation at Hyatt Regency Birmingham, allowing them to stay at the event venue. A dedicated event booking rate has not yet been confirmed. Any agreed rate and booking instructions will be shared here once available. Accommodation is booked and paid for separately from dinner tickets. Other nearby options include Premier Inn Birmingham City Centre Bridge Street (20 Bridge Street, Birmingham, B1 2JR) and Hilton Garden Inn Birmingham Brindleyplace (1 Brunswick Square, Birmingham, B1 2HW). Please check rates, availability and cancellation terms directly with your chosen hotel.</p>
               </div>
             </div>
           </div>
@@ -241,8 +244,8 @@
         <div class="wrap close-inner reveal">
           <Flourish class="fl" tone="light" />
           <p class="close-sum">We look forward to your company</p>
-          <p class="close-when">Saturday, 30 January 2027 &middot; Five until ten o'clock</p>
-          <p class="close-where">Hyatt Regency, Birmingham &middot; Black Tie</p>
+          <p class="close-when">Saturday, 30 January 2027 &middot; 5pm to 10pm</p>
+          <p class="close-where">Hyatt Regency Birmingham &middot; Black Tie Formal</p>
           <div class="cta-row">
             <a :href="links.book" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Book your place</a>
           </div>
@@ -332,7 +335,7 @@ const expectations = [
 const awards = [
   {
     id: 'award-pharmacist',
-    name: 'OSPAP Pharmacist of the Year',
+    name: 'OSPAP Pharmacist of the Year Award',
     focus: 'Outstanding overall contribution to pharmacy practice, patient care and the profession.',
     eligible: 'GPhC-registered pharmacists who qualified through the OSPAP route and practised in the UK during the achievement period.',
     criteria: [
@@ -347,7 +350,7 @@ const awards = [
   },
   {
     id: 'award-leader',
-    name: 'Emerging Leader',
+    name: 'Emerging Leader Award',
     focus: 'Initiative, positive influence and leadership potential.',
     eligible: 'OSPAP students, foundation trainees and OSPAP-qualified pharmacists within their first five years of GPhC registration who demonstrated leadership during the achievement period. A formal leadership title is not required.',
     criteria: [
@@ -362,8 +365,8 @@ const awards = [
   },
   {
     id: 'award-community',
-    name: 'Community Impact',
-    focus: 'A meaningful contribution to a UK community during the achievement period.',
+    name: 'Community Impact Award',
+    focus: 'Meaningful contributions to improving the journey of incoming OSPAP pharmacists.',
     eligible: 'Individuals or teams led by, or including, an OSPAP student, foundation trainee or OSPAP-qualified pharmacist who made a meaningful contribution to a UK community during the achievement period. Contributions may be paid or voluntary.',
     criteria: [
       'Responding to an identifiable community need.',
@@ -377,8 +380,8 @@ const awards = [
   },
   {
     id: 'award-employer',
-    name: 'OSPAP Employer of the Year',
-    focus: 'An employer showing strong support, development and inclusion of OSPAP pharmacists or trainees.',
+    name: 'OSPAP Employer of the Year Award',
+    focus: 'An employer demonstrating strong support, development and inclusion of OSPAP pharmacists or trainees.',
     eligible: 'UK pharmacy employers or individual workplaces that employed or hosted OSPAP students, foundation trainees or OSPAP-qualified pharmacists during the achievement period. Employers of any size and across all pharmacy sectors may enter.',
     criteria: [
       'Structured induction and support for transition into UK practice.',
@@ -392,7 +395,7 @@ const awards = [
   },
   {
     id: 'award-entrepreneur',
-    name: 'OSPAP Entrepreneur of the Year',
+    name: 'OSPAP Entrepreneur of the Year Award',
     focus: 'Enterprise and innovation through a pharmacy or healthcare business or initiative.',
     eligible: 'OSPAP students, foundation trainees or OSPAP-qualified pharmacists who founded or co-founded an active business or social enterprise, in any sector, demonstrating progress during the achievement period. An idea alone is not sufficient.',
     criteria: [
@@ -407,7 +410,7 @@ const awards = [
   },
   {
     id: 'award-trainee',
-    name: 'OSPAP Foundation Trainee of the Year',
+    name: 'OSPAP Foundation Trainee of the Year Award',
     focus: 'Outstanding development, professionalism and contribution during foundation training.',
     eligible: 'Individuals who completed OSPAP and undertook UK foundation pharmacist training at any point during the achievement period, including those who have since registered as pharmacists.',
     criteria: [
@@ -422,7 +425,7 @@ const awards = [
   },
   {
     id: 'award-student',
-    name: 'OSPAP Student of the Year',
+    name: 'OSPAP Student of the Year Award',
     focus: 'Achievement, initiative and contribution during the OSPAP course.',
     eligible: 'Individuals enrolled on a GPhC-accredited OSPAP programme at any point during the achievement period, including those who have since completed the programme or entered foundation training.',
     criteria: [
@@ -437,8 +440,8 @@ const awards = [
   },
   {
     id: 'award-educator',
-    name: 'OSPAP Educator & Mentor of the Year',
-    focus: 'Outstanding contribution to developing OSPAP learners through teaching, supervision or mentorship.',
+    name: 'OSPAP Educator and Mentor of the Year Award',
+    focus: 'Recognising an individual who has made an outstanding contribution to the development of OSPAP students, foundation trainees or OSPAP-qualified pharmacists through teaching, supervision or mentorship.',
     eligible: 'Lecturers, teacher practitioners, foundation supervisors, practice educators, coaches and formal or informal mentors who supported OSPAP students, foundation trainees or OSPAP-qualified pharmacists during the achievement period. Nominees do not need to have qualified through OSPAP themselves.',
     criteria: [
       'Teaching, supervision or mentorship responsive to learners’ needs.',
@@ -453,31 +456,31 @@ const awards = [
 ]
 
 const guidance = [
-  'Say what the nominee personally contributed and what changed as a result. Specific examples carry more weight than general praise.',
-  'Obtain the nominee’s consent before submitting, and permission to share any testimonials.',
-  'Remove patient-identifiable and confidential information from all evidence.',
-  'Earlier achievements may give context, but judging focuses on the stated achievement period.',
-  'You may enter more than one category where eligible, but each submission must address that category’s criteria.',
-  'Entries are judged on the quality and impact of the contribution, taking account of career stage and available resources.',
+  'Explain what the nominee personally contributed and what changed as a result. Specific examples carry more weight than general praise.',
+  'Obtain the nominee’s consent before submitting their nomination, and permission to share any testimonials.',
+  'Remove patient-identifiable information and confidential information from all evidence.',
+  'Previous achievements may provide context, but judging will focus on the stated achievement period.',
+  'Individuals may enter more than one category where eligible, but each submission must address that category’s criteria.',
+  'Entries will be assessed on the quality and impact of the contribution, taking account of the nominee’s career stage and available resources.',
 ]
 
 const tickets = [
-  { name: 'Student / Foundation trainee', price: '£35', note: 'A student ID or proof of trainee registration is required on the day.', featured: false },
-  { name: 'Early booking', price: '£50', note: 'A reduced rate that closes on 15 November 2026.', featured: true },
-  { name: 'Individual', price: '£70', note: 'Standard admission to the dinner and awards ceremony.', featured: false },
+  { name: 'Student or foundation trainee', price: '£35', note: 'A student ID or proof of trainee registration will be required on the day.', featured: false },
+  { name: 'Early booking rate', price: '£50', note: 'Closes 15 November 2026.', featured: true },
+  { name: 'Individual ticket', price: '£70', note: '', featured: false },
 ]
 
 const faqs = [
-  { q: 'Can I attend if I am not nominated for an award?', a: 'Absolutely. You do not need to be a nominee to attend. Book a ticket and join us for an evening of celebration and connection.' },
-  { q: 'Can I come alone?', a: 'Yes. Whether you come alone or with others, there will be plenty of opportunity to meet fellow guests and grow your network.' },
-  { q: 'Can I bring a partner, friend or family member?', a: 'Yes, they are welcome to celebrate with us. Each guest will need their own ticket.' },
-  { q: 'Is the event open to pharmacists who did not take the OSPAP route?', a: 'Yes. Pharmacists from all training backgrounds are welcome to join us in celebrating the OSPAP community.' },
-  { q: 'What is the dress code?', a: 'Black tie or formal evening wear. Dress for a special evening of celebration.' },
-  { q: 'Can you accommodate dietary requirements?', a: 'Yes. Please tell us of any dietary requirements or food allergies at least two weeks before, so we can arrange with the venue.' },
-  { q: 'Can I request to sit with someone?', a: 'Seating is first-come, first-served. We recommend arriving together if you would like to sit with someone, though we cannot guarantee it.' },
-  { q: 'Can I transfer my ticket or receive a refund?', a: 'Please contact the Pharmacist Evolve team to discuss ticket transfers or refunds.' },
-  { q: 'Will photographs and videos be taken?', a: 'Yes, official photography and filming will take place. Speak to the event team on arrival if you would prefer not to be captured.' },
-  { q: 'I booked for the original October date. Is my ticket still valid?', a: 'Yes. Your original ticket remains valid for the rescheduled dinner on 30 January 2027. There is no need to buy another.' },
+  { q: 'Can I attend if I am not nominated for an award?', a: 'Absolutely! You do not need to be an award nominee to attend. Purchase your ticket using one of the links above and join us for an evening of celebration and connection.' },
+  { q: 'Can I come alone?', a: 'Yes! Whether you come alone or with others, there will be opportunities to meet fellow guests, make connections and grow your network.' },
+  { q: 'Can I bring a partner, friend or family member?', a: 'Yes, partners, friends and family members are welcome to celebrate with us. Each guest will need their own ticket.' },
+  { q: 'Is the event open to pharmacists who did not take the OSPAP route?', a: 'Yes! Pharmacists from all training backgrounds are welcome to join us in celebrating the OSPAP community.' },
+  { q: 'What is the dress code?', a: 'Black tie or formal evening wear. Dress for a special evening of celebration!' },
+  { q: 'Can you accommodate dietary requirements?', a: 'Yes. Please let us know about any dietary requirements or food allergies at least two weeks before the event so we can discuss suitable arrangements with the venue.' },
+  { q: 'Can I request to sit with someone?', a: 'Seating is available on a first-come, first-served basis. We recommend arriving together if you would like to sit with someone, although we cannot guarantee seats together.' },
+  { q: 'Can I transfer my ticket or receive a refund?', a: 'Please contact the Pharmacist Evolve team to discuss ticket transfers or refund requests.' },
+  { q: 'Will photographs and videos be taken?', a: 'Yes, official photography and filming will take place during the evening. Please speak to the event team on arrival if you would prefer not to be photographed or filmed.' },
+  { q: 'I booked for the original October date. Is my ticket still valid?', a: 'Yes! Your original ticket remains valid for the rescheduled dinner on 30 January 2027. You do not need to purchase another ticket.' },
 ]
 
 /* a single, slow, orchestrated reveal — from a fully-visible default */
@@ -651,11 +654,12 @@ onBeforeUnmount(() => observer && observer.disconnect())
 .col-note { margin-top: 1.1rem; font-style: italic; color: var(--ink-soft); font-size: 0.98rem; line-height: 1.55; }
 
 /* ---- The Honours ---- */
-.dates { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0 0 2.4rem; border: 1px solid rgba(232, 205, 136, 0.3); }
+.dates { display: grid; grid-template-columns: 1fr; gap: 0; margin: 0 0 1.1rem; border: 1px solid rgba(232, 205, 136, 0.3); }
 .dates > div { padding: 1.05rem 1.25rem; border-bottom: 1px solid rgba(232, 205, 136, 0.22); }
 .dates > div:last-child { border-bottom: 0; }
 .dates dt { font-family: 'Cinzel', serif; font-weight: 500; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.64rem; color: var(--gold-bright); }
 .dates dd { margin: 0.35rem 0 0; font-size: 1.1rem; color: var(--cream); }
+.dates-note { margin: 0 0 2.4rem; font-style: italic; line-height: 1.6; color: var(--cream-soft); font-size: 0.98rem; max-width: 46rem; }
 
 .honours { list-style: none; margin: 0; padding: 0; }
 .honour { border-top: 1px solid rgba(232, 205, 136, 0.2); }
