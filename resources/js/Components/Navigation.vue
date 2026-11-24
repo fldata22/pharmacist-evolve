@@ -15,7 +15,7 @@
             v-for="item in navItems"
             :key="item.href"
             :href="item.href"
-            class="px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
+            class="px-2 lg:px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
             :class="isActive(item)
               ? 'text-orange-600'
               : 'text-gray-700 hover:text-orange-600'"
@@ -72,7 +72,8 @@ const navItems = [
   { label: 'About', href: '/about', component: 'About' },
   { label: 'Events', href: '/events', component: 'Events' },
   { label: 'Resources', href: '/resources', component: 'Resources' },
+  { label: 'Media', href: '/media', component: ['Media', 'MediaFolder'] },
 ]
 
-const isActive = (item) => page.component === item.component
+const isActive = (item) => [].concat(item.component).includes(page.component)
 </script>

@@ -21,7 +21,7 @@
 
         <div class="bg-white rounded-3xl shadow-sm border border-orange-100 p-8 text-left">
           <p class="text-gray-600 mb-6">
-            Want to be told when it opens? Register your interest in the Transition Programme and we will keep you updated as resources go live.
+            Want to be told when it opens? Register your interest in the OSPAP Pharmacists Coaching Program and we will keep you updated as resources go live.
           </p>
           <div class="flex flex-col sm:flex-row gap-4">
             <Link href="/for-pharmacists" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors">

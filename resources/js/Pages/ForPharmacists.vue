@@ -1,6 +1,6 @@
 <template>
   <AppLayout>
-    <Head title="For Pharmacists | Transition Programme" />
+    <Head :title="`For Pharmacists | ${programme.name}`" />
 
     <!-- Hero -->
     <section class="relative bg-gradient-to-br from-slate-50 via-orange-50 to-amber-50 overflow-hidden">
@@ -14,10 +14,16 @@
           For Pharmacists
         </span>
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Pharmacist Evolve <span class="text-orange-600">Transition Programme</span>
+          OSPAP Pharmacists <span class="text-orange-600">Coaching Program</span>
         </h1>
-        <p class="text-xl text-gray-600 mb-8 max-w-3xl leading-relaxed">
-          Build a practical plan for your transition into UK working life, with eight weeks of structured guidance, live group sessions and time for your individual development plan, tailored to internationally trained pharmacists.
+        <p class="text-xl text-gray-600 mb-6 max-w-3xl leading-relaxed">
+          Build a practical plan for your transition into UK working life, with six weeks of structured small-group coaching, live group sessions and time for your individual development plan, tailored to internationally trained pharmacists.
+        </p>
+
+        <!-- Partnership -->
+        <p class="text-gray-700 mb-8 max-w-3xl">
+          A partnership between{{ " " }}
+          <template v-for="(partner, i) in partnership" :key="partner.name"><template v-if="i > 0">{{ ' and ' }}</template><span class="font-semibold text-gray-900">{{ partner.name }}</span>{{ ` (${partner.org})` }}</template>.
         </p>
 
         <!-- At a glance -->
@@ -31,14 +37,14 @@
         </div>
 
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#register" class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-            Register Interest
+          <a :href="programme.enrolUrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+            Enrol now<template v-if="offerActive">, £{{ currentPrice() }}</template>
             <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
           </a>
-          <a href="#pricing" class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-orange-600 hover:text-orange-600 transition-colors">
-            See what is included
+          <a :href="programme.webinar.url" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-orange-600 hover:text-orange-600 transition-colors">
+            Join the free webinar
           </a>
         </div>
       </div>
@@ -83,7 +89,7 @@
             </li>
           </ul>
           <p class="mt-6 text-sm text-gray-500 border-t border-gray-100 pt-4">
-            Community support is for shared learning during the eight weeks. It does not include immediate replies or unlimited private messages.
+            Community support is for shared learning during the six weeks. It does not include immediate replies or unlimited private messages.
           </p>
         </div>
       </div>
@@ -92,8 +98,7 @@
     <!-- Programme outline -->
     <section class="py-16 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2">Programme outline</h2>
-        <p class="text-gray-500 mb-8">Live group sessions across the eight weeks. Faith will confirm this outline before publication.</p>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">Programme outline</h2>
 
         <div class="space-y-4">
           <div v-for="(session, i) in outline" :key="i" class="flex items-start gap-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border border-orange-100">
@@ -109,75 +114,116 @@
       </div>
     </section>
 
-    <!-- How support is delivered -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">How support is delivered</h2>
-        <p class="text-lg text-gray-600 max-w-3xl">
-          The programme is led by Faith Adebimpe. Any additional mentors or guest contributors will be confirmed before their sessions. Your joining information will explain who delivers each part and how to access support.
+    <!-- Meet your coaches -->
+    <section id="coaches" class="py-16 bg-gray-50 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Meet your coaches</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mb-10">
+          The programme is delivered in partnership by Faith Adebimpe of Pharmacist Evolve and Nirusha Govender of Mediqis. Your joining information will explain who delivers each part and how to access support.
         </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <article v-for="coach in coaches" :key="coach.name" class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
+            <div class="flex flex-col sm:flex-row sm:items-center gap-6 mb-6">
+              <img
+                :src="coach.photo"
+                :alt="coach.name"
+                class="w-32 h-32 rounded-full object-cover shadow-md flex-shrink-0"
+                :style="{ objectPosition: coach.photoPosition }"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">{{ coach.name }}</h3>
+                <p class="text-orange-700 font-medium mt-1">{{ coach.role }}</p>
+              </div>
+            </div>
+            <p v-for="(para, i) in coach.bio" :key="i" class="text-gray-600 leading-relaxed" :class="{ 'mt-4': i > 0 }">{{ para }}</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-16 bg-white scroll-mt-20">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">Choose your payment option</h2>
-        <p class="text-gray-500 mb-10 text-center">Both options include exactly the same support.</p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="rounded-3xl p-8 border-2 border-orange-600 bg-gradient-to-br from-orange-50 to-amber-50 relative">
-            <span class="absolute -top-3 left-8 px-3 py-1 rounded-full bg-orange-600 text-white text-xs font-bold uppercase tracking-wide">Pay in full</span>
-            <p class="text-5xl font-bold text-gray-900 mb-2">£500</p>
-            <p class="text-gray-600">Upfront for the full eight-week programme.</p>
+    <!-- Free webinar -->
+    <section class="py-14 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-gradient-to-r from-gray-900 to-slate-800 text-white p-8 lg:p-10 flex flex-col md:flex-row md:items-center gap-6 md:justify-between">
+          <div>
+            <p class="text-orange-300 text-sm font-bold uppercase tracking-wide mb-2">Free webinar</p>
+            <h2 class="text-2xl font-bold mb-2">{{ programme.webinar.title }}</h2>
+            <p class="text-gray-300">Meet Faith and Nirusha, hear how the programme works and ask your questions before you enrol.</p>
           </div>
-
-          <div class="rounded-3xl p-8 border border-gray-200 bg-white">
-            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wide">Spread the cost</span>
-            <p class="text-5xl font-bold text-gray-900 mb-2">2 &times; £275</p>
-            <p class="text-gray-600">Two monthly payments, £550 in total. This spreads the programme fee; it is not an ongoing monthly membership.</p>
-          </div>
-        </div>
-
-        <p class="mt-6 text-sm text-gray-500 text-center">
-          The price shown at application is the full payable amount, including any applicable tax. Participation, cancellation and refund terms are linked at application.
-        </p>
-
-        <div class="text-center mt-10">
-          <a href="#register" class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
-            Register Interest
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
+          <a :href="programme.webinar.url" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors flex-shrink-0">
+            Sign up free on Eventbrite
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- Pricing -->
+    <section id="pricing" class="py-16 bg-gray-50 scroll-mt-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900 mb-2 text-center">Choose your payment option</h2>
+        <p class="text-gray-500 mb-10 text-center">Both options include exactly the same support.</p>
+
+        <div v-if="offerActive" class="mb-8 rounded-2xl bg-gray-900 text-white px-6 py-4 text-center">
+          <span class="font-bold text-orange-300 uppercase tracking-wide text-sm">{{ blackFridayOffer.label }}</span>
+          <span class="mx-2">&middot;</span>
+          {{ blackFridayOffer.percentOff }}% off when you pay in full: £{{ blackFridayOffer.price }} instead of £{{ programme.price }}.
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="rounded-3xl p-8 border-2 border-orange-600 bg-gradient-to-br from-orange-50 to-amber-50 relative">
+            <span class="absolute -top-3 left-8 px-3 py-1 rounded-full bg-orange-600 text-white text-xs font-bold uppercase tracking-wide">Pay in full</span>
+            <p class="text-5xl font-bold text-gray-900 mb-2">
+              <span v-if="offerActive" class="block text-2xl font-semibold text-gray-400 line-through mb-1">£{{ programme.price }}</span>
+              £{{ currentPrice() }}
+            </p>
+            <p class="text-gray-600">Upfront for the full six-week programme.</p>
+          </div>
+
+          <div class="rounded-3xl p-8 border border-gray-200 bg-white">
+            <span class="inline-block mb-3 px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-xs font-bold uppercase tracking-wide">Spread the cost</span>
+            <p class="text-5xl font-bold text-gray-900 mb-2">{{ programme.instalments.count }} &times; £{{ programme.instalments.amount }}</p>
+            <p class="text-gray-600">Two monthly payments, £{{ programme.instalments.count * programme.instalments.amount }} in total. This spreads the programme fee; it is not an ongoing monthly membership.</p>
+          </div>
+        </div>
+
+        <p class="mt-6 text-sm text-gray-500 text-center">
+          The price shown at enrolment is the full payable amount, including any applicable tax. Participation and cancellation terms are linked at enrolment.
+        </p>
+
+        <div class="text-center mt-10">
+          <a :href="programme.enrolUrl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+            Enrol now
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          <p class="mt-3 text-sm text-gray-500">Enrolment opens in a Google Form.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Participation terms -->
-    <section class="py-16 bg-gray-50">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 text-center">
-          <p class="text-3xl font-bold text-orange-600 mb-1">8&ndash;15</p>
-          <p class="text-gray-600 text-sm">Small group of eight to fifteen paying participants.</p>
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center">
+          <p class="text-3xl font-bold text-orange-600 mb-1">{{ programme.participantsPerCoach }} per coach</p>
+          <p class="text-gray-600 text-sm">Small group of {{ programme.participantsPerCoach }} paying participants per coach.</p>
         </div>
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 text-center">
-          <p class="text-3xl font-bold text-orange-600 mb-1">Full refund</p>
-          <p class="text-gray-600 text-sm">If the minimum is not reached, you receive a full refund or an optional transfer to a later date.</p>
-        </div>
-        <div class="bg-white rounded-2xl p-6 border border-gray-100 text-center">
-          <p class="text-3xl font-bold text-orange-600 mb-1">Jan/Feb 2027</p>
+        <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100 text-center">
+          <p class="text-3xl font-bold text-orange-600 mb-1">{{ programme.cohortStart }}</p>
           <p class="text-gray-600 text-sm">Next cohort start, to be confirmed with dates and session times.</p>
         </div>
       </div>
     </section>
 
     <!-- Common questions -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Common questions</h2>
         <div class="space-y-3">
-          <details v-for="(faq, i) in faqs" :key="i" class="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+          <details v-for="(faq, i) in faqs" :key="i" class="group bg-white rounded-2xl border border-gray-100 overflow-hidden">
             <summary class="flex items-center justify-between cursor-pointer px-6 py-5 font-semibold text-gray-900 list-none">
               {{ faq.q }}
               <svg class="w-5 h-5 text-orange-600 flex-shrink-0 ml-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -207,8 +253,8 @@
 
         <div class="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
           <div class="bg-gradient-to-r from-orange-600 to-amber-600 px-8 py-6">
-            <h2 class="text-2xl font-bold text-white mb-1">Register your interest</h2>
-            <p class="text-orange-100 text-sm">Applications are not yet open. This does not reserve a place or take payment. We will email you when dates and applications are confirmed.</p>
+            <h2 class="text-2xl font-bold text-white mb-1">Not ready to enrol yet?</h2>
+            <p class="text-orange-100 text-sm">Register your interest and we will keep you updated. This does not reserve a place or take payment. To secure a place, <a :href="programme.enrolUrl" target="_blank" rel="noopener noreferrer" class="underline font-semibold text-white">enrol here</a>.</p>
           </div>
 
           <form @submit.prevent="submitForm" class="p-8 space-y-6">
@@ -298,10 +344,13 @@
 import { ref } from 'vue'
 import { Head, Link, useForm } from '@inertiajs/vue3'
 import AppLayout from '@/Layouts/AppLayout.vue'
+import { programme, blackFridayOffer, offerIsActive, currentPrice, partnership, coaches } from '@/config/programme'
 
 defineOptions({ layout: null })
 
-const atAGlance = ['Eight weeks', 'Online', 'Small group', 'Live group sessions']
+const offerActive = offerIsActive()
+
+const atAGlance = [programme.duration, 'Online', `Small group, ${programme.participantsPerCoach} per coach`, 'Live group sessions', `Starts ${programme.cohortStart}`]
 
 const workTowards = [
   'A personal transition plan with practical next steps.',
@@ -312,13 +361,13 @@ const workTowards = [
 ]
 
 const included = [
-  'Live group sessions across the eight weeks.',
+  'Live group sessions across the six weeks.',
   'One individual onboarding appointment of 30 minutes.',
   'One individual progress review of 30 minutes.',
   'CV optimisation tailored to your desired job.',
   'Interview preparation.',
   'Practical resources, templates and action plans.',
-  'A programme community for support and shared learning during the eight weeks.',
+  'A programme community for support and shared learning during the six weeks.',
   'Questions reviewed twice weekly on the published working days.',
   'Experience a dramatic transformation that opens doors to new opportunities in your UK pharmacy career.',
 ]
@@ -336,8 +385,8 @@ const faqs = [
   { q: 'Is this exam preparation?', a: 'No. The programme focuses on transition, working life and career development. It is not a GPhC examination preparation course.' },
   { q: 'Will you find me a job?', a: 'Employment and placement are not included or guaranteed. Career planning and application guidance form part of the programme.' },
   { q: 'Does this replace my training provider or supervisor?', a: 'No. It complements your existing training and workplace support.' },
-  { q: 'Can I contact Faith privately whenever I need help?', a: 'Support is provided through scheduled appointments, group sessions and the designated community space. Private on-demand support is not included.' },
-  { q: 'When does it start?', a: 'The next cohort is planned for Jan/Feb 2027. Once applications open we will show the start date, session times, time zone and deadline.' },
+  { q: 'Can I contact my coach privately whenever I need help?', a: 'Support is provided through scheduled appointments, group sessions and the designated community space. Private on-demand support is not included.' },
+  { q: 'When does it start?', a: `The next cohort starts ${programme.cohortStart}. We will confirm the start date, session times and time zone to everyone who enrols.` },
   { q: 'What happens if I miss a session?', a: 'Sessions are recorded, and there is the opportunity to ask questions as needed.' },
 ]
 

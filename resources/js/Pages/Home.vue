@@ -101,16 +101,19 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Transition Programme -->
+          <!-- OSPAP Pharmacists Coaching Program -->
           <div class="flex flex-col rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100">
             <span class="inline-flex self-start items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wide mb-5">For pharmacists</span>
-            <h3 class="text-2xl font-bold text-gray-900 mb-3">Pharmacist Evolve Transition Programme</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ programme.name }}</h3>
             <p class="text-gray-600 mb-6 flex-grow">
-              Eight weeks of structured guidance with live group sessions and time for your individual development plan, for OSPAP graduates entering years 1 to 3 of practice.
+              Six weeks of small-group coaching with Faith Adebimpe (Pharmacist Evolve) and Nirusha Govender (Mediqis), for OSPAP pharmacists in years 1 to 3 of practice. Next cohort starts {{ programme.cohortStart }}.
             </p>
             <div class="mb-6">
-              <p class="text-3xl font-bold text-gray-900">£500 <span class="text-base font-medium text-gray-500">upfront</span></p>
-              <p class="text-gray-500 text-sm">or 2 monthly payments of £275 (£550 total).</p>
+              <p v-if="offerActive" class="inline-flex items-center px-3 py-1 mb-2 rounded-full bg-gray-900 text-white text-xs font-bold uppercase tracking-wide">{{ blackFridayOffer.label }}: {{ blackFridayOffer.percentOff }}% off</p>
+              <p class="text-3xl font-bold text-gray-900">
+                <span v-if="offerActive" class="text-xl font-semibold text-gray-400 line-through mr-2">£{{ programme.price }}</span>£{{ currentPrice() }} <span class="text-base font-medium text-gray-500">upfront</span>
+              </p>
+              <p class="text-gray-500 text-sm">or {{ programme.instalments.count }} monthly payments of £{{ programme.instalments.amount }} (£{{ programme.instalments.count * programme.instalments.amount }} total).</p>
             </div>
             <Link href="/for-pharmacists" class="inline-flex items-center justify-center px-6 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors">
               View the Programme
@@ -171,9 +174,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div class="rounded-2xl p-8 border border-orange-100 bg-orange-50">
             <h3 class="text-xl font-bold text-gray-900 mb-2">If you are a pharmacist</h3>
-            <p class="text-gray-600 mb-6">Read the Transition Programme, then register your interest. We will email you when dates and applications are confirmed. No payment is taken to register.</p>
+            <p class="text-gray-600 mb-6">Read about the OSPAP Pharmacists Coaching Program, join the free introductory webinar, then enrol online when you are ready.</p>
             <Link href="/for-pharmacists" class="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
-              Register your interest
+              Explore the programme
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
@@ -262,8 +265,11 @@
 import { Link } from '@inertiajs/vue3'
 import AppLayout from '@/Layouts/AppLayout.vue'
 import Logo from '@/Components/Logo.vue'
+import { programme, blackFridayOffer, offerIsActive, currentPrice } from '@/config/programme'
 
 defineOptions({ layout: null })
+
+const offerActive = offerIsActive()
 
 const challenges = [
   { title: 'Workplace expectations', detail: 'Understand how UK pharmacy teams work and what is expected of you day to day.', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },

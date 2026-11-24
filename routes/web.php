@@ -23,7 +23,7 @@ Route::redirect('/services/group-mentoring', '/for-pharmacists')->name('services
 Route::redirect('/services/ospap-coaching', '/for-pharmacists')->name('services.ospap-coaching');
 Route::redirect('/services/workforce-integration', '/for-employers')->name('services.workforce-integration');
 
-// Two core service pages: individuals (Transition Programme) and employers
+// Two core service pages: individuals (OSPAP Pharmacists Coaching Program) and employers
 // (Integration Partnership). Each has a public enquiry form.
 Route::get('/for-pharmacists', function () {
     return Inertia::render('ForPharmacists');
@@ -59,6 +59,16 @@ Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/awards-dinner', function () {
     return Inertia::render('AwardsDinner');
 })->name('awards-dinner');
+
+// Media: photo folders (e.g. Catalyst Conference 2026). The folder list and
+// photos live in resources/js/config/media.js; add new slugs to whereIn().
+Route::get('/media', function () {
+    return Inertia::render('Media');
+})->name('media');
+
+Route::get('/media/{folder}', function (string $folder) {
+    return Inertia::render('MediaFolder', ['slug' => $folder]);
+})->whereIn('folder', ['catalyst-conference-2026'])->name('media.folder');
 
 Route::get('/about', function () {
     return Inertia::render('About');

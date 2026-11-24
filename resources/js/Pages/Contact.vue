@@ -10,7 +10,7 @@
       <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">Find the Right Support</h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          Interested in the transition programme? Explore the programme and apply when enrolment opens. Looking for support for your workforce? Send an employer pilot enquiry. For other questions, use the form below.
+          Interested in the OSPAP Pharmacists Coaching Program? Explore the programme and enrol online. Looking for support for your workforce? Send an employer pilot enquiry. For other questions, use the form below.
         </p>
       </div>
     </section>
@@ -22,7 +22,7 @@
           <Link href="/for-pharmacists" class="group rounded-2xl p-8 bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100 hover:shadow-lg hover:-translate-y-0.5 transition-all">
             <span class="inline-flex items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wide mb-4">For pharmacists</span>
             <h2 class="text-2xl font-bold text-gray-900 mb-2">Interested in the programme?</h2>
-            <p class="text-gray-600 mb-4">Explore the Transition Programme and register your interest. We will email you when enrolment opens.</p>
+            <p class="text-gray-600 mb-4">Explore the OSPAP Pharmacists Coaching Program, join the free introductory webinar or enrol online.</p>
             <span class="inline-flex items-center font-semibold text-orange-600 group-hover:text-orange-700">
               Explore the programme
               <svg class="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>

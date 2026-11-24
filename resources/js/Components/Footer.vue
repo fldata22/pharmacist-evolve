@@ -38,6 +38,7 @@
             <li><Link href="/about" class="text-gray-300 hover:text-orange-400 transition-colors">About</Link></li>
             <li><Link href="/events" class="text-gray-300 hover:text-orange-400 transition-colors">Events</Link></li>
             <li><Link href="/resources" class="text-gray-300 hover:text-orange-400 transition-colors">Resources</Link></li>
+            <li><Link href="/media" class="text-gray-300 hover:text-orange-400 transition-colors">Media</Link></li>
             <li><Link href="/contact" class="text-gray-300 hover:text-orange-400 transition-colors">Contact</Link></li>
           </ul>
         </div>
@@ -46,7 +47,7 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Our Programmes</h3>
           <ul class="space-y-2">
-            <li><Link href="/for-pharmacists" class="text-gray-300 hover:text-orange-400 transition-colors">Transition Programme</Link></li>
+            <li><Link href="/for-pharmacists" class="text-gray-300 hover:text-orange-400 transition-colors">OSPAP Pharmacists Coaching Program</Link></li>
             <li><Link href="/for-employers" class="text-gray-300 hover:text-orange-400 transition-colors">Integration Partnership</Link></li>
           </ul>
         </div>
