@@ -14,10 +14,10 @@
           For Pharmacists
         </span>
         <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          OSPAP Pharmacists <span class="text-orange-600">Coaching Program</span>
+          OSPAP Pharmacists <span class="text-orange-600">Coaching Programme</span>
         </h1>
         <p class="text-xl text-gray-600 mb-6 max-w-3xl leading-relaxed">
-          Build a practical plan for your transition into UK working life, with six weeks of structured small-group coaching, live group sessions and time for your individual development plan, tailored to internationally trained pharmacists.
+          Your pharmacy career does not start from zero when you enter the UK profession. This six-week, coaching-led programme is designed to help internationally qualified pharmacists recognise the value of their previous experience, build confidence in their professional identity and explore the opportunities available to them within UK pharmacy.
         </p>
 
         <!-- Partnership -->
@@ -53,12 +53,12 @@
     <!-- Who this is for -->
     <section class="py-16 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-4">Who this is for</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Who is this programme for?</h2>
         <p class="text-lg text-gray-600 mb-4 max-w-3xl">
-          This programme is for OSPAP pharmacists in years 1 to 3 after GPHC registration who need support to navigate their career journeys.
+          This programme is designed for internationally qualified pharmacists who are undertaking or have completed the OSPAP route and are looking to establish, develop or progress their careers in UK pharmacy. Whether you are just beginning your OSPAP journey, preparing to enter UK pharmacy practice, newly registered with the GPhC or already working in the UK and considering your next career move, it offers a supportive space to reflect on your experience, build confidence and explore your professional possibilities.
         </p>
         <p class="text-lg text-gray-600 max-w-3xl">
-          It may suit you if you want help understanding workplace expectations, communicating confidently, planning your development or navigating challenges during the transition.
+          It may suit you if you want to understand how your previous experience and qualifications translate into UK pharmacy, build confidence in your professional identity, understand UK career pathways, work out your next steps, or recognise and communicate your transferable skills more effectively. You do not need to have all the answers before joining.
         </p>
       </div>
     </section>
@@ -79,7 +79,7 @@
         </div>
 
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">What is included</h2>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">What is included?</h2>
           <ul class="space-y-4">
             <li v-for="item in included" :key="item" class="flex items-start">
               <svg class="w-6 h-6 text-amber-600 mr-3 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,7 +89,7 @@
             </li>
           </ul>
           <p class="mt-6 text-sm text-gray-500 border-t border-gray-100 pt-4">
-            Community support is for shared learning during the six weeks. It does not include immediate replies or unlimited private messages.
+            Questions and contributions in the programme community are reviewed on the published working days, with responses provided within the agreed programme support arrangements. The community is intended for shared learning and programme-related support. It does not include immediate responses, unlimited private messaging or individual coaching outside the agreed programme provision.
           </p>
         </div>
       </div>
@@ -98,7 +98,7 @@
     <!-- Programme outline -->
     <section class="py-16 bg-white">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8">Programme outline</h2>
+        <h2 class="text-3xl font-bold text-gray-900 mb-8">The six-week programme</h2>
 
         <div class="space-y-4">
           <div v-for="(session, i) in outline" :key="i" class="flex items-start gap-5 bg-gradient-to-br from-orange-50 to-amber-50 rounded-2xl p-6 border border-orange-100">
@@ -119,7 +119,7 @@
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-4">Meet your coaches</h2>
         <p class="text-lg text-gray-600 max-w-3xl mb-10">
-          The programme is delivered in partnership by Faith Adebimpe of Pharmacist Evolve and Nirusha Govender of Mediqis. Your joining information will explain who delivers each part and how to access support.
+          This programme is led by Nirusha Govender FRCPharm, Founder and Principal Consultant of MEDIQIS and Professional Coach, who has developed a bespoke coaching framework specifically for this collaboration with Pharmacist Evolve. Working alongside Faith Adebimpe, the programme combines professional coaching with practical pharmacy insight and lived experience.
         </p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <article v-for="coach in coaches" :key="coach.name" class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
@@ -350,35 +350,45 @@ defineOptions({ layout: null })
 
 const offerActive = offerIsActive()
 
-const atAGlance = [programme.duration, 'Online', `Small group, ${programme.participantsPerCoach} per coach`, 'Live group sessions', `Starts ${programme.cohortStart}`]
+const atAGlance = [
+  `${programme.duration} of structured group coaching`,
+  'Online delivery',
+  'Small-group learning and peer support',
+  'Live, interactive weekly webinars',
+  'Guided individual reflection and development activities',
+  'Personalised coaching support and practical resources',
+  `Starts ${programme.cohortStart}`,
+  `Enrolment: £${currentPrice()}`,
+]
 
 const workTowards = [
-  'A personal transition plan with practical next steps.',
-  'A clearer understanding of communication and expectations at work.',
-  'Knowing how to raise concerns and find appropriate support.',
-  'A professional development plan and a way to reflect on progress.',
-  'Greater clarity about applications and your next career stage.',
+  'A clearer understanding of your professional strengths, values and achievements.',
+  'Greater confidence in recognising and communicating your transferable skills.',
+  'A stronger sense of your professional identity and what you bring to UK pharmacy.',
+  'Greater awareness of potential career pathways and opportunities.',
+  'Practical strategies for navigating barriers, uncertainty and challenges.',
+  'A clearer vision of your professional and career aspirations.',
+  'A personalised action plan with realistic next steps.',
+  'Greater ownership of your ongoing professional development and career direction.',
 ]
 
 const included = [
-  'Live group sessions across the six weeks.',
-  'One individual onboarding appointment of 30 minutes.',
-  'One individual progress review of 30 minutes.',
-  'CV optimisation tailored to your desired job.',
-  'Interview preparation.',
-  'Practical resources, templates and action plans.',
-  'A programme community for support and shared learning during the six weeks.',
-  'Questions reviewed twice weekly on the published working days.',
-  'Experience a dramatic transformation that opens doors to new opportunities in your UK pharmacy career.',
+  'Six weekly live, interactive group coaching webinars.',
+  'A bespoke coaching framework developed by Nirusha Govender for this collaboration.',
+  'Structured activities and guided reflection to support individual development.',
+  'A practical coaching workbook with exercises, templates and action-planning tools.',
+  'Opportunities to share experiences and learn from other internationally qualified pharmacists.',
+  'Coaching and professional insights from both programme leads.',
+  'A supportive programme community for shared learning throughout the six weeks.',
 ]
 
 const outline = [
-  { title: 'Your transition plan', detail: 'Identify priorities and agree practical next steps.' },
-  { title: 'Communication and teamwork', detail: 'Explore workplace scenarios and asking for help.' },
-  { title: 'When challenges arise', detail: 'Recognise concerns, document issues and find appropriate support.' },
-  { title: 'Professional development', detail: 'Plan learning, reflection and constructive feedback.' },
-  { title: 'Your next career step', detail: 'Prepare applications, interviews and career conversations.' },
-  { title: 'Review and future plan', detail: 'Review progress and plan continued development.' },
+  { title: 'Your professional journey and strengths', detail: 'Explore your professional background, achievements, values and motivations. Recognise the experience and capabilities you already bring and begin to understand what makes your professional contribution distinctive.' },
+  { title: 'Understanding your UK professional landscape', detail: 'Explore the UK pharmacy environment, professional expectations and opportunities. Identify what you already know, where you may need further insight and how to access the right information and support.' },
+  { title: 'Recognising and communicating your professional value', detail: 'Explore how your international experience, knowledge and transferable skills can translate into the UK pharmacy context. Develop greater confidence in articulating your capabilities and professional contribution.' },
+  { title: 'Building confidence and professional identity', detail: 'Reflect on the experiences, assumptions and barriers that may influence your confidence and career decisions. Develop a stronger sense of professional identity and consider how to approach challenges with a more constructive mindset.' },
+  { title: 'Exploring career possibilities', detail: 'Broaden your perspective on what your pharmacy career could look like. Explore different pathways, consider your aspirations and identify opportunities that align with your experience, strengths and values.' },
+  { title: 'Turning insight into action', detail: 'Bring together your learning and identify the steps needed to move forward. Develop a practical action plan, with clear priorities and realistic goals to support your continued professional development.' },
 ]
 
 const faqs = [

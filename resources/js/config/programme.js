@@ -1,12 +1,12 @@
-// Single source of truth for the OSPAP Pharmacists Coaching Program details
+// Single source of truth for the OSPAP Pharmacists Coaching Programme details
 // shown on the site (For Pharmacists page, home page card). Change things
 // here rather than in the pages.
 
 export const programme = {
-  name: 'OSPAP Pharmacists Coaching Program',
+  name: 'OSPAP Pharmacists Coaching Programme',
   duration: 'Six weeks',
   durationShort: '6 weeks',
-  cohortStart: 'Feb/March 2027',
+  cohortStart: 'February/March 2027',
   participantsPerCoach: 10,
 
   // Enrolment is handled off-site on a Google Form.
@@ -49,13 +49,13 @@ export function currentPrice() {
 
 export const partnership = [
   { name: 'Faith Adebimpe MRCPharm', org: 'Pharmacist Evolve' },
-  { name: 'Nirusha Govender FRCPharm', org: 'Mediqis' },
+  { name: 'Nirusha Govender FRCPharm', org: 'MEDIQIS Healthcare Consultancy' },
 ]
 
-// Bios are as written in Faith's November 2026 brief.
-// Photos: the Nirusha photo matches the one already used for her on the
-// Conference page; the Faith photo is from the same studio set as the About
-// page portrait. Both still to be confirmed by Faith.
+// Bios are from Faith's amended brief (faith-coaching-ng-amendments.docx,
+// Nov 2026). Photos: the Nirusha photo matches the one already used for her
+// on the Conference page; the Faith photo is from the same studio set as the
+// About page portrait. Both still to be confirmed by Faith.
 export const coaches = [
   {
     name: 'Faith Adebimpe MRCPharm',
@@ -63,18 +63,21 @@ export const coaches = [
     photo: '/images/coaches/faith-adebimpe.jpg',
     photoPosition: 'center 20%',
     bio: [
-      'Faith is a pharmacist, independent prescriber, coach and founder of Pharmacist Evolve. She grew up in Nigeria and completed her Master of Pharmacy at University College London. Her experience of finding her feet in UK pharmacy shaped her interest in how pharmacists build confidence, find their voice within the Pharmacy sector and work out how to achieve the best out of their pharmacy careers in the UK. She founded Pharmacist Evolve to support internationally trained pharmacists through coaching and mentoring, professional networks and collaboration with employers and organisations.',
-      'Through the group coaching programme, Faith brings together her experience in UK pharmacy practice and her work supporting internationally trained pharmacists. She helps participants recognise the value of their previous experience, navigate unfamiliar workplace expectations and speak confidently about what they bring to the pharmacy sector. She gives international pharmacists space to work through real situations, navigating pharmacy practice in the UK towards real world career success.',
+      'Faith is a pharmacist, independent prescriber, coach and founder of Pharmacist Evolve. She grew up in Nigeria and completed her Master of Pharmacy at University College London, and her own experience of finding her feet in UK pharmacy shaped her interest in supporting internationally trained pharmacists to build confidence, find their voice and achieve their professional ambitions.',
+      'Through Pharmacist Evolve, Faith supports internationally trained pharmacists through coaching, mentoring, professional networks and collaboration with employers and organisations.',
+      'In this programme, Faith brings her experience of UK pharmacy practice and her understanding of the transition faced by internationally qualified pharmacists. She helps participants navigate unfamiliar professional environments, build confidence and recognise how their experience can contribute to their future careers.',
     ],
   },
   {
-    name: 'Nirusha Govender FRCPharm, PGCertIP',
-    role: 'Pharmacist, Founder of MEDIQIS & Qualified Coach',
+    name: 'Nirusha Govender FRCPharm, PGCert Independent Prescribing',
+    role: 'Lead Professional Coach | Founder and Principal Consultant, MEDIQIS Healthcare Consultancy',
     photo: '/images/coaches/nirusha-govender.jpg',
     photoPosition: 'center 25%',
     bio: [
-      'Nirusha is Founder and Principal Consultant of MEDIQIS Healthcare Consultancy, an experienced pharmacist, former NHS senior leader and qualified coach, with nearly 30 years of experience across clinical practice, pharmacy leadership, medicines optimisation and healthcare transformation. Having completed the OSPAP journey herself, she understands first-hand the challenges, opportunities and professional adjustments involved in transitioning into UK pharmacy practice as an internationally qualified pharmacist.',
-      'Through the MEDIQIS coaching programme, Nirusha brings together her lived OSPAP experience, extensive pharmacy expertise and professional coaching skills to help internationally qualified pharmacists recognise and articulate their transferable skills, build confidence, navigate their transition into the UK profession and develop their professional identity. Her approach goes beyond the OSPAP qualification, empowering pharmacists to draw on their previous experience, embrace their strengths and build fulfilling, confident and successful careers in UK pharmacy.',
+      'Nirusha is an experienced pharmacist, former NHS senior leader and professional coach, with nearly 30 years of experience across clinical practice, pharmacy leadership, medicines optimisation and healthcare transformation.',
+      'Having completed the OSPAP journey herself, she understands first-hand the challenges, opportunities and professional adjustments involved in transitioning into UK pharmacy practice as an internationally qualified pharmacist.',
+      'As Lead Professional Coach, Nirusha has designed the bespoke coaching framework underpinning this programme. She brings together her lived experience, extensive pharmacy expertise and professional coaching skills to help participants recognise their strengths, articulate their transferable skills, challenge limiting assumptions and develop a confident professional identity.',
+      'Her coaching approach is grounded in helping people recognise their strengths, value their experiences and see possibilities they may not have considered. Having experienced the OSPAP journey herself, Nirusha is passionate about ensuring internationally qualified pharmacists do not lose sight of the knowledge, skills and professional identity they have worked hard to build. She wants them to feel confident bringing the full breadth of their professional experience into the UK pharmacy environment, recognising its value and building on it to shape their future careers.',
     ],
   },
 ]
