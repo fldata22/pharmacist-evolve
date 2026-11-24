@@ -393,9 +393,9 @@ const outline = [
 
 const faqs = [
   { q: 'Is this exam preparation?', a: 'No. The programme focuses on transition, working life and career development. It is not a GPhC examination preparation course.' },
-  { q: 'Will you find me a job?', a: 'Employment and placement are not included or guaranteed. Career planning and application guidance form part of the programme.' },
+  { q: 'Will you find me a job?', a: 'Employment and placement are not included or guaranteed. The programme helps you explore career pathways and build a personalised action plan for your next steps.' },
   { q: 'Does this replace my training provider or supervisor?', a: 'No. It complements your existing training and workplace support.' },
-  { q: 'Can I contact my coach privately whenever I need help?', a: 'Support is provided through scheduled appointments, group sessions and the designated community space. Private on-demand support is not included.' },
+  { q: 'Can I contact my coach privately whenever I need help?', a: 'Support is provided through the weekly live group webinars and the programme community space. Private on-demand support and individual coaching outside the programme are not included.' },
   { q: 'When does it start?', a: `The next cohort starts ${programme.cohortStart}. We will confirm the start date, session times and time zone to everyone who enrols.` },
   { q: 'What happens if I miss a session?', a: 'Sessions are recorded, and there is the opportunity to ask questions as needed.' },
 ]

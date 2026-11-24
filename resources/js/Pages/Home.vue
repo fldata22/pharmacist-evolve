@@ -101,7 +101,7 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- OSPAP Pharmacists Coaching Program -->
+          <!-- OSPAP Pharmacists Coaching Programme -->
           <div class="flex flex-col rounded-3xl p-8 lg:p-10 bg-gradient-to-br from-orange-50 to-amber-50 border border-orange-100">
             <span class="inline-flex self-start items-center px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-bold uppercase tracking-wide mb-5">For pharmacists</span>
             <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ programme.name }}</h3>
@@ -174,7 +174,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div class="rounded-2xl p-8 border border-orange-100 bg-orange-50">
             <h3 class="text-xl font-bold text-gray-900 mb-2">If you are a pharmacist</h3>
-            <p class="text-gray-600 mb-6">Read about the OSPAP Pharmacists Coaching Program, join the free introductory webinar, then enrol online when you are ready.</p>
+            <p class="text-gray-600 mb-6">Read about the OSPAP Pharmacists Coaching Programme, join the free introductory webinar, then enrol online when you are ready.</p>
             <Link href="/for-pharmacists" class="inline-flex items-center text-orange-600 font-semibold hover:text-orange-700">
               Explore the programme
               <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>

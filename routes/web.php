@@ -23,7 +23,7 @@ Route::redirect('/services/group-mentoring', '/for-pharmacists')->name('services
 Route::redirect('/services/ospap-coaching', '/for-pharmacists')->name('services.ospap-coaching');
 Route::redirect('/services/workforce-integration', '/for-employers')->name('services.workforce-integration');
 
-// Two core service pages: individuals (OSPAP Pharmacists Coaching Program) and employers
+// Two core service pages: individuals (OSPAP Pharmacists Coaching Programme) and employers
 // (Integration Partnership). Each has a public enquiry form.
 Route::get('/for-pharmacists', function () {
     return Inertia::render('ForPharmacists');

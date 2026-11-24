@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Mail;
 class ProgrammeInterestController extends Controller
 {
     /**
-     * Store a Register Interest submission for the OSPAP Pharmacists Coaching Program.
+     * Store a Register Interest submission for the OSPAP Pharmacists Coaching Programme.
      *
      * The record is always saved to the database first so an enquiry is never
      * lost; the notification email is best-effort and a mail failure must not
@@ -34,7 +34,7 @@ class ProgrammeInterestController extends Controller
 
         return redirect()->back()->with(
             'success',
-            'Thank you for your interest in the OSPAP Pharmacists Coaching Program. '
+            'Thank you for your interest in the OSPAP Pharmacists Coaching Programme. '
             .'This does not reserve a place or commit you to payment. We will email you '
             .'when programme dates and applications are confirmed.'
         );
@@ -43,7 +43,7 @@ class ProgrammeInterestController extends Controller
     private function notify(ProgrammeInterest $interest): void
     {
         try {
-            $body = "NEW OSPAP COACHING PROGRAM INTEREST\n";
+            $body = "NEW OSPAP COACHING PROGRAMME INTEREST\n";
             $body .= str_repeat('=', 40)."\n\n";
             $body .= "Name: {$interest->first_name}\n";
             $body .= "Email: {$interest->email}\n";
@@ -58,7 +58,7 @@ class ProgrammeInterestController extends Controller
             Mail::raw($body, function ($mail) use ($interest) {
                 $mail->to('support@pharmacistevolve.com')
                     ->cc('faithadebimpe@pharmacistevolve.com')
-                    ->subject('New OSPAP Coaching Program interest: '.$interest->first_name)
+                    ->subject('New OSPAP Coaching Programme interest: '.$interest->first_name)
                     ->replyTo($interest->email, $interest->first_name)
                     ->from(config('mail.from.address'), config('mail.from.name'));
             });
