@@ -23,6 +23,135 @@
       </div>
     </section>
 
+    <!-- Upcoming Events Section -->
+    <section class="py-24 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Upcoming Events
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            In-person and virtual events to connect, learn, and grow your pharmacy career
+          </p>
+        </div>
+
+        <!-- Featured: Awards Dinner + next conference -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" :class="{ 'mb-8': events && events.length > 0 }">
+          <!-- Awards Dinner -->
+          <div class="flex flex-col bg-slate-900 rounded-3xl p-8 lg:p-10 shadow-lg">
+            <p class="text-[#D4A853] text-xs font-bold uppercase tracking-wider mb-3">Saturday, 30 January 2027 &middot; Birmingham</p>
+            <h3 class="text-2xl lg:text-3xl font-bold text-white mb-4">OSPAP Networking &amp; Awards Dinner</h3>
+            <p class="text-slate-300 text-lg leading-relaxed mb-8">
+              Celebrating achievement, building connections and recognising the contribution of internationally trained pharmacists to UK pharmacy. 5pm to 10pm at Hyatt Regency Birmingham.
+            </p>
+            <div class="mt-auto">
+              <Link
+                href="/awards-dinner"
+                class="inline-flex items-center justify-center px-7 py-3 bg-[#D4A853] text-slate-900 font-bold rounded-xl hover:bg-[#e0bb6a] transition-colors duration-200"
+              >
+                View the dinner
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          <!-- Next conference -->
+          <div class="flex flex-col bg-white rounded-3xl p-8 lg:p-10 shadow-lg border border-gray-100">
+            <p class="text-orange-600 text-xs font-bold uppercase tracking-wider mb-3">July 2027 &middot; Date and venue to be announced</p>
+            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">Catalyst Conference 2027</h3>
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              Our next conference on overseas pharmacist workforce integration is coming in July 2027. Join the waitlist and we'll let you know as soon as tickets are available.
+            </p>
+            <div class="mt-auto flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/waitlist"
+                class="inline-flex items-center justify-center px-7 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors duration-200"
+              >
+                Join the waitlist
+              </Link>
+              <Link
+                href="/conference"
+                class="inline-flex items-center justify-center px-7 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:border-orange-600 hover:text-orange-600 transition-colors"
+              >
+                See Catalyst 2026
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Events Grid -->
+        <div v-if="events && events.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div 
+            v-for="event in events" 
+            :key="event.id"
+            class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-gray-100"
+          >
+            <div v-if="event.image" class="h-48 overflow-hidden">
+              <img 
+                :src="`/storage/${event.image}`" 
+                :alt="event.title"
+                class="w-full h-full object-cover"
+              >
+            </div>
+            <div v-else class="h-48 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
+              <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full capitalize">
+                  {{ event.type }}
+                </span>
+                <span v-if="event.is_featured" class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">
+                  Featured
+                </span>
+              </div>
+              
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                {{ event.title }}
+              </h3>
+              
+              <p class="text-gray-600 mb-4 line-clamp-3">
+                {{ event.description }}
+              </p>
+              
+              <div class="space-y-2 mb-4">
+                <div class="flex items-center text-gray-700">
+                  <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                  </svg>
+                  <span class="text-sm font-medium">{{ formatDate(event.event_date) }}</span>
+                </div>
+                
+                <div v-if="event.location" class="flex items-center text-gray-700">
+                  <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                  <span class="text-sm">{{ event.location }}</span>
+                </div>
+              </div>
+              
+              <a 
+                v-if="event.registration_link"
+                :href="event.registration_link" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200"
+              >
+                Register Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Upcoming Webinars Section -->
     <section class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,153 +231,22 @@
           </div>
         </div>
 
-        <!-- No Webinars - Coming Soon Card -->
+        <!-- No scheduled webinars: show the free coaching programme webinar -->
         <div v-else class="max-w-2xl mx-auto">
-          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 text-center border-2 border-orange-200">
-            <div class="w-24 h-24 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-8">
-              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Webinars Coming Soon
-            </h3>
-            
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-              We're preparing expert-led webinars on key topics including CV writing, interview preparation, UK pharmacy practice, and career development strategies.
+          <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 lg:p-10 text-center border-2 border-orange-200">
+            <p class="text-orange-600 text-xs font-bold uppercase tracking-wider mb-3">Free &middot; Online &middot; With Faith and Nirusha</p>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ programme.webinar.title }}</h3>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+              Find out how the {{ programme.name }} works, who it's for and how to join the {{ programme.cohortStart }} cohort.
             </p>
-
-            <!-- Notification Signup -->
-            <div class="bg-white rounded-2xl p-6 border-l-4 border-orange-500">
-              <h4 class="text-lg font-bold text-gray-900 mb-3">Get Notified</h4>
-              <p class="text-gray-600 mb-4">
-                Be the first to know when our webinars are scheduled.
-              </p>
-              
-              <Link 
-                href="/waitlist"
-                class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-600 to-amber-600 text-white font-semibold rounded-xl hover:from-orange-700 hover:to-amber-700 transform hover:scale-105 transition-all duration-200"
-              >
-                Join Waitlist
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Upcoming Events Section -->
-    <section class="py-24 bg-gray-50">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Upcoming Events
-          </h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            In-person and virtual events to connect, learn, and grow your pharmacy career
-          </p>
-        </div>
-
-        <!-- Dynamic Events Grid -->
-        <div v-if="events && events.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div 
-            v-for="event in events" 
-            :key="event.id"
-            class="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden border border-gray-100"
-          >
-            <div v-if="event.image" class="h-48 overflow-hidden">
-              <img 
-                :src="`/storage/${event.image}`" 
-                :alt="event.title"
-                class="w-full h-full object-cover"
-              >
-            </div>
-            <div v-else class="h-48 bg-gradient-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
-              <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            
-            <div class="p-6">
-              <div class="flex items-center mb-3">
-                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full capitalize">
-                  {{ event.type }}
-                </span>
-                <span v-if="event.is_featured" class="ml-2 bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">
-                  Featured
-                </span>
-              </div>
-              
-              <h3 class="text-xl font-bold text-gray-900 mb-3">
-                {{ event.title }}
-              </h3>
-              
-              <p class="text-gray-600 mb-4 line-clamp-3">
-                {{ event.description }}
-              </p>
-              
-              <div class="space-y-2 mb-4">
-                <div class="flex items-center text-gray-700">
-                  <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                  </svg>
-                  <span class="text-sm font-medium">{{ formatDate(event.event_date) }}</span>
-                </div>
-                
-                <div v-if="event.location" class="flex items-center text-gray-700">
-                  <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                  <span class="text-sm">{{ event.location }}</span>
-                </div>
-              </div>
-              
-              <a 
-                v-if="event.registration_link"
-                :href="event.registration_link" 
-                target="_blank"
-                rel="noopener noreferrer"
-                class="block w-full text-center px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:scale-105 transition-all duration-200"
-              >
-                Register Now
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- No Events - Coming Soon Card -->
-        <div v-else class="max-w-2xl mx-auto">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-8 text-center border-2 border-blue-200">
-            <div class="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-8">
-              <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-              </svg>
-            </div>
-            
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Events Coming Soon
-            </h3>
-            
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-              We're planning networking events, career fairs, and professional development workshops to support your journey in UK pharmacy.
-            </p>
-
-            <!-- Contact for Updates -->
-            <div class="bg-white rounded-2xl p-6 border-l-4 border-blue-500">
-              <h4 class="text-lg font-bold text-gray-900 mb-3">Stay Informed</h4>
-              <p class="text-gray-600 mb-4">
-                Join our waitlist to be notified about upcoming events.
-              </p>
-              
-              <Link 
-                href="/waitlist" 
-                class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transform hover:scale-105 transition-all duration-200"
-              >
-                Join Waitlist
-              </Link>
-            </div>
+            <a
+              :href="programme.webinar.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-7 py-3 bg-orange-600 text-white font-semibold rounded-xl hover:bg-orange-700 transition-colors duration-200"
+            >
+              Save your free place
+            </a>
           </div>
         </div>
       </div>
@@ -293,6 +291,7 @@
 <script setup>
 import { Link } from '@inertiajs/vue3'
 import AppLayout from '@/Layouts/AppLayout.vue'
+import { programme } from '@/config/programme'
 
 // Define props
 const props = defineProps({
